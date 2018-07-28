@@ -866,6 +866,25 @@
 			}
 		}
 	}
+	&--naMidia{
+		background:$color_6;
+	}
+	&--footerContent{
+		& .Section{
+			&-items{
+				top: -223px;
+				&-item{
+					background-image: url(../images/texture.png);
+					background-size: cover;
+					padding-top: 65px;
+					padding-bottom: 65px;
+					&-resume{
+						color: $color_1;
+					}
+				}
+			}
+		}
+	}
 
 
 	// ===================
