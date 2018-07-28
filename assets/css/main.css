@@ -249,7 +249,7 @@ strong {
   transform: translateX(-50%);
   bottom: 0px;
   width: 80px;
-  height: 3px;
+  height: 0.1px;
   content: "";
 }
 
