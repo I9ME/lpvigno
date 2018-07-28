@@ -32,7 +32,7 @@
 					transform: translateX(-50%);
 					bottom:0px;
 					width: 80px;
-					height: 3px;
+					height: 0.1px;
 					content: "";
 				}
 			}
@@ -863,6 +863,25 @@
 			
 			& .Captions{
 				
+			}
+		}
+	}
+	&--naMidia{
+		background:$color_6;
+	}
+	&--footerContent{
+		& .Section{
+			&-items{
+				top: -223px;
+				&-item{
+					background-image: url(../images/texture.png);
+					background-size: cover;
+					padding-top: 65px;
+					padding-bottom: 65px;
+					&-resume{
+						color: $color_1;
+					}
+				}
 			}
 		}
 	}

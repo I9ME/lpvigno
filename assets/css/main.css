@@ -249,7 +249,7 @@ strong {
   transform: translateX(-50%);
   bottom: 0px;
   width: 80px;
-  height: 3px;
+  height: 0.1px;
   content: "";
 }
 
@@ -1032,6 +1032,25 @@ strong {
   background: #edeae3;
 }
 
+.Section--naMidia {
+  background: #f8d200;
+}
+
+.Section--footerContent .Section-items {
+  top: -223px;
+}
+
+.Section--footerContent .Section-items-item {
+  background-image: url(../images/texture.png);
+  background-size: cover;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.Section--footerContent .Section-items-item-resume {
+  color: #FFFFFF;
+}
+
 .Site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   height: 74px;
@@ -1373,7 +1392,7 @@ strong {
 }
 
 .u-boxShadow {
-  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 50px -6px rgba(0, 0, 0, 0.8);
 }
 
 .u-boxShadow--hover:hover {
@@ -1382,7 +1401,7 @@ strong {
 
 @media screen and (min-width: 768px) {
   .u-boxShadow {
-    box-shadow: 0px 0px 35px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 12px 45px -1px rgba(0, 0, 0, 0.1);
   }
   .u-boxShadow--hover:hover {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
@@ -5550,6 +5569,20 @@ th.u-isShown {
   height: 54px;
 }
 
+.FigureIcon--face {
+  background-image: url(../images/sprite.png);
+  background-position: -243px -151px;
+  width: 13px;
+  height: 24px;
+}
+
+.FigureIcon--insta {
+  background-image: url(../images/sprite.png);
+  background-position: -280px -125px;
+  width: 23px;
+  height: 23px;
+}
+
 .FigureIcon--newsletter {
   background-image: url(../images/sprite.png);
   background-position: -243px -71px;
@@ -5562,6 +5595,13 @@ th.u-isShown {
   background-position: 0px -178px;
   width: 85px;
   height: 52px;
+}
+
+.FigureIcon--yt {
+  background-image: url(../images/sprite.png);
+  background-position: -243px -125px;
+  width: 37px;
+  height: 26px;
 }
 
 .Intro--nameVignoli {
