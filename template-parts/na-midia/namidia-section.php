@@ -6,27 +6,27 @@
 			<h3 class="Section-header-subtitle u-alignCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet.</h3>
 		</header>
 		<div class="Section-content">
-			<ul id="namidia-carousel_" class="Section-items u-displayFlex owl-theme_ owl-carousel_">
-				<li class="Section-items-item u-size8of24 u-boxShadow u-paddingHorizontal--vrt--inter--half u-marginVertical--inter">
-					<div class="Section-items-item-content">
-						<figure class="Section-items-item-figure u-paddingHorizontal--vrt--inter--half">
-							<img class="u-objectFitCover u-sizeHeight100 u-sizeMinWidth100" src="<?php echo get_template_directory_uri() ?>/assets/images/opovo.png">
+			<ul id="namidia-carousel" class="Section-items owl-theme owl-carousel">
+				<li class="Section-items-item u-marginHorizontal--inter--half u-paddingVertical--inter--half--px">
+					<div class="Section-items-item-content u-alignCenter u-paddingHorizontal--vrt--inter--px u-boxShadow">
+						<figure class="Section-items-item-figure u-paddingBottom--inter--half u-alignCenter">
+							<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/opovo.png">
 						</figure>
 						<p class="Section-items-item-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet. Ut rhoncus aliquet iaculis. </p>
 					</div>
 				</li>
-				<li class="Section-items-item u-size8of24 u-boxShadow u-paddingHorizontal--vrt--inter--half u-marginVertical--inter">
-					<div class="Section-items-item-content">
-						<figure class="Section-items-item-figure u-paddingHorizontal--vrt--inter--half">
-							<img class="u-objectFitCover u-sizeHeight100 u-sizeMinWidth100" src="<?php echo get_template_directory_uri() ?>/assets/images/diario.png">
+				<li class="Section-items-item u-marginHorizontal--inter--half u-paddingVertical--inter--half--px">
+					<div class="Section-items-item-content u-alignCenter u-boxShadow u-paddingHorizontal--vrt--inter--px ">
+						<figure class="Section-items-item-figure u-paddingBottom--inter--half u-alignCenter">
+							<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/diario.png">
 						</figure>
 						<p class="Section-items-item-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet. Ut rhoncus aliquet iaculis. </p>
 					</div>
 				</li>
-				<li class="Section-items-item u-size8of24 u-boxShadow u-paddingHorizontal--vrt--inter--half u-marginVertical--inter">
-					<div class="Section-items-item-content">
-						<figure class="Section-items-item-figure u-paddingHorizontal--vrt--inter--half">
-							<img class="u-objectFitCover u-sizeHeight100 u-sizeMinWidth100" src="<?php echo get_template_directory_uri() ?>/assets/images/opovo.png">
+				<li class="Section-items-item u-marginHorizontal--inter--half u-paddingVertical--inter--half--px">
+					<div class="Section-items-item-content u-alignCenter u-boxShadow u-paddingHorizontal--vrt--inter--px">
+						<figure class="Section-items-item-figure u-paddingBottom--inter--half u-alignCenter">
+							<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/opovo.png">
 						</figure>
 						<p class="Section-items-item-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet. Ut rhoncus aliquet iaculis. </p>
 					</div>
