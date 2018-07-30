@@ -868,11 +868,20 @@
 	}
 	&--naMidia{
 		background:$color_6;
+		/*PADDING PERSONALIZADO PARA O FOOTER*/
+		padding-bottom: 150px;
 	}
 	&--footerContent{
 		& .Section{
+			&-content{
+					padding-bottom: 114px;
+					top: -12px;
+					@media screen and (min-width: $break-sm){
+						top: -20px;
+						padding-bottom: 164px;
+					}
+			}
 			&-items{
-				top: -223px;
 				&-item{
 					background-image: url(../images/texture.png);
 					background-size: cover;

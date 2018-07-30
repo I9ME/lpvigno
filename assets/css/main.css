@@ -1034,10 +1034,20 @@ strong {
 
 .Section--naMidia {
   background: #f8d200;
+  /*PADDING PERSONALIZADO PARA O FOOTER*/
+  padding-bottom: 150px;
 }
 
-.Section--footerContent .Section-items {
-  top: -223px;
+.Section--footerContent .Section-content {
+  padding-bottom: 114px;
+  top: -12px;
+}
+
+@media screen and (min-width: 768px) {
+  .Section--footerContent .Section-content {
+    top: -20px;
+    padding-bottom: 164px;
+  }
 }
 
 .Section--footerContent .Section-items-item {

@@ -1,4 +1,4 @@
-<section id="midia" class="Section Section--style1 Section--naMidia u-paddingHorizontal">
+<section id="midia" class="Section Section--style1 Section--naMidia u-paddingTop">
 	<div class="u-maxSize--container u-alignCenterBox u-alignCenter"><!-- Max Size Container -->
 		<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-paddingVertical">
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-marginBottom--inter--half">VIGNOLI NA <strong>MÍDIA</strong></h2>
