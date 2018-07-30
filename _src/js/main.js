@@ -110,6 +110,36 @@ $(window).scroll(function(){
         });
 
 
+/*s
+// Carousel
+ */
+
+$('#namidia-carousel').owlCarousel({
+    loop:true,
+    dots: true,
+    nav: true,
+    responsiveClass: true,
+    responsive:{
+        0:{
+            items:1,
+            margin:50,
+            nav:false
+        },
+        768:{
+            items:2,
+            margin:25,
+            //nav:false
+        },
+        960:{
+            items:3,
+            margin:25,
+            //nav:true,
+        }
+    }
+})
+
+
+
 // /*=========================================================================================
 // // CLOSE FUNCTION
 // =========================================================================================*/

@@ -223,6 +223,15 @@ strong {
   color: #6e1b1d;
 }
 
+.Section {
+  /*
+NA MÍDIA .Section--naMidia
+ */
+  /*
+FOOTER .Site--foter .Section--footerContent
+ */
+}
+
 .Section-header-title {
   font-size: 20px;
   font-weight: normal;
@@ -525,7 +534,7 @@ strong {
 }
 
 .Section--style1 .Section-header-title--beforeTitleLine:before {
-  background: #6e1b1d;
+  background: #d4cbaf;
 }
 
 .Section--style1 .Section-header-subtitle {
@@ -1126,10 +1135,6 @@ strong {
   position: relative;
 }
 
-.Section--aFranquia .Section-header-title--beforeTitleLine:before {
-  background: #d4cbaf;
-}
-
 .Section--aFranquia .Section-gridElastic {
   height: auto;
   display: flex;
@@ -1192,9 +1197,35 @@ strong {
 }
 
 .Section--naMidia {
-  background: #ab696b;
   /*PADDING PERSONALIZADO PARA O FOOTER*/
   padding-bottom: 120px;
+}
+
+.Section--footerContent .Section-content {
+  padding-bottom: 114px;
+  top: -12px;
+}
+
+@media screen and (min-width: 768px) {
+  .Section--footerContent .Section-content {
+    top: -20px;
+    padding-bottom: 164px;
+  }
+}
+
+.Section--footerContent .Section-items {
+  box-shadow: 0px 33px 40px -15px rgba(0, 0, 0, 0.35);
+}
+
+.Section--footerContent .Section-items-item {
+  background-image: url(../images/texture.png);
+  background-size: cover;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.Section--footerContent .Section-items-item-resume {
+  color: #FFFFFF;
 }
 
 .Site-header {
