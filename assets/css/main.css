@@ -64,6 +64,7 @@ html {
 body {
   margin: 0px;
   paddin: 0px;
+  background: red;
 }
 
 *,
