@@ -5,7 +5,7 @@
 			<h3 class="Section-header-subtitle u-alignCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet.</h3>
 		</header>
 		<div class="Section-content">
-			<ul class="Section-items u-displayFlex">
+			<ul id="namidia-carousel_" class="Section-items u-displayFlex owl-theme_ owl-carousel_">
 				<li class="Section-items-item u-size8of24 u-boxShadow u-paddingHorizontal--vrt--inter--half u-marginVertical--inter">
 					<div class="Section-items-item-content">
 						<figure class="Section-items-item-figure u-paddingHorizontal--vrt--inter--half">

@@ -77,6 +77,8 @@ function skeleton_scripts() {
 	wp_enqueue_script( 'js-jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', array(), true );
 	wp_enqueue_script( 'js-main', get_template_directory_uri() . '/assets/js/main.min.js', array(), $skeleton_version, true );
 	wp_enqueue_script( 'js-paroller', get_template_directory_uri() . '/assets/js/jquery.paroller.min.js', array(), true );
+	wp_enqueue_style('css-owl', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), true);
+	wp_enqueue_script( 'js-owl', get_theme_file_uri( '/assets/js/owl.carousel.min.js' ), array(), true );
 	
 
 
