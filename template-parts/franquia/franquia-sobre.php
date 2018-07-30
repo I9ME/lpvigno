@@ -3,7 +3,7 @@
 		<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24">
 			<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-paddingVertical u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter">
 				<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
-				<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingHorizontal--inter--half u-marginBottom--inter--half u-sizeFull">A FRANQUIA <strong>VIGNOLI</strong></h2>
+				<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingHorizontal--inter--half u-sizeFull">A FRANQUIA <strong>VIGNOLI</strong></h2>
 			</header>
 			<div class="Section-content u-alignJustify">
 				<h3 class="Section-content-subtitle">

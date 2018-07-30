@@ -525,7 +525,7 @@ strong {
 }
 
 .Section--style1 .Section-header-title--beforeTitleLine:before {
-  background: #6e1b1d;
+  background: #d4cbaf;
 }
 
 .Section--style1 .Section-header-subtitle {
@@ -1124,10 +1124,6 @@ strong {
 
 .Section--aFranquia .Section-header-title--beforeTitleLine {
   position: relative;
-}
-
-.Section--aFranquia .Section-header-title--beforeTitleLine:before {
-  background: #d4cbaf;
 }
 
 .Section--aFranquia .Section-gridElastic {

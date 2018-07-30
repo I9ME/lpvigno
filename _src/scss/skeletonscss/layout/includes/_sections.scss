@@ -326,7 +326,7 @@
 				color: $color_2;
 				&--beforeTitleLine{
 					&:before{
-						background: $color_2;
+						background: $color_15;
 					}
 				}
 			}
@@ -946,9 +946,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 				&-title{
 					&--beforeTitleLine{
 						position: relative;
-						&:before{
-							background: $color_15;
-						}
 					}
 				}
 			}
