@@ -5,7 +5,164 @@
 
 jQuery(function($) {
 	$(document).ready(function() {
+/*
+window.onload = function() {
+    var element = document.createElement("script");
+    //element.src = "myScript.js";
+    //
+   // document.body.appendChild(element);
+   alert('Carregou! ')
+};
+*/
 
+
+
+//=======================================================
+//Aplica a animação no scroll mediante clique no menu
+//=======================================================
+
+
+
+    $(".u-isScrollDown").click(function(event){        
+        event.preventDefault();
+        
+       
+
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 0}, 1000);
+
+          if ($(".Navigation--main").hasClass('u-isExpanded')){
+            $("#MainNavigation-container, .NavigationButton.NavigationButton--main").removeClass("u-isExpanded")
+            $("#MainNavigation-container, .NavigationButton.NavigationButton--main").addClass("u-isCollapsed");  
+         }
+        
+        varHash = $(this).attr('href');
+
+        
+        /*if (location.hash == varHash) {
+            $(this).addClass('u-isActive');
+        } else {
+            $(this).removeClass('u-isActive');
+        }*/
+        
+        if(history.pushState) {
+        
+            history.pushState(null, null, varHash);
+        
+        }
+        else {
+        location.hash = '#myhash';
+        window.location.hash = varHash;
+        }
+
+        
+   });
+
+
+
+
+/*$(function(){
+      $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 40
+      });
+    });
+*/
+
+
+
+
+// =====================================
+// .ScrollOn
+// Detecta o Movimento da Barra de Rolagem e aplica a classe no body
+// =====================================
+
+$(window).scroll(function(){
+
+
+     var scroll = jQuery(window).scrollTop();
+
+     //Class ScrollOn
+     if ( scroll > 0 ) {
+      jQuery('body').addClass('u-isScrollOn');
+
+     } else {
+      jQuery('body').removeClass('u-isScrollOn');
+     }
+
+     //Class Fixed
+    /* if ( scroll > 135 ) {
+      jQuery('.Intro--blog-headerBar').addClass('u-isFixed');
+
+     } else {
+      jQuery('.Intro--blog-headerBar').removeClass('u-isFixed');
+     }*/
+
+});
+
+// =====================================
+// .ScrollFade
+// Mostra os objetos conforme aparecem no scroll
+// =====================================
+ 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.u-isScrollFade').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 100;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                $(this).addClass('u-isScrollFade--on'); 
+                    
+            }
+            
+        }); 
+    
+    });
+
+
+//=======================================================
+//Aplica a animação no scroll mediante clique no menu
+//=======================================================
+
+    $(".u-isScrollDown").click(function(event){        
+        event.preventDefault();
+        
+       
+
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 0}, 1000);
+
+          if ($(".Navigation--menu--main").hasClass('u-isExpanded')){
+            $("#MainNavigation-container, .NavigationButton.NavigationButton--main").removeClass("u-isExpanded")
+            $("#MainNavigation-container, .NavigationButton.NavigationButton--main").addClass("u-isCollapsed");  
+         }
+        
+        varHash = $(this).attr('href');
+
+        
+        /*if (location.hash == varHash) {
+            $(this).addClass('u-isActive');
+        } else {
+            $(this).removeClass('u-isActive');
+        }*/
+        
+        if(history.pushState) {
+        
+            history.pushState(null, null, varHash);
+        
+        }
+        else {
+        location.hash = '#myhash';
+        window.location.hash = varHash;
+        }
+
+        
+   });
 
 
 // ==========================
