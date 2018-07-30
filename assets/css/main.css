@@ -433,22 +433,6 @@ FOOTER .Site--foter .Section--footerContent
   right: 2.08333% !important;
 }
 
-.Section .Section-navigation-items--tabs {
-  line-height: 100%;
-}
-
-.Section .Section-navigation-items--tabs .Item .NavigationLink {
-  opacity: 0.5;
-}
-
-.Section .Section-navigation-items--tabs .Item .NavigationLink:hover {
-  opacity: 1;
-}
-
-.Section .Section-navigation-items--tabs .Item.active .NavigationLink {
-  opacity: 1;
-}
-
 .Section .Section-table-thead-item {
   width: 25%;
 }
@@ -1128,7 +1112,6 @@ FOOTER .Site--foter .Section--footerContent
   moz-background: linear-gradient(to right, #f1efe9 50%, #f9f8f3);
   -webkit-background: linear-gradient(to right, #f1efe9 50%, #f9f8f3);
   background: linear-gradient(to right, #f1efe9 50%, #f9f8f3);
-  height: 1000px;
 }
 
 .Section--aFranquia .Section-header-title--beforeTitleLine {
@@ -1194,6 +1177,29 @@ FOOTER .Site--foter .Section--footerContent
     margin-bottom: 10px;
     max-width: 100%;
   }
+}
+
+.Section--aFranquia .Section-subSection {
+  background: #FFFFFF;
+}
+
+.Section--aFranquia .Section-subSection:after {
+  width: 100%;
+  height: 120px;
+  margin: 0px;
+  -webkit-transform: skew(0deg, -4deg);
+  -moz-transform: skew(0deg, -4deg);
+  -o-transform: skew(0deg, -4deg);
+  overflow: hidden;
+  content: "";
+  position: absolute;
+  top: -65px;
+  left: 0px;
+  background: #FFFFFF;
+}
+
+.Section--aFranquia .Section-subSection .Subsection-imageMan-src {
+  margin-top: -300px;
 }
 
 .Section--naMidia {
@@ -5716,18 +5722,46 @@ th.u-isShown {
   height: 54px;
 }
 
+.FigureIcon--moedas {
+  background-image: url(../images/sprite.png);
+  background-position: -240px -741px;
+  width: 85px;
+  height: 65px;
+}
+
+.FigureIcon--money {
+  background-image: url(../images/sprite.png);
+  background-position: -696px -304px;
+  width: 93px;
+  height: 70px;
+}
+
 .FigureIcon--newsletter {
   background-image: url(../images/sprite.png);
-  background-position: -631px -375px;
+  background-position: -716px -375px;
   width: 53px;
   height: 50px;
 }
 
+.FigureIcon--report {
+  background-image: url(../images/sprite.png);
+  background-position: -686px -523px;
+  width: 93px;
+  height: 63px;
+}
+
 .FigureIcon--send {
   background-image: url(../images/sprite.png);
-  background-position: -696px -304px;
+  background-position: -631px -375px;
   width: 85px;
   height: 52px;
+}
+
+.FigureIcon--store {
+  background-image: url(../images/sprite.png);
+  background-position: -686px -450px;
+  width: 83px;
+  height: 73px;
 }
 
 .Flatlay--azeite {
@@ -5753,14 +5787,14 @@ th.u-isShown {
 
 .Flatlay--folha2--noShadow {
   background-image: url(../images/sprite.png);
-  background-position: 0px -622px;
+  background-position: -120px -622px;
   width: 120px;
   height: 187px;
 }
 
 .Flatlay--folha2 {
   background-image: url(../images/sprite.png);
-  background-position: -120px -622px;
+  background-position: 0px -622px;
   width: 120px;
   height: 187px;
 }
