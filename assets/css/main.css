@@ -1035,7 +1035,7 @@ strong {
 .Section--naMidia {
   background: #f8d200;
   /*PADDING PERSONALIZADO PARA O FOOTER*/
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 
 .Section--footerContent .Section-content {
@@ -1048,6 +1048,10 @@ strong {
     top: -20px;
     padding-bottom: 164px;
   }
+}
+
+.Section--footerContent .Section-items {
+  box-shadow: 0px 33px 40px -15px rgba(0, 0, 0, 0.35);
 }
 
 .Section--footerContent .Section-items-item {

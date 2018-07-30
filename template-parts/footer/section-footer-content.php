@@ -26,9 +26,8 @@
 	</div>
 	<div class="u-maxSize--container u-alignCenterBox u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
 		<div class="Section-container u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter u-sizeFull u-paddingBottom">
-			<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-paddingVertical">
+			<header class="Section-header u-marginBottom--inter u-alignCenterBox u-paddingVertical">
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-marginBottom--inter--half">RECEBA AS NOSSAS <strong>NOVIDADES</strong></h2>
-			<h3 class="Section-header-subtitle u-alignCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet.</h3>
 		</header>
 			<div class="Section-content u-marginTop--inter u-size12of24">
 				<form class="Form Form--style3">
