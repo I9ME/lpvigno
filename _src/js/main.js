@@ -213,7 +213,6 @@ $(window).scroll(function(){
 
 
 
-
 function LightboxClose() {
   //alert( "clicked" );
    $('#Lightbox--container').removeClass('Lightbox--active');
@@ -303,6 +302,15 @@ $('#namidia-carousel').owlCarousel({
 
 	});
 });
+
+
+
+function NavigationTabs(section, tab){
+    //alert( section + ' , ' + tab );
+    $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item, .Section--' + section + ' .Items--tabs .Item, .Section--' + section + ' .Subsection-imageMain').removeClass('is-active');
+    $('.Section--' + section + ' .Navigation--tabs #tab-' + tab + ', .Section--' + section + ' .Items--tabs #tabContent-' + tab + ', .Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab ).addClass('is-active');
+    //alert('clicked');
+}
 
 
 
