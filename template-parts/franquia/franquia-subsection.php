@@ -36,7 +36,7 @@
 
 		<ul class="Subsection-items Items Items--tabs u-marginTop u-positionRelative">
 
-			<li id="tabContent-1" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop u-positionRelative is-active">
+			<li id="tabContent-1" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop u-positionRelative is-active is-animating">
 				
 					<div class="Item-content">
 						<header class="Subsection-header">
@@ -70,7 +70,7 @@
 				
 			</li>
 
-			<li id="tabContent-2" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop u-positionRelative">
+			<li id="tabContent-2" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop u-positionRelative is-animating">
 				<div class="Item-content">
 						<header class="Subsection-header">
 							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet.</h4>
