@@ -1097,7 +1097,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 
 		& .Subsection{
 			@media screen and (min-width: $break-sm){
-				padding-top: $v_spacing * 1.5;
+				padding-top: $v_spacing * 0.5;
 			}
 		}
 		
@@ -1138,19 +1138,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 				&-imageMain{
 					display: none;
 					&-src{
-						opacity: 0;
+						//opacity: 0;
 					}
 					&.is-active{
 						display: block;
 						& .Subsection-imageMain-src{
-							opacity: 1;
+							//opacity: 1;
 							//transition-delay: 0.5s;
 						}
 					}
 				}
 			}
 			@media screen and (min-width: $break-sm){
-
+					//Subsection-imageMain
 				& .Subsection{
 					/* &-content{
 						padding-left: $h_spacing;
@@ -1158,10 +1158,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 					} */
 
 					&-imageMain{
-						
+						position: absolute;
+						right: 0px;
+						top: -300px;
+						display: block;
 						&-src{
 							max-width: inherit;
-							margin-top: -300px;
+							opacity: 0;
+						}
+						&.is-active{
+							& .Subsection-imageMain-src{
+								opacity: 1;
+							}
 						}
 						
 					}
@@ -1171,6 +1179,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 		}
 
 
+	}
+
+	/*
+	Vídeos
+	 */
+	
+	&--videos{
+		background: $color_5;
+		& .Section{
+			&-imageMain{
+				background: $color_2;
+			}
+		}
+	}
+
+	&--opinioes{
+		background: $color_5;
+		& .Section{
+			&-header{
+				&-title{
+					color: $color_4;
+				}
+			}
+			&-imageMain{
+				background: $color_4;
+			}
+		}
 	}
 
 /*

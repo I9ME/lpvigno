@@ -308,8 +308,20 @@ $('#namidia-carousel').owlCarousel({
 function NavigationTabs(section, tab){
     //alert( section + ' , ' + tab );
     $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item, .Section--' + section + ' .Items--tabs .Item, .Section--' + section + ' .Subsection-imageMain').removeClass('is-active');
-    $('.Section--' + section + ' .Navigation--tabs #tab-' + tab + ', .Section--' + section + ' .Items--tabs #tabContent-' + tab + ', .Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab ).addClass('is-active');
+    $('.Section--' + section + ' .Navigation--tabs #tab-' + tab + ', .Section--' + section + ' .Items--tabs #tabContent-' + tab +', .Section--' + section + ' #tabImage-' + tab).addClass('is-active');
+    //$('.Section--' + section + ' .Subsection-imageMain .Subsection-imageMain-src').fadeOut();
+    //$('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab + ' .Subsection-imageMain-src').fadeIn();
     //alert('clicked');
+    
+   // $('.Section--' + section + ' .Subsection-imageMain').fadeOut(250);
+    //$('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab ).fadeIn(450);
+
+   /* $('.Section--' + section + ' .Subsection-imageMain').fadeOut(function() {
+    $('.Section--' + section + ' .Subsection-imageMain').removeClass('is-active');    
+    $('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab).addClass('is-active').fadeIn(750);*/
+
+  //});
+   
 }
 
 
