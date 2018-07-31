@@ -13,8 +13,7 @@
  */
 
 ?>
-		</div><!-- #content -->
-
+		</div><!-- #content -->		
 		<footer class="Site-footer" role="contentinfo">
 				<?php get_template_part('template-parts/footer/section','footer-content'); ?>
 				<?php get_template_part('template-parts/footer/section','footer-info'); ?>

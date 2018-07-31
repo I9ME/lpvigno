@@ -26,6 +26,7 @@ html {
 body{
   margin: 0px;
   paddin: 0px;
+  //background-color: $color_5; 
 }
 
 *,
@@ -110,6 +111,19 @@ a:hover {
   outline-width: 0;
   text-decoration: none;
 }
+
+
+
+p{
+  line-height: $line_height;
+}
+
+a{
+  color: $color_2;
+  text-decoration: none;
+}
+
+
 
 
 strong{
