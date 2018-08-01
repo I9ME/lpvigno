@@ -29,11 +29,11 @@
 			<header class="Section-header u-marginBottom--inter--half u-alignCenterBox u-paddingVertical">
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-marginBottom--inter--half">RECEBA AS NOSSAS <strong>NOVIDADES</strong></h2>
 		</header>
-			<div class="Section-content u-size24of24 u-displayFlex u-flexJustifyContentCenter">
+			<div class="Section-content u-size24of24 u-displayFlex u-flexJustifyContentCenter u-flexDirectionColumn">
 				<form class="Form Form--style3 u-displayFlex u-sizeFull">
 					<fieldset class="Form-fieldset u-displayFlex u-justifyContentCenter u-sizeFull">
-						<div class="Form-line u-size8of24">
-							<div class="Form-row Form-row--email u-positionRelative">
+						<div class="Form-line u-displayFlex u-justifyContentCenter">
+							<div class="Form-row Form-row--email u-positionRelative u-size8of24">
 							<div class="Form-content u-positionRelative">
 								<i class="u-icon u-icon--envelope">
 									<svg class="iconEnvelope u-icon is-animating">
@@ -49,6 +49,9 @@
 						</div>
 					</fieldset>
 				</form>
+				<figure class="Section-content-figure u-displayFlex u-flexJustifyContentCenter u-marginHorizontal--inter">
+					<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/vignoli--logo--footer.png">
+				</figure>
 			</div>
 		</div>
 	</div> <!-- Max Size Container -->
