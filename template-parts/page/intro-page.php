@@ -72,7 +72,7 @@
 		<figure class="Flatlay Flatlay--tomate2 u-zIndex1" data-paroller-factor="-0.35" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 		<figure class="Flatlay Flatlay--azeite u-zIndex1" data-paroller-factor="0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"></figure>
 		<figure class="Flatlay Flatlay--colher u-zIndex1" data-paroller-factor="-0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"></figure>
-		<figure class="Flatlay Flatlay--ramo u-zIndex1" data-paroller-factor="-0.4" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+		<figure class="Flatlay Flatlay--ramo u-zIndex1" data-paroller-factor="-0.3" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 		<figure class="Flatlay Flatlay--folha2 u-zIndex1" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 	</div>
 	<?php } ?>

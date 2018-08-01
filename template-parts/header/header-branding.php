@@ -14,7 +14,7 @@
 	$custom_logo_id = get_theme_mod( 'custom_logo' );
 	$logo = wp_get_attachment_image_src( $custom_logo_id , 'medium' );
 ?>
-	<a href="<?php echo get_home_url(); ?>" class="u-displayInlineBlock">
+	<a href="<?php echo linkHome(); ?>" class="u-displayInlineBlock <?php echo classScrollDown(); ?>">
 		<?php 
 			if ( has_custom_logo() ) {
 			        echo '<img  class="Site-header-branding-img u-displayInlineBlock u-sizeAuto" src="'. esc_url( $logo[0] ) .'" alt="' . get_bloginfo( 'name' ) . '">';
