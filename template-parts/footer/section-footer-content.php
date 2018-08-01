@@ -25,11 +25,11 @@
 		</div>
 	</div>
 	<div class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-sizeFull">
-		<div class="Section-container u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter u-sizeFull u-paddingBottom">
+		<div class="Section-container u-alignCenterBox u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter u-sizeFull">
 			<header class="Section-header u-marginBottom--inter--half u-alignCenterBox u-paddingVertical">
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-marginBottom--inter--half">RECEBA AS NOSSAS <strong>NOVIDADES</strong></h2>
 		</header>
-			<div class="Section-content u-size24of24 u-displayFlex u-flexJustifyContentCenter u-flexDirectionColumn">
+			<div class="Section-content--formSpace u-size24of24 u-displayFlex u-flexJustifyContentCenter u-flexDirectionColumn">
 				<form class="Form Form--style3 u-displayFlex u-sizeFull">
 					<fieldset class="Form-fieldset u-displayFlex u-justifyContentCenter u-sizeFull">
 						<div class="Form-line u-displayFlex u-justifyContentCenter">
@@ -49,9 +49,19 @@
 						</div>
 					</fieldset>
 				</form>
-				<figure class="Section-content-figure u-displayFlex u-flexJustifyContentCenter u-marginHorizontal--inter">
+				<figure class="Section-content-figure u-displayFlex u-flexJustifyContentCenter u-marginTop--inter u-marginBottom--inter--half">
 					<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/vignoli--logo--footer.png">
 				</figure>
+				<ul class="Section-items--contact u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-alignCenterBox">
+					<li class="Section-items--contact-item u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-flexAlignItemsCenter u-marginTop--inter--half">
+						<i class="figureIcon"></i>
+						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter">(85)3333-3333</p>
+					</li>
+					<li class="Section-items--contact-item u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-flexAlignItemsCenter u-marginTop--inter--half">
+						<i class="figureIcon"></i>
+						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter u-size12of24 u-alignCenter">Rua xxxxxxxxxxxx, xxx, xxxxxxx, xxxxx, <br> XXXXX-XXX</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div> <!-- Max Size Container -->

@@ -1385,6 +1385,12 @@ FOOTER .Site--foter .Section--footerContent
   color: #FFFFFF;
 }
 
+.Section--footerContent .Section-items--contact-item-resume {
+  color: #000000;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
 .Site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   height: auto;

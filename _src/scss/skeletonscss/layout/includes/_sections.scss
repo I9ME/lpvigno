@@ -1247,6 +1247,15 @@ FOOTER .Site--foter .Section--footerContent
 						color: $color_1;
 					}
 				}
+				&--contact{
+					&-item{
+						&-resume{
+							color: $color_11;
+							font-weight: bolder;
+							font-size: 15px;
+						}
+					}
+				}
 			}
 		}
 	}
