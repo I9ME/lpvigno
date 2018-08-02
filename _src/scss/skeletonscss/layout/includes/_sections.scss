@@ -1166,9 +1166,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 			    left: 15%;
 			    bottom: 15px;
 			    height: 25px;
-			    -moz-box-shadow: 0px 10px 65px rgba(0,0,0,0.5);
-			    -webkit-box-shadow: 0px 10px 65px rgba(0,0,0,0.5);
-			    box-shadow: 0px 10px 65px rgba(0,0,0,0.5);
+			    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+			    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+			    box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
 			    content: "";
 			    background: transparent;
 			    z-index: -1;
@@ -1299,9 +1299,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 				    left: 15%;
 				    bottom: 0;
 				    height: 25px;
-				    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.25);
-				    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.25);
-				    box-shadow: 0px 10px 35px rgba(0,0,0,0.25);
+				    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+				    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+				    box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
 				    background: $color_5;
 				}
 			}
@@ -1438,9 +1438,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 				    left: 15%;
 				    bottom: 0;
 				    height: 25px;
-				    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.35);
-				    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.35);
-				    box-shadow: 0px 10px 35px rgba(0,0,0,0.35);
+				     -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+				    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+				    box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
 				    background: $color_5;
 				}
 			}
@@ -1470,6 +1470,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 		}
 	}
 
+
+/*
+A VIGNOLI
+ */
+
+ 	&--aVignoli{
+ 		& .owl-dots{
+ 			flex-direction: row-reverse;
+ 		}
+ 	}
 /*
 NA MÍDIA .Section--naMidia
  */

@@ -237,6 +237,9 @@ strong {
 	Vídeos
 	 */
   /*
+A VIGNOLI
+ */
+  /*
 NA MÍDIA .Section--naMidia
  */
   /*
@@ -1286,9 +1289,9 @@ FOOTER .Site--foter .Section--footerContent
   left: 15%;
   bottom: 15px;
   height: 25px;
-  -moz-box-shadow: 0px 10px 65px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 10px 65px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 10px 65px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
   content: "";
   background: transparent;
   z-index: -1;
@@ -1396,9 +1399,9 @@ FOOTER .Site--foter .Section--footerContent
     left: 15%;
     bottom: 0;
     height: 25px;
-    -moz-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
     background: #edeae3;
   }
   .Section--videos .Section-header {
@@ -1504,9 +1507,9 @@ FOOTER .Site--foter .Section--footerContent
     left: 15%;
     bottom: 0;
     height: 25px;
-    -moz-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.35);
-    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
     background: #edeae3;
   }
   .Section--opinioes .Section-header {
@@ -1526,6 +1529,10 @@ FOOTER .Site--foter .Section--footerContent
 .Section--opinioes .Section-imageMain {
   background: #63974d;
   min-height: 200px;
+}
+
+.Section--aVignoli .owl-dots {
+  flex-direction: row-reverse;
 }
 
 .Section--naMidia {
@@ -1911,6 +1918,12 @@ FOOTER .Site--foter .Section--footerContent
   -moz-box-shadow: 0px 5px 45px -10px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 5px 45px -10px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 5px 45px -10px rgba(0, 0, 0, 0.25);
+}
+
+.u-boxShadow--clean--bottom {
+  -moz-box-shadow: 0px 22px 48px -13px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 22px 48px -13px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 22px 48px -13px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 960px) {

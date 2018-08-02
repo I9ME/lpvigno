@@ -335,6 +335,27 @@ $('#opinioes-carousel').owlCarousel({
             items:1,
         }
     }
+});
+
+$('#historia-carousel').owlCarousel({
+    loop:true,
+    dots: true,
+    nav: false,
+    margin: 50,
+    responsiveClass: true,
+    responsive:{
+        0:{
+            items:1,
+            
+
+        },
+        768:{
+            items:2,
+        },
+        960:{
+            items:3,
+        }
+    }
 })
 
 
