@@ -312,6 +312,14 @@ FOOTER .Site--foter .Section--footerContent
   font-size: 17px;
 }
 
+.Section .Section-items-item-text {
+  font-size: 17px;
+}
+
+.Section .Section-items-item-text p {
+  padding-top: 10px;
+}
+
 .Section .Section-items-item--divisor {
   position: relative;
 }
@@ -1531,8 +1539,10 @@ FOOTER .Site--foter .Section--footerContent
   min-height: 200px;
 }
 
-.Section--aVignoli .owl-dots {
-  flex-direction: row-reverse;
+@media screen and (min-width: 768px) {
+  .Section--aVignoli .owl-dots {
+    flex-direction: row-reverse;
+  }
 }
 
 .Section--naMidia {
@@ -1921,9 +1931,9 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .u-boxShadow--clean--bottom {
-  -moz-box-shadow: 0px 22px 48px -13px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0px 22px 48px -13px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 22px 48px -13px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 22px 45px -10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 22px 45px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 22px 45px -10px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 960px) {

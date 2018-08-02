@@ -52,7 +52,9 @@
 			font-size: $font_size_subtitle_section;
 			color: $color_11;
 		}
+
 	}
+
 
 		
 		& .Section-items{
@@ -77,7 +79,20 @@
 					font-size: $font_size_subtitle_item;
 				}
 				&-resume{
-					font-size: 17px;
+					font-size: $font_size_text;
+				}
+				&-text{
+					font-size: $font_size_text;
+					& p{
+						padding-top: 10px;
+					}
+				}
+
+				& .subSection{
+					&-text{
+						font-size: 16px;
+					}
+
 				}
 
 				&--divisor{
@@ -1476,8 +1491,10 @@ A VIGNOLI
  */
 
  	&--aVignoli{
- 		& .owl-dots{
- 			flex-direction: row-reverse;
+ 		@media screen and (min-width: $break-sm){
+ 			& .owl-dots{
+ 				flex-direction: row-reverse;
+ 			}
  		}
  	}
 /*

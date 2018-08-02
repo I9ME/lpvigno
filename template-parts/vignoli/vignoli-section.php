@@ -1,4 +1,4 @@
-<section id="midia" class="Section Section--style1 Section--aVignoli u-paddingTop">
+<section id="avignoli" class="Section Section--style1 Section--aVignoli u-paddingTop">
 	<div class="u-maxSize--container u-alignCenterBox"><!-- Max Size Container -->
 		<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-paddingVertical u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter">
 			<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
@@ -16,14 +16,14 @@
 						<figure class="ShadowBox ShadowBox--tabRight--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
 						<figure class="ShadowBox ShadowBox--tabRight u-positionAbsolute u-zIndex1 is-animating"></figure>
 					</li>
-					<li id="tab-1" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter u-positionRelative u-paddingVertical--inter--px is-active">
+					<li id="tab-2" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter u-positionRelative u-paddingVertical--inter--px is-active">
 						<h3 class="u-alignCenter">
 							<a class="Navigation-link u-displayBlock u-paddingHorizontal--vrt--inter--half--px u-displayBlock is-animating" href="javascript:NavigationTabs('aVignoli','2');">História</a>
 						</h3>
 						<figure class="ShadowBox ShadowBox--tabRight--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
 						<figure class="ShadowBox ShadowBox--tabRight u-positionAbsolute u-zIndex1 is-animating"></figure>
 					</li>
-					<li id="tab-2" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter u-positionRelative u-paddingLeft--inter--px">
+					<li id="tab-3" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter u-positionRelative u-paddingLeft--inter--px">
 						<h3>
 							<a class="Navigation-link u-displayBlock is-animating u-paddingHorizontal--vrt--inter--half--px" href="javascript:NavigationTabs('aVignoli','3');">Vídeos</a>
 						</h3>
@@ -34,13 +34,15 @@
 			</nav>
 
 			<ul class="Subsection-items Items Items--tabs u-marginTop u-positionRelative">
-
-				<li id="tabContent-1" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-positionRelative is-active is-animating">
-					<div class="Subsection-items-item-content u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom">
-						<h4 class="Subsection-items-item-title u-marginBottom--inter">
+				<li id="tabContent-1" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-positionRelative is-animating">
+					FOTOS
+				</li>
+				<li id="tabContent-2" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-positionRelative is-active is-animating">
+					<div class="Section-items-item-content u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom">
+						<h4 class="Section-items-item-title u-marginBottom--inter">
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry
 						</h4>
-						<div class="Subsection-items-item-text u-alignJustify">
+						<div class="Section-items-item-text u-alignJustify">
 							<p>
 								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 							</p>
@@ -48,55 +50,55 @@
 								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem ipsum.
 							</p>
 
-							<ul id="historia-carousel" class="SubSection-items Subsection--historia u-marginTop--inter owl-carousel">
-								<li class="Subsection-items-item u-alignCenter">
+							<ul id="historia-carousel" class="SubSection-items subSection--historia u-marginTop--inter owl-carousel">
+								<li class="subSection-items-item u-alignCenter">
 									<div class="DotHistoty">
 										<span class="DotHistoty-year">2004</span>
 									</div>
-									<header class="Subsection-header">
-										<h5 class="Subsection-header-title">Fundamos a Vingoli</h5>
+									<header class="subSection-header">
+										<h5 class="subSection-header-title">Fundamos a Vingoli</h5>
 									</header>
-									<div class="Subsection-content">
-										<p class="Subsection-text">
+									<div class="subSection-content">
+										<p class="subSection-text">
 											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
 										</p>
 									</div>
 								</li>
-								<li class="Subsection-items-item u-alignCenter">
+								<li class="subSection-items-item u-alignCenter">
 									<div class="DotHistoty">
 										<span class="DotHistoty-year">2010</span>
 									</div>
-									<header class="Subsection-header">
-										<h5 class="Subsection-header-title">Fundamos a Vingoli</h5>
+									<header class="subSection-header">
+										<h5 class="subSection-header-title">Fundamos a Vingoli</h5>
 									</header>
-									<div class="Subsection-content">
-										<p class="Subsection-text">
+									<div class="subSection-content">
+										<p class="subSection-text">
 											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
 										</p>
 									</div>
 								</li>
-								<li class="Subsection-items-item u-alignCenter u-alignCenter">
+								<li class="subSection-items-item u-alignCenter u-alignCenter">
 									<div class="DotHistoty">
 										<span class="DotHistoty-year">2014</span>
 									</div>
-									<header class="Subsection-header">
-										<h5 class="Subsection-header-title">Fundamos a Vingoli</h5>
+									<header class="subSection-header">
+										<h5 class="subSection-header-title">Fundamos a Vingoli</h5>
 									</header>
-									<div class="Subsection-content">
-										<p class="Subsection-text">
+									<div class="subSection-content">
+										<p class="subSection-text">
 											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
 										</p>
 									</div>
 								</li>
-								<li class="Subsection-items-item u-alignCenter">
+								<li class="subSection-items-item u-alignCenter">
 									<div class="DotHistoty">
 										<span class="DotHistoty-year">2018</span>
 									</div>
-									<header class="Subsection-header">
-										<h5 class="Subsection-header-title">Fundamos a Vingoli</h5>
+									<header class="subSection-header">
+										<h5 class="subSection-header-title">Fundamos a Vingoli</h5>
 									</header>
-									<div class="Subsection-content">
-										<p class="Subsection-text">
+									<div class="subSection-content">
+										<p class="subSection-text">
 											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
 										</p>
 									</div>
@@ -105,6 +107,9 @@
 						</div>
 						
 					</div>
+				</li>
+				<li id="tabContent-3" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-positionRelative  is-animating">
+					VÍDEOS
 				</li>
 			</ul>
 		</div>
