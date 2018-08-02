@@ -200,6 +200,7 @@
 							}
 						}
 
+
 						&.is-active{
 							& .Navigation-link{
 								color: $color_2;
@@ -332,7 +333,8 @@
 				}
 			}
 			&-subtitle{
-				color: $color_2;
+				color: $color_10;
+				font-size: 20px;
 			}
 		}
 	
@@ -1461,6 +1463,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 			}
 		}
 
+
 		& .Section{
 			&-header{
 				&-title{
@@ -1469,7 +1472,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 			}
 			&-imageMain{
 				background: $color_4;
+
 				min-height: 200px;
+
 			}
 		}
 	}
@@ -1486,6 +1491,14 @@ FOOTER .Site--foter .Section--footerContent
  */
 &--footerContent{
 		& .Section{
+			&-header{
+				&-title{
+					font-size: 18px;
+					@media screen and (min-width: $break-md){
+						font-size: 30px;
+					}
+				}
+			}
 			&-content{
 					padding-bottom: 114px;
 					top: -12px;
@@ -1499,14 +1512,30 @@ FOOTER .Site--foter .Section--footerContent
 				&-item{
 					background-image: url(../images/texture.png);
 					background-size: cover;
-					padding-top: 65px;
-					padding-bottom: 65px;
+
+					/*padding-top: 65px;
+					padding-bottom: 65px;*/
+					a{
+						color: white;
+					}
 					&-resume{
 						color: $color_1;
 					}
 				}
+				&--contact{
+					&-item{
+						&-resume{
+							color: $color_11;
+							font-weight: bolder;
+							font-size: 15px;
+						}
+					}
+				}
 			}
 		}
+	}
+	&--locais{
+		background: $color_20;
 	}
 
 

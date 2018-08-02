@@ -13,7 +13,6 @@
  ?>
 
 <div class="Section-subSection Section-subsection--dados Subsection u-marginTop u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
-
 	
 	<div class="Subsection-content u-positionRelative u-size12of24 u-paddingVertical">
 
@@ -42,9 +41,7 @@
 
 		<ul class="Subsection-items Items Items--tabs u-marginTop u-positionRelative">
 
-
 			<li id="tabContent-1" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop u-positionRelative is-active is-animating">
-
 				
 					<div class="Item-content">
 						<header class="Subsection-header">
@@ -78,9 +75,7 @@
 				
 			</li>
 
-
 			<li id="tabContent-2" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop u-positionRelative is-animating">
-
 				<div class="Item-content">
 						<header class="Subsection-header">
 							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet.</h4>
@@ -113,7 +108,6 @@
 			</li>
 		</ul>
 	</div>
-
 	<div id="tabImage-1" class="Subsection-imageMain u-positionRelative u-size12of24 u-zIndex4 u-lineHeight0 is-active">
 		<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="<?php echo get_template_directory_uri() . '/assets/images/subSection-mainImage--pizza' . $var_img_file . '.png'; ?>" alt="Pizza Vignoli">
 	</div>

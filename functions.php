@@ -220,7 +220,6 @@ function my_body_classes( $classes ) {
      
 }
 
-
 function switch_img_Mobile() {
 
 
@@ -228,5 +227,4 @@ function switch_img_Mobile() {
 			$var_img_file = '--mobile';
 			return $var_img_file;
 		}
-
-}
+	}

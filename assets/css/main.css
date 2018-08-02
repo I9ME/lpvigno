@@ -376,6 +376,88 @@ FOOTER .Site--foter .Section--footerContent
   font-weight: bold;
 }
 
+<<<<<<< HEAD
+.Section .Navigation--tabs-items-item .Navigation-link {
+  color: #BBBBBB;
+  font-size: 22px;
+=======
+.Section .navController--prev {
+  left: 0px;
+}
+
+.Section .navController--next {
+  right: 0px;
+}
+
+.Section .navControllerdisabled {
+  opacity: 0.45;
+}
+
+.Section .navController--all {
+  height: 31px;
+  line-height: 31px;
+  font-size: 0px;
+}
+
+.Section .navController--all .ShowText {
+  font-size: 16px;
+>>>>>>> petrus
+}
+
+.Section .Navigation--tabs-items-item .Navigation-link:hover {
+  color: #63974d;
+}
+
+.Section .Navigation--tabs-items-item .ShadowBox {
+  opacity: 1;
+}
+
+.Section .Navigation--tabs-items-item .ShadowBox--tabLeft {
+  bottom: 0px;
+  left: 0px;
+}
+
+.Section .Navigation--tabs-items-item .ShadowBox--tabLeft--footer {
+  bottom: 0px;
+  left: 0px;
+}
+
+.Section .Navigation--tabs-items-item .ShadowBox--tabRight {
+  bottom: 0px;
+  right: 0px;
+}
+
+.Section .Navigation--tabs-items-item .ShadowBox--tabRight--footer {
+  bottom: 0px;
+  right: 0px;
+}
+
+.Section .Navigation--tabs-items-item.is-active .Navigation-link {
+  color: #6e1b1d;
+}
+
+.Section .Navigation--tabs-items-item.is-active .Navigation-link:hover {
+  color: #6e1b1d;
+}
+
+.Section .Navigation--tabs-items-item.is-active .ShadowBox {
+  opacity: 0;
+}
+
+<<<<<<< HEAD
+.Section .Items--tabs .Item {
+  display: none;
+}
+
+.Section .Items--tabs .Item-content {
+  opacity: 0;
+}
+
+.Section .Items--tabs .Item.is-active {
+  display: block;
+}
+
+=======
 .Section .Navigation--tabs-items-item .Navigation-link {
   color: #BBBBBB;
   font-size: 22px;
@@ -433,6 +515,7 @@ FOOTER .Site--foter .Section--footerContent
   display: block;
 }
 
+>>>>>>> petrus
 .Section .Items--tabs .Item.is-active .Item-content {
   opacity: 1;
 }
@@ -526,7 +609,8 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .Section--style1 .Section-header-subtitle {
-  color: #6e1b1d;
+  color: #555555;
+  font-size: 20px;
 }
 
 .Section--style1 .ReadMore {
@@ -1270,6 +1354,7 @@ FOOTER .Site--foter .Section--footerContent
   }
 }
 
+<<<<<<< HEAD
 .Section .owl-nav {
   position: absolute;
   display: flex;
@@ -1311,10 +1396,15 @@ FOOTER .Site--foter .Section--footerContent
 
 .Section--videos .navController--content .u-icon {
   color: #6e1b1d;
+=======
+.Section--videos {
+  background: #edeae3;
+>>>>>>> petrus
 }
 
 .Section--videos .Section-imageMain {
   background: #6e1b1d;
+<<<<<<< HEAD
   min-height: 200px;
 }
 
@@ -1433,12 +1523,15 @@ FOOTER .Site--foter .Section--footerContent
   .Section--videos .Section-imageMain a:hover .Section-imageMain-ButtonCommand .IconPlay svg {
     color: #6e1b1d;
   }
+=======
+>>>>>>> petrus
 }
 
 .Section--opinioes {
   background: #edeae3;
 }
 
+<<<<<<< HEAD
 .Section--opinioes .navController--content {
   position: relative;
   display: flex;
@@ -1519,13 +1612,18 @@ FOOTER .Site--foter .Section--footerContent
   }
 }
 
+=======
+>>>>>>> petrus
 .Section--opinioes .Section-header-title {
   color: #63974d;
 }
 
 .Section--opinioes .Section-imageMain {
   background: #63974d;
+<<<<<<< HEAD
   min-height: 200px;
+=======
+>>>>>>> petrus
 }
 
 .Section--naMidia {
@@ -1533,6 +1631,19 @@ FOOTER .Site--foter .Section--footerContent
   padding-bottom: 120px;
 }
 
+<<<<<<< HEAD
+=======
+.Section--footerContent .Section-header-title {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 960px) {
+  .Section--footerContent .Section-header-title {
+    font-size: 30px;
+  }
+}
+
+>>>>>>> petrus
 .Section--footerContent .Section-content {
   padding-bottom: 114px;
   top: -12px;
@@ -1552,14 +1663,36 @@ FOOTER .Site--foter .Section--footerContent
 .Section--footerContent .Section-items-item {
   background-image: url(../images/texture.png);
   background-size: cover;
+<<<<<<< HEAD
   padding-top: 65px;
   padding-bottom: 65px;
+=======
+  /*padding-top: 65px;
+					padding-bottom: 65px;*/
+}
+
+.Section--footerContent .Section-items-item a {
+  color: white;
+>>>>>>> petrus
 }
 
 .Section--footerContent .Section-items-item-resume {
   color: #FFFFFF;
 }
 
+<<<<<<< HEAD
+=======
+.Section--footerContent .Section-items--contact-item-resume {
+  color: #000000;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.Section--locais {
+  background: #f9ebd9;
+}
+
+>>>>>>> petrus
 .Site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   height: auto;
@@ -1701,6 +1834,7 @@ FOOTER .Site--foter .Section--footerContent
   left: 0px;
 }
 
+<<<<<<< HEAD
 .u-absoluteTopCenter {
   position: absolute;
   left: 50% !important;
@@ -1708,6 +1842,8 @@ FOOTER .Site--foter .Section--footerContent
   transform: translateX(-50%) !important;
 }
 
+=======
+>>>>>>> petrus
 .u-left0 {
   left: 0px;
 }
@@ -6489,37 +6625,41 @@ input[type="submit"] {
 
 .Form--style3 .Form-input:not([type="submit"])::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #999999;
+  color: #a18c59;
+  font-size: 18px;
 }
 
 .Form--style3 .Form-input:not([type="submit"])::-moz-placeholder {
   /* Firefox 19+ */
-  color: #999999;
+  color: #a18c59;
+  font-size: 18px;
 }
 
 .Form--style3 .Form-input:not([type="submit"]):-ms-input-placeholder {
   /* IE 10+ */
-  color: #999999;
+  color: #a18c59;
+  font-size: 18px;
 }
 
 .Form--style3 .Form-input:not([type="submit"]):-moz-placeholder {
   /* Firefox 18- */
-  color: #999999;
+  color: #a18c59;
+  font-size: 18px;
 }
 
 .Form--style3 .Form-input[type="submit"] {
   height: 54px;
-  border-radius: 54px;
+  border-radius: 5px;
   color: #FFFFFF;
   padding-left: 20px;
   padding-right: 20px;
-  border: none;
+  border: solid 3px;
   position: absolute;
   display: block;
   right: 3px;
   bottom: 3px;
   z-index: 2;
-  background-color: transparent;
+  background: linear-gradient(to bottom right, #63974d, #44752f) !important;
 }
 
 .Form--style3 .Form-row .u-icon {
@@ -6588,6 +6728,16 @@ input[type="submit"] {
   .Form--style4 {
     margin: 0px 0 0 2.5% !important;
   }
+}
+
+.Form-row {
+  border: 1px solid #d2c6aa;
+  border-radius: 5px;
+}
+
+.Form-content .u-icon {
+  font-size: 20px;
+  color: #d2c6aa !important;
 }
 
 .is-animating, .is-animating:after, .is-animating:before {

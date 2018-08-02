@@ -212,7 +212,6 @@ $(window).scroll(function(){
      });
 
 
-
 function LightboxClose(iFrame) {
 
   //alert( "clicked" );
@@ -362,6 +361,7 @@ $('#depoimentos-carousel .owl-next').html('<svg class="Pagination-items-item-ico
 $('#depoimentos-carousel .owl-nav').append('<a class="navController navController--center  navController--all  navController--button  navController--border ReadMore ReadMore--background  Button ButtonLink u-lineHeight0 hover is-animating u-marginRight--inter" href="/cases/"><span class="ShowText">VER TODOS</span></a>');
 */
 
+
 // /*=========================================================================================
 // // CLOSE FUNCTION
 // =========================================================================================*/
@@ -387,7 +387,7 @@ function NavigationTabs(section, tab){
     $('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab).addClass('is-active').fadeIn(750);*/
 
   //});
- 
+
 }
 
 
