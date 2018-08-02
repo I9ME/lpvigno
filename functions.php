@@ -146,11 +146,20 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 <symbol id="iconArrowLeftLine" viewBox="0 0 20 20">
 <path d="M3.828 9l6.071-6.071-1.414-1.414-8.485 8.485 8.485 8.485 1.414-1.414-6.071-6.071h16.172v-2h-16.172z"></path>
 </symbol>
+<symbol id="iconArrowRightLine" viewBox="0 0 20 20">
+<path d="M16.172 9l-6.071-6.071 1.414-1.414 8.485 8.485-8.485 8.485-1.414-1.414 6.071-6.071h-16.172v-2z"></path>
+</symbol>
+<symbol id="iconArrowRightLine_2" viewBox="0 0 24 24">
+<path d="M19.9 12.4c0.1-0.2 0.1-0.5 0-0.8-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l5.3 5.3h-11.6c-0.6 0-1 0.4-1 1s0.4 1 1 1h11.6l-5.3 5.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3l7-7c0.1-0.1 0.2-0.2 0.2-0.3z"></path>
+</symbol>
 <symbol id="iconPhone" viewBox="0 0 32 32">
 <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
 </symbol>
-<symbol id="iconArrowRightLine" viewBox="0 0 24 24">
-<path d="M19.9 12.4c0.1-0.2 0.1-0.5 0-0.8-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l5.3 5.3h-11.6c-0.6 0-1 0.4-1 1s0.4 1 1 1h11.6l-5.3 5.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3l7-7c0.1-0.1 0.2-0.2 0.2-0.3z"></path>
+<symbol id="iconPlay" viewBox="0 0 32 32">s
+<path d="M6 0v32l20-15.977-20-16.023z"></path>
+</symbol>
+<symbol id="iconQuoteLeft" viewBox="0 0 26 28">
+<path d="M12 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3zM26 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3z"></path>
 </symbol>
 </defs>
 </svg>';
@@ -209,4 +218,15 @@ function my_body_classes( $classes ) {
      
     return $classes;
      
+}
+
+
+function switch_img_Mobile() {
+
+
+	if( wp_is_mobile() ){
+			$var_img_file = '--mobile';
+			return $var_img_file;
+		}
+
 }

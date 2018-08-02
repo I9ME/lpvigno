@@ -1,4 +1,4 @@
-<section id="afranquia" class="Section Section--style1 Section--aFranquia u-positionRelative u-paddingBottom u-paddingTop--inter--half">
+<section id="afranquia" class="Section Section--style1 Section--aFranquia u-positionRelative u-paddingTop--inter--half">
 	<div class="Section-mainContent u-paddingVertical u-paddingBottom">
 		<div class="u-maxSize--container u-alignCenterBox u-alignCenter u-displayFlex u-flexDirectionColumn u-flexSwitchRow--reverse u-positionRelative"><!-- Max Size Container -->
 			<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24 u-paddingTop u-marginTop--inter--half">

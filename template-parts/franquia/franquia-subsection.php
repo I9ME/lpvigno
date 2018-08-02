@@ -11,7 +11,9 @@
 	}
 
  ?>
-<div class="Section-subSection Section-subsection--dados Subsection u-paddingBottom u-marginHorizontal u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
+
+<div class="Section-subSection Section-subsection--dados Subsection u-marginTop u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
+
 	
 	<div class="Subsection-content u-positionRelative u-size12of24 u-paddingVertical">
 
@@ -19,14 +21,18 @@
 			<ul class="Navigation--tabs-items u-sizeFull u-displayFlex">
 				<li id="tab-1" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter u-positionRelative u-paddingRight--inter--px is-active">
 					<h3 class="u-alignRight">
-						<a class="Navigation-link u-displayBlock is-animating" href="javascript:NavigationTabs('aFranquia','1');">Restaurante</a>
+
+						<a class="Navigation-link u-displayBlock u-paddingHorizontal--vrt--inter--half--px is-animating" href="javascript:NavigationTabs('aFranquia','1');">Restaurante</a>
+
 					</h3>
 					<figure class="ShadowBox ShadowBox--tabRight--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
 					<figure class="ShadowBox ShadowBox--tabRight u-positionAbsolute u-zIndex1 is-animating"></figure>
 				</li>
 				<li id="tab-2" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter u-positionRelative u-paddingLeft--inter--px">
 					<h3>
-						<a class="Navigation-link u-displayBlock is-animating" href="javascript:NavigationTabs('aFranquia','2');">Expresso</a>
+
+						<a class="Navigation-link u-displayBlock is-animating u-paddingHorizontal--vrt--inter--half--px" href="javascript:NavigationTabs('aFranquia','2');">Expresso</a>
+
 					</h3>
 					<figure class="ShadowBox ShadowBox--tabLeft--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
 					<figure class="ShadowBox ShadowBox--tabLeft u-positionAbsolute u-zIndex1 is-animating"></figure>
@@ -36,7 +42,9 @@
 
 		<ul class="Subsection-items Items Items--tabs u-marginTop u-positionRelative">
 
-			<li id="tabContent-1" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop--inter u-positionRelative is-active">
+
+			<li id="tabContent-1" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop u-positionRelative is-active is-animating">
+
 				
 					<div class="Item-content">
 						<header class="Subsection-header">
@@ -70,7 +78,9 @@
 				
 			</li>
 
-			<li id="tabContent-2" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop--inter u-positionRelative">
+
+			<li id="tabContent-2" class="Subsection-items-item Item Item--tab is-animating u-sizeFull u-paddingTop u-positionRelative is-animating">
+
 				<div class="Item-content">
 						<header class="Subsection-header">
 							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet.</h4>
@@ -103,10 +113,12 @@
 			</li>
 		</ul>
 	</div>
-	<div id="tabImage-1" class="Subsection-imageMain u-positionRelative u-size12of24 u-zIndex4 is-active">
+
+	<div id="tabImage-1" class="Subsection-imageMain u-positionRelative u-size12of24 u-zIndex4 u-lineHeight0 is-active">
 		<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="<?php echo get_template_directory_uri() . '/assets/images/subSection-mainImage--pizza' . $var_img_file . '.png'; ?>" alt="Pizza Vignoli">
 	</div>
-	<div id="tabImage-2" class="Subsection-imageMain u-positionRelative u-size12of24 u-zIndex4">
+	<div id="tabImage-2" class="Subsection-imageMain u-positionRelative u-size12of24 u-lineHeight0 u-zIndex4">
+
 		<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="<?php echo get_template_directory_uri() . '/assets/images/subSection-mainImage--pizza--expresso' . $var_img_file . '.png'; ?>" alt="Pizza Vignoli">
 	</div>
 
