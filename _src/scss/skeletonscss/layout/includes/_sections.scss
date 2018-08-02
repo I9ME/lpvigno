@@ -1510,8 +1510,8 @@ A VIGNOLI
 NA MÍDIA .Section--naMidia
  */
 &--naMidia{
-		/*PADDING PERSONALIZADO PARA O FOOTER*/
-		padding-bottom: 120px;
+		
+
 	}
 /*
 FOOTER .Site--foter .Section--footerContent
@@ -1559,6 +1559,10 @@ FOOTER .Site--foter .Section--footerContent
 					}
 				}
 			}
+		}
+
+		& .Form-row{
+			border:1px solid $color_16;
 		}
 	}
 	&--locais{

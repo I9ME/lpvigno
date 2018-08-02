@@ -309,15 +309,19 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .Section .Section-items-item-resume {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .Section .Section-items-item-text {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .Section .Section-items-item-text p {
   padding-top: 10px;
+}
+
+.Section .Section-items-item .subSection-text {
+  font-size: 16px;
 }
 
 .Section .Section-items-item--divisor {
@@ -1546,11 +1550,6 @@ FOOTER .Site--foter .Section--footerContent
   }
 }
 
-.Section--naMidia {
-  /*PADDING PERSONALIZADO PARA O FOOTER*/
-  padding-bottom: 120px;
-}
-
 .Section--footerContent .Section-header-title {
   font-size: 18px;
 }
@@ -1596,6 +1595,10 @@ FOOTER .Site--foter .Section--footerContent
   color: #000000;
   font-weight: bolder;
   font-size: 15px;
+}
+
+.Section--footerContent .Form-row {
+  border: 1px solid #d2c6aa;
 }
 
 .Section--locais {
@@ -6643,7 +6646,6 @@ input[type="submit"] {
 }
 
 .Form-row {
-  border: 1px solid #d2c6aa;
   border-radius: 5px;
 }
 
@@ -6724,6 +6726,12 @@ input[type="submit"] {
 
 #cases-videos-carousel .owl-dots {
   flex-direction: row-reverse;
+}
+
+.owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: auto !important;
+  touch-action: auto !important;
 }
 
 .Lightbox {

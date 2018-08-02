@@ -31,6 +31,13 @@
 	flex-direction: row-reverse;
 }
 
+
+.owl-carousel .owl-stage, 
+.owl-carousel.owl-drag .owl-item{
+-ms-touch-action: auto !important;
+    touch-action: auto !important;
+}
+
 .Lightbox{
 	display: block;
 	z-index: 9999997;

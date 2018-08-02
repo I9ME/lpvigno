@@ -279,18 +279,16 @@ $('#namidia-carousel').owlCarousel({
     responsive:{
         0:{
             items:1,
-            margin:50,
+            //margin:50
             nav:false
         },
         768:{
             items:2,
-            margin:25,
-            //nav:false
+            //margin:25,
         },
         960:{
             items:3,
-            margin:25,
-            //nav:true,
+            //margin:25,
         }
     }
 })
