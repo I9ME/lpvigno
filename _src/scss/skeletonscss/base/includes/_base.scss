@@ -113,6 +113,19 @@ a:hover {
 }
 
 
+
+p{
+  line-height: $line_height;
+}
+
+a{
+  color: $color_2;
+  text-decoration: none;
+}
+
+
+
+
 strong{
   font-weight: bold;
 }

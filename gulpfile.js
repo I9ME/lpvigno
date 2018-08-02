@@ -28,7 +28,7 @@ var browsersup      = [
 // Sass Source
 var scssPath = './_src/scss';
 var scssFile = './_src/scss/main.scss';
-//var scssFile2 = './_src/scss/main-2.scss';
+var scssFile2 = './_src/scss/main-2.scss';
 
 // CSS destination
 var cssDest = './assets/css';
@@ -113,7 +113,7 @@ gulp.task('sassprod', function() {
 //Task copy editor-style
 gulp.task('editorstyle', function(){
   return gulp.src( scssPath + '/editor-style.scss')
-    .pipe(sass(sassDevOptions).on('error', sass.logError))
+  	.pipe(sass(sassDevOptions).on('error', sass.logError))
     .pipe(gulp.dest(cssDest))
     .pipe(browserSync.reload({stream: true}));
 });
