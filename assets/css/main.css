@@ -1378,8 +1378,12 @@ FOOTER .Site--foter .Section--footerContent
 .Section--footerContent .Section-items-item {
   background-image: url(../images/texture.png);
   background-size: cover;
-  padding-top: 65px;
-  padding-bottom: 65px;
+  /*padding-top: 65px;
+					padding-bottom: 65px;*/
+}
+
+.Section--footerContent .Section-items-item a {
+  color: white;
 }
 
 .Section--footerContent .Section-items-item-resume {

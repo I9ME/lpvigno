@@ -2,24 +2,42 @@
 
 	<div class="Section-content u-positionRelative u-sizeFull u-flexAlignItemsCenter u-flexJustifyContentCenter">
 		<div class="u-positionAbsolute Section-content u-marginTop--inter u-positionAbsolute u-displayFlex u-size24of24 u-flexAlignItemsCenter u-flexJustifyContentCenter">
-			<ul class="Section-items u-displayFlex u-flexJustifyContentCenter u-positionAbsolute u-flexAlignItemsCenter u-sizeFull">
+			<ul class="Section-items u-displayFlex u-flexJustifyContentCenter u-positionAbsolute u-flexFollowSize u-heightFull u-sizeFull">
 				<li class="Section-items-item u-size8of24">
-					<i class="FigureIcon FigureIcon--newsletter"></i>
-					<div class="Section-items-item-content">
-						<p class="Section-items-item-resume u-alignCenter">/pizzavignoli</p>
-					</div>
+					<a class="u-displayFlex u-flexDirectionColumn u-justifyContentCenter u-heightFull" href="#">
+						<div class="Section-items-item-content u-displayFlex u-justifyContentCenter">
+							<i class="FigureIcon u-marginRight--inter">
+								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
+									<use xlink:href="#iconFacebook"></use>
+								</svg>
+						 	</i>
+							<p class="Section-items-item-resume">/pizzavignoli</p>
+						</div>
+					</a>
 				</li>
 				<li class="Section-items-item u-size8of24">
-					<i class="FigureIcon FigureIcon--newsletter"></i>
-					<div class="Section-items-item-content">
-						<p class="Section-items-item-resume u-alignCenter">@pizzavignoli</p>
-					</div>
+					<a class="u-displayFlex u-flexDirectionColumn u-justifyContentCenter u-heightFull" href="#">
+						<div class="Section-items-item-content u-displayFlex u-justifyContentCenter">
+							<i class="FigureIcon u-marginRight--inter">
+								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
+									<use xlink:href="#iconInstagram"></use>
+								</svg>
+						 	</i>
+							<p class="Section-items-item-resume">/pizzavignoli</p>
+						</div>
+					</a>
 				</li>
 				<li class="Section-items-item u-size8of24">
-					<i class="FigureIcon FigureIcon--newsletter"></i>
-					<div class="Section-items-item-content">
-						<p class="Section-items-item-resume u-alignCenter">/pizzavignoli</p>
-					</div>
+					<a class="u-displayFlex u-flexDirectionColumn u-justifyContentCenter u-heightFull" href="#">
+						<div class="Section-items-item-content u-displayFlex u-justifyContentCenter">
+							<i class="FigureIcon u-marginRight--inter">
+								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
+									<use xlink:href="#iconYoutube"></use>
+								</svg>
+						 	</i>
+							<p class="Section-items-item-resume">/pizzavignoli</p>
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>

@@ -1242,8 +1242,11 @@ FOOTER .Site--foter .Section--footerContent
 				&-item{
 					background-image: url(../images/texture.png);
 					background-size: cover;
-					padding-top: 65px;
-					padding-bottom: 65px;
+					/*padding-top: 65px;
+					padding-bottom: 65px;*/
+					a{
+						color: white;
+					}
 					&-resume{
 						color: $color_1;
 					}

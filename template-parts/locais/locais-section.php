@@ -6,7 +6,7 @@
 	</header>
 	<div class="Section-content u-displayFlex u-flexJustifyContentCenter">
 		<figure class="Section-items-figure u-displayFlex u-flexJustifyContentCenter">
-			<img class="u-objectFitCover u-maxSize100 u-sizeHeight100 u-sizeAuto u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="<?php echo get_template_directory_uri() ?>/assets/images/brazil-pizza<?php echo switch_img_Mobile(); ?>.png">
+			<img class="u-objectFitCover u-sizeHeight100 u-sizeFull u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="<?php echo get_template_directory_uri() ?>/assets/images/brazil-pizza<?php echo switch_img_Mobile(); ?>.png">
 		</figure>
 	</div>
 </section>
