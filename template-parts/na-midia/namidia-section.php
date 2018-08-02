@@ -8,7 +8,7 @@
 		<div class="Section-content">
 			<ul id="namidia-carousel" class="Section-items owl-theme owl-carousel">
 				<li class="Section-items-item u-marginHorizontal--inter--half u-paddingVertical--inter--half--px">
-					<div class="Section-items-item-content u-alignCenter u-paddingHorizontal--vrt--inter--px u-boxShadow">
+					<div class="Section-items-item-content u-alignCenter u-paddingHorizontal--vrt--inter--px u-boxShadow--clean">
 						<figure class="Section-items-item-figure u-paddingBottom--inter--half u-alignCenter">
 							<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/opovo.png">
 						</figure>
@@ -16,7 +16,7 @@
 					</div>
 				</li>
 				<li class="Section-items-item u-marginHorizontal--inter--half u-paddingVertical--inter--half--px">
-					<div class="Section-items-item-content u-alignCenter u-boxShadow u-paddingHorizontal--vrt--inter--px ">
+					<div class="Section-items-item-content u-alignCenter u-boxShadow--clean u-paddingHorizontal--vrt--inter--px ">
 						<figure class="Section-items-item-figure u-paddingBottom--inter--half u-alignCenter">
 							<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/diario.png">
 						</figure>
@@ -24,7 +24,7 @@
 					</div>
 				</li>
 				<li class="Section-items-item u-marginHorizontal--inter--half u-paddingVertical--inter--half--px">
-					<div class="Section-items-item-content u-alignCenter u-boxShadow u-paddingHorizontal--vrt--inter--px">
+					<div class="Section-items-item-content u-alignCenter u-boxShadow--clean u-paddingHorizontal--vrt--inter--px">
 						<figure class="Section-items-item-figure u-paddingBottom--inter--half u-alignCenter">
 							<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/opovo.png">
 						</figure>

@@ -11,7 +11,7 @@
 	}
 
  ?>
-<div class="Section-subSection Section-subsection--dados Subsection u-paddingBottom u-marginTop u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
+<div class="Section-subSection Section-subsection--dados Subsection u-marginTop u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
 	
 	<div class="Subsection-content u-positionRelative u-size12of24 u-paddingVertical">
 
@@ -103,10 +103,10 @@
 			</li>
 		</ul>
 	</div>
-	<div id="tabImage-1" class="Subsection-imageMain u-positionRelative u-size12of24 u-zIndex4 is-active">
+	<div id="tabImage-1" class="Subsection-imageMain u-positionRelative u-size12of24 u-zIndex4 u-lineHeight0 is-active">
 		<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="<?php echo get_template_directory_uri() . '/assets/images/subSection-mainImage--pizza' . $var_img_file . '.png'; ?>" alt="Pizza Vignoli">
 	</div>
-	<div id="tabImage-2" class="Subsection-imageMain u-positionRelative u-size12of24 u-zIndex4">
+	<div id="tabImage-2" class="Subsection-imageMain u-positionRelative u-size12of24 u-lineHeight0 u-zIndex4">
 		<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="<?php echo get_template_directory_uri() . '/assets/images/subSection-mainImage--pizza--expresso' . $var_img_file . '.png'; ?>" alt="Pizza Vignoli">
 	</div>
 

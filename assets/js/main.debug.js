@@ -213,11 +213,12 @@ $(window).scroll(function(){
 
 
 
-function LightboxClose() {
+function LightboxClose(iFrame) {
   //alert( "clicked" );
    $('#Lightbox--container').removeClass('Lightbox--active');
    $('#Lightbox--container').addClass('Lightbox--inactive');
-   $('.Lightbox-window-content').html( '' );
+   $('.Lightbox-window-content').html( iFrame );
+   alert(iframe);
 }
 
 $( ".LightboxClose" ).on( "click", LightboxClose );
@@ -294,7 +295,71 @@ $('#namidia-carousel').owlCarousel({
     }
 })
 
+$('#videos-carousel').owlCarousel({
+    loop:true,
+    dots: false,
+    nav: true,
+    margin: 0,
+    responsiveClass: true,
+    responsive:{
+        0:{
+            items:1,
+            
 
+        },
+        768:{
+            items:1,
+        },
+        960:{
+            items:1,
+        }
+    }
+});
+
+$('#opinioes-carousel').owlCarousel({
+    loop:true,
+    dots: false,
+    nav: true,
+    margin: 0,
+    responsiveClass: true,
+    responsive:{
+        0:{
+            items:1,
+            
+
+        },
+        768:{
+            items:1,
+        },
+        960:{
+            items:1,
+        }
+    }
+})
+
+
+
+
+// Persnonalizando os Botões de Navegação
+/*
+$('#depoimentos-carousel .owl-prev').html('<svg class="Pagination-items-item-icon u-icon iconArrowLeft"><use xlink:href="#iconArrowLeft"></use></svg>').addClass('navController navController--left navController--prev navController--button navController--border u-borderRadius50 navController--button--uniSize u-positionAbsolute is-animating u-isActionable ');
+$('#depoimentos-carousel .owl-next').html('<svg class="Pagination-items-item-icon u-icon iconArrowRight"><use xlink:href="#iconArrowRight"></use></svg>').addClass('navController navController--right navController--next navController--button navController--border u-borderRadius50 navController--button--uniSize u-positionAbsolute is-animating u-isActionable ');
+*/
+/*
+$('#parcerias-carousel--control .owl-prev').html('<svg class="Pagination-items-item-icon u-icon iconArrowLeft"><use xlink:href="#iconArrowLeft"></use></svg>').addClass('navController navController--left navController--prev navController--button navController--border u-borderRadius50 u-positionAbsolute is-animating u-isActionable ');
+$('#parcerias-carousel--control .owl-next').html('<svg class="Pagination-items-item-icon u-icon iconArrowRight"><use xlink:href="#iconArrowRight"></use></svg>').addClass('navController navController--right navController--next navController--button navController--border u-borderRadius50 u-positionAbsolute is-animating u-isActionable ');
+*/
+
+$('#videos-carousel .owl-prev, #opinioes-carousel .owl-prev').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowLeftLine"><use xlink:href="#iconArrowLeftLine"></use></svg>').addClass('navController navController-prev navController--content u-borderRadius5--left is-animating u-isActionable ');
+$('#videos-carousel .owl-next, #opinioes-carousel .owl-next').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowRightLine"><use xlink:href="#iconArrowRightLine"></use></svg>').addClass('navController navController--next navController--content u-borderRadius5--right is-animating u-isActionable ');
+
+
+/*
+$('#depoimentos-carousel .owl-nav').addClass('Pagination Pagination--appendJs u-marginTop--inter u-marginBottom--inter u-flex u-justifyContentCenter');
+$('#depoimentos-carousel .owl-prev').html('<svg class="Pagination-items-item-icon u-icon iconArrowLeft"><use xlink:href="#iconArrowLeft"></use></svg>').addClass('navController navController--left navController--prev navController--button navController--button--largeSize navController--border u-borderRadius50 is-animating u-marginRight--inter');
+$('#depoimentos-carousel .owl-next').html('<svg class="Pagination-items-item-icon u-icon iconArrowRight"><use xlink:href="#iconArrowRight"></use></svg>').addClass('navController navController--right navController--next navController--button navController--button--largeSize navController--border u-borderRadius50 is-animating u-marginRight--inter');
+$('#depoimentos-carousel .owl-nav').append('<a class="navController navController--center  navController--all  navController--button  navController--border ReadMore ReadMore--background  Button ButtonLink u-lineHeight0 hover is-animating u-marginRight--inter" href="/cases/"><span class="ShowText">VER TODOS</span></a>');
+*/
 
 // /*=========================================================================================
 // // CLOSE FUNCTION

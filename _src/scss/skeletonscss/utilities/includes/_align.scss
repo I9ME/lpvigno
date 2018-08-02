@@ -34,11 +34,28 @@
 	top: 50% !important;
 	transform: translateX(-50%) translateY(-50%) !important;
 }
-
+.u-absoluteLeftMiddle{
+	position: absolute;
+	left: 0px !important;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+}
+.u-absoluteMiddle{
+	position: absolute;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+}
 .u-absoluteTopLeft{
 	position: absolute;
 	top: 0px;
 	left: 0px;
+}
+
+.u-absoluteTopCenter{
+	position: absolute;
+	left: 50% !important;
+	top: 0px !important;
+	transform: translateX(-50%) !important;
 }
 
 .u-left0{

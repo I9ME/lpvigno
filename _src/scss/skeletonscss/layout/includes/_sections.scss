@@ -17,10 +17,10 @@
 
 	&-header{
 		&-title{
-			font-size: 20px;
+			font-size: $font_size_title_section;
 			font-weight: normal;
 			@media screen and (min-width: $break-sm){
-				font-size: 30px;
+				font-size: $font_size_title_section;
 			}
 			&--beforeTitleLine{
 				position: relative;
@@ -158,57 +158,11 @@
 		}
 
 		& .navController{
-			&--prev{
-				left: 0px;
-			}
-			&--next{
-				right: 0px;
-			}
-			&disabled{
-				opacity: 0.45;
-			}
-			&--all{
-				height: 31px;
-				line-height: 31px;
-				font-size: 0px;
-				& .ShowText{
-					font-size: $font_size_text;
-				}
-			}
-			&--center{
-					//display: inline-block;
-					left:inherit !important;
-					right:inherit !important;
-
-			}
-			&--button{
-				height: 31px;
-				line-height: 29px;
-				&--uniSize{
-					width: 31px;
-				}
-				&--largeSize{
-					padding-left: 20px;
-					padding-right: 20px;
-				}
-			}
-			&--border{
-					border: 1px solid $color_8;
-				}
-			&--above{
-				border-color: #FFF !important;
-				border-width: 2px !important;
-			}
-			&--above:hover{
-				background: none !important;
-				color: #FFF !important;
-			}
-			&--above.navController--prev{
-				left: $h_spacing / 2 !important;
-			}
-			&--above.navController--next{
-				right: $h_spacing / 2 !important;
-			}
+		
+			&--prev{}
+			&--next{}
+			&--content{
+			}	
 
 		}
 
@@ -446,6 +400,15 @@
 		}
 		
 		& .navController{
+			&--prev{}
+			&--next{}
+			&--content{
+				color: $color_1 !important;
+				& svg{
+					font-size: 20px;
+				}
+			}	
+
 			&--border{
 				border-color: $color_8;
 				background: $color_1;
@@ -778,6 +741,7 @@
 					& .u-icon{
 						font-size: 18px;
 						margin-right: 7.5px;
+						color: $color_2;
 					}
 					&-input{
 						max-width: 140px;
@@ -818,6 +782,7 @@
 							}
 							& .u-icon{
 								font-size: $font_size_text;
+								color: $color_1;
 							}
 						}
 						&--bg{
@@ -1185,17 +1150,313 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 	Vídeos
 	 */
 	
+	
+	& .owl-nav{
+			position: absolute;
+			display: flex;
+			bottom: 50px;
+			width: 80%;
+			left: 10%;
+			justify-content: space-between;
+
+			&:after{
+				position: absolute;
+			    display: block;
+			    width: 70%;
+			    left: 15%;
+			    bottom: 15px;
+			    height: 25px;
+			    -moz-box-shadow: 0px 10px 65px rgba(0,0,0,0.5);
+			    -webkit-box-shadow: 0px 10px 65px rgba(0,0,0,0.5);
+			    box-shadow: 0px 10px 65px rgba(0,0,0,0.5);
+			    content: "";
+			    background: transparent;
+			    z-index: -1;
+			    font-size: 12px;
+			}
+		}
+
+	
 	&--videos{
-		background: $color_5;
+		background-color: $color_5;		
+
+		& .navController{
+				&--prev{}
+				&--next{}
+				&--content{
+						position: relative;
+						display: flex;
+						justify-content: center;
+						width: calc(50% - 1px);
+						padding: 25px;
+						background: $color_1 !important;
+						min-height: 70px !important;
+						& .u-icon{
+							color: $color_2;
+						}
+				}	
+			}
+
 		& .Section{
 			&-imageMain{
 				background: $color_2;
+				min-height: 200px;
+				&-ButtonCommand{
+					width: 100px;
+					height: 100px;
+					background: $color_1;
+					border-radius: 150px;
+					top: -57.5px;
+					& .IconPlay{
+						width: 85px;
+						height: 85px;
+						border-radius: 150px;
+						background: $color_2;
+						color: $color_1;
+						//font-size: 20px;
+						& svg{
+							left: 54% !important;
+						}
+					}
+				}
+			}
+			&-items{
+				&-item{
+					&-figure{
+						min-height: 300px;
+					}
+				}
+			}
+
+
+			
+		}
+		@media screen and (max-width: $break-sm){
+
+			margin-top: 0px !important;
+
+			&:after{
+
+			 	width: 100%;
+				    height: 45px;
+				    margin: 0px;
+				    -webkit-transform: skew(0deg, -4deg);
+				       -moz-transform: skew(0deg, -4deg);
+				         -o-transform: skew(0deg, -4deg);
+				    overflow:hidden;
+				  
+
+				    content:"";
+				    position: absolute;
+				    top: -25px;
+				    left: 0px;
+				    z-index: 4;
+
+				    background: $color_5;
+			}
+
+			& .Section{
+				&-mainContent{
+					background: $color_1;
+					margin-bottom: 65px;
+				}
+				&--texts{
+					
+				}
+				&-imageMain{
+				}
+			}
+		}
+		@media screen and (min-width: $break-sm){
+
+			& .Owl-container{
+				padding: 0px !important;
+				margin: 0px !important;
+			}
+
+			& .owl-carousel{
+				padding: 0px !important;
+			}
+			& .Section--texts{
+				width: 50% !important;
+				padding-top: 180px;
+				padding-bottom: 180px;
+			}
+			& .Section-imageMain{
+				width: 50%;
+				border-radius: 0px;
+			}
+			& .Section-mainContent{
+				margin-top: 0px !important;
+			}
+
+			& .owl-nav{
+				width: 300px;
+    			bottom: 70px;
+
+				&:after{
+				    width: 70%;
+				    left: 15%;
+				    bottom: 0;
+				    height: 25px;
+				    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.25);
+				    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.25);
+				    box-shadow: 0px 10px 35px rgba(0,0,0,0.25);
+				    background: $color_5;
+				}
+			}
+
+			& .Section{
+				&-header{
+					position: absolute;
+				    left: 0 !important;
+				    transform: none !important;
+				    top: $sizeColumns_px !important;
+				    width: 50% !important;
+				}
+				&--texts{
+					padding-right: $h_spacing * 2;
+					margin-left: 0px;
+					margin-right: 0px;
+				}
+				&-imageMain{
+					margin-top: 0px;
+					min-height: 300px;
+					&-ButtonCommand{
+						left: -57.5px !important;
+						top: 50% !important;
+						background: $color_5;
+						transform: translateY(-50%) !important;
+						& .IconPlay{
+							color: $color_5;
+							border: 2px solid $color_2;
+						}
+					}
+					& a:hover{
+						& .Section-imageMain{
+							&-ButtonCommand{
+								& .IconPlay{
+									background: $color_5;
+									& svg{
+										color: $color_2;
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
 
 	&--opinioes{
 		background: $color_5;
+
+
+		& .navController{
+			&--prev{}
+			&--next{}
+			&--content{
+					position: relative;
+					display: flex;
+					justify-content: center;
+					width: calc(50% - 1px);
+					padding: 25px;
+					background: $color_1 !important;
+					min-height: 70px !important;
+					& .u-icon{
+						color: $color_4;
+					}
+			}	
+		}
+
+		& .Section{
+			
+			&-imageMain{
+				min-height: 200px;
+			}
+
+			&--texts{
+				& .quoteAuthor{
+					color: $color_4;
+				}
+			}
+		}
+
+		@media screen and (max-width: $break-sm){
+			
+
+			& .Section{
+				&-mainContent{
+					background: $color_1;
+					margin-bottom: 65px;
+				}
+			}
+		}
+
+
+		@media screen and (min-width: $break-sm){
+
+
+
+
+		& .Owl-container{
+				padding: 0px !important;
+				margin: 0px !important;
+			}
+
+			& .owl-carousel{
+				padding: 0px !important;
+			}
+			& .Section--texts{
+				width: 50% !important;
+				padding-top: 180px;
+				padding-bottom: 180px;
+			}
+			& .Section-imageMain{
+				width: 50%;
+				margin-top: 0px !important;
+				border-radius: 0px;
+			}
+			& .Section-mainContent{
+				margin-top: 0px !important;
+				
+				display: flex !important;
+				&.u-flexDirectionColumn.u-flexSwitchRow{
+					flex-direction: row-reverse !important;
+				}
+			}
+
+			& .owl-nav{
+				width: 300px;
+    			bottom: 80px;
+    			left: inherit !important;
+    			right: 15% !important;
+
+				&:after{
+				    width: 70%;
+				    left: 15%;
+				    bottom: 0;
+				    height: 25px;
+				    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.35);
+				    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.35);
+				    box-shadow: 0px 10px 35px rgba(0,0,0,0.35);
+				    background: $color_5;
+				}
+			}
+
+			& .Section{
+				&-header{
+					position: absolute;
+				    left: inherit !important;
+				    right: 0px !important;
+				    transform: none !important;
+				    top: $sizeColumns_px !important;
+				    width: 50% !important;
+				}
+			}
+		}
+
 		& .Section{
 			&-header{
 				&-title{
@@ -1204,6 +1465,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 			}
 			&-imageMain{
 				background: $color_4;
+				min-height: 200px;
 			}
 		}
 	}
