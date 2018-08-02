@@ -212,13 +212,8 @@ $(window).scroll(function(){
      });
 
 
-
-<<<<<<< HEAD
 function LightboxClose(iFrame) {
 
-=======
-function LightboxClose() {
->>>>>>> petrus
   //alert( "clicked" );
    $('#Lightbox--container').removeClass('Lightbox--active');
    $('#Lightbox--container').addClass('Lightbox--inactive');
@@ -300,7 +295,6 @@ $('#namidia-carousel').owlCarousel({
     }
 })
 
-<<<<<<< HEAD
 $('#videos-carousel').owlCarousel({
     loop:true,
     dots: false,
@@ -366,9 +360,7 @@ $('#depoimentos-carousel .owl-prev').html('<svg class="Pagination-items-item-ico
 $('#depoimentos-carousel .owl-next').html('<svg class="Pagination-items-item-icon u-icon iconArrowRight"><use xlink:href="#iconArrowRight"></use></svg>').addClass('navController navController--right navController--next navController--button navController--button--largeSize navController--border u-borderRadius50 is-animating u-marginRight--inter');
 $('#depoimentos-carousel .owl-nav').append('<a class="navController navController--center  navController--all  navController--button  navController--border ReadMore ReadMore--background  Button ButtonLink u-lineHeight0 hover is-animating u-marginRight--inter" href="/cases/"><span class="ShowText">VER TODOS</span></a>');
 */
-=======
 
->>>>>>> petrus
 
 // /*=========================================================================================
 // // CLOSE FUNCTION
@@ -395,11 +387,7 @@ function NavigationTabs(section, tab){
     $('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab).addClass('is-active').fadeIn(750);*/
 
   //});
-<<<<<<< HEAD
- 
-=======
-   
->>>>>>> petrus
+
 }
 
 
