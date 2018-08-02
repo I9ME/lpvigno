@@ -376,72 +376,6 @@ FOOTER .Site--foter .Section--footerContent
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-.Section .navController--prev {
-  left: 0px;
-=======
-.Section .Navigation--tabs-items-item .Navigation-link {
-  color: #BBBBBB;
-  font-size: 22px;
->>>>>>> diogo
-}
-
-.Section .Navigation--tabs-items-item .Navigation-link:hover {
-  color: #63974d;
-}
-
-.Section .Navigation--tabs-items-item .ShadowBox {
-  opacity: 1;
-}
-
-.Section .Navigation--tabs-items-item .ShadowBox--tabLeft {
-  bottom: 0px;
-  left: 0px;
-}
-
-.Section .Navigation--tabs-items-item .ShadowBox--tabLeft--footer {
-  bottom: 0px;
-  left: 0px;
-}
-
-.Section .Navigation--tabs-items-item .ShadowBox--tabRight {
-  bottom: 0px;
-  right: 0px;
-}
-
-.Section .Navigation--tabs-items-item .ShadowBox--tabRight--footer {
-  bottom: 0px;
-  right: 0px;
-}
-
-.Section .Navigation--tabs-items-item.is-active .Navigation-link {
-  color: #6e1b1d;
-}
-
-.Section .Navigation--tabs-items-item.is-active .Navigation-link:hover {
-  color: #6e1b1d;
-}
-
-.Section .Navigation--tabs-items-item.is-active .ShadowBox {
-  opacity: 0;
-}
-
-.Section .Items--tabs .Item {
-  display: none;
-}
-
-.Section .Items--tabs .Item-content {
-  opacity: 0;
-}
-
-.Section .Items--tabs .Item.is-active {
-  display: block;
-}
-
-.Section .Items--tabs .Item.is-active .Item-content {
-  opacity: 1;
-}
-
 .Section .Navigation--tabs-items-item .Navigation-link {
   color: #BBBBBB;
   font-size: 22px;
@@ -1283,11 +1217,7 @@ FOOTER .Site--foter .Section--footerContent
 
 @media screen and (min-width: 768px) {
   .Section--aFranquia .Subsection {
-<<<<<<< HEAD
-    padding-top: 67.5px;
-=======
     padding-top: 22.5px;
->>>>>>> diogo
   }
 }
 
@@ -1314,24 +1244,10 @@ FOOTER .Site--foter .Section--footerContent
   display: none;
 }
 
-<<<<<<< HEAD
-.Section--aFranquia .Section-subSection .Subsection-imageMain-src {
-  opacity: 0;
-}
-
-=======
->>>>>>> diogo
 .Section--aFranquia .Section-subSection .Subsection-imageMain.is-active {
   display: block;
 }
 
-<<<<<<< HEAD
-.Section--aFranquia .Section-subSection .Subsection-imageMain.is-active .Subsection-imageMain-src {
-  opacity: 1;
-}
-
-=======
->>>>>>> diogo
 @media screen and (min-width: 768px) {
   .Section--aFranquia .Section-subSection .Subsection {
     /* &-content{
@@ -1339,12 +1255,6 @@ FOOTER .Site--foter .Section--footerContent
 						padding-right: $h_spacing;
 					} */
   }
-<<<<<<< HEAD
-  .Section--aFranquia .Section-subSection .Subsection-imageMain-src {
-    max-width: inherit;
-    margin-top: -300px;
-  }
-=======
   .Section--aFranquia .Section-subSection .Subsection-imageMain {
     position: absolute;
     right: 0px;
@@ -1616,7 +1526,6 @@ FOOTER .Site--foter .Section--footerContent
 .Section--opinioes .Section-imageMain {
   background: #63974d;
   min-height: 200px;
->>>>>>> diogo
 }
 
 .Section--naMidia {
@@ -1792,8 +1701,6 @@ FOOTER .Site--foter .Section--footerContent
   left: 0px;
 }
 
-<<<<<<< HEAD
-=======
 .u-absoluteTopCenter {
   position: absolute;
   left: 50% !important;
@@ -1801,7 +1708,6 @@ FOOTER .Site--foter .Section--footerContent
   transform: translateX(-50%) !important;
 }
 
->>>>>>> diogo
 .u-left0 {
   left: 0px;
 }
