@@ -589,7 +589,8 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .Section--style1 .Section-header-subtitle {
-  color: #6e1b1d;
+  color: #555555;
+  font-size: 20px;
 }
 
 .Section--style1 .ReadMore {
@@ -1389,6 +1390,10 @@ FOOTER .Site--foter .Section--footerContent
   color: #000000;
   font-weight: bolder;
   font-size: 15px;
+}
+
+.Section--locais {
+  background: #f5ebde;
 }
 
 .Site-header {

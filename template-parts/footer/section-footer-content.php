@@ -26,7 +26,8 @@
 	</div>
 	<div class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-sizeFull">
 		<div class="Section-container u-alignCenterBox u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter u-sizeFull">
-			<header class="Section-header u-marginBottom--inter--half u-alignCenterBox u-paddingVertical">
+			<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
+			<header class="Section-header u-marginBottom--inter--half u-alignCenterBox u-paddingVertical u-paddingHorizontal--inter--half u-sizeFull">
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-marginBottom--inter--half">RECEBA AS NOSSAS <strong>NOVIDADES</strong></h2>
 		</header>
 			<div class="Section-content--formSpace u-size24of24 u-displayFlex u-flexJustifyContentCenter u-flexDirectionColumn">

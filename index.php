@@ -19,6 +19,8 @@ get_header(); ?>
 	<?php get_template_part('template-parts/videos/videos','section'); ?>
 	<?php get_template_part('template-parts/opinioes/opinioes','section'); ?>
 	<?php get_template_part('template-parts/na-midia/namidia','section'); ?>
+	<?php get_template_part('template-parts/locais/locais','section'); ?>
+
 </main><!-- #main -->
 
 

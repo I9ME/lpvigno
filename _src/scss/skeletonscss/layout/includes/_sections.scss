@@ -375,7 +375,8 @@
 				}
 			}
 			&-subtitle{
-				color: $color_2;
+				color: $color_10;
+				font-size: 20px;
 			}
 		}
 	
@@ -1258,6 +1259,9 @@ FOOTER .Site--foter .Section--footerContent
 				}
 			}
 		}
+	}
+	&--locais{
+		background: $color_20;
 	}
 
 

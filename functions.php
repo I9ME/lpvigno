@@ -210,3 +210,15 @@ function my_body_classes( $classes ) {
     return $classes;
      
 }
+
+
+//Função para troca da imagem entre mobile e desktop
+function switch_img_Mobile() {
+
+
+    if( wp_is_mobile() ){
+            $var_img_file = '--mobile';
+            return $var_img_file;
+        }
+
+}
