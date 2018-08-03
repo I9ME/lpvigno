@@ -173,6 +173,19 @@
 			}
 		}
 
+		& .subSection{
+			&-items{
+				&-item{
+					&-content{}
+					&-title{
+						font-size: $font_size_title_item;
+					}
+					&-text{}
+				}
+			}
+
+		}
+
 		& .navController{
 		
 			&--prev{}
@@ -200,6 +213,7 @@
 							&--tabLeft{
 								bottom: 0px;
 								left: 0px;
+								height: 90px;
 								&--footer{
 									bottom: 0px;
 									left: 0px;
@@ -208,6 +222,7 @@
 							&--tabRight{
 								bottom: 0px;
 								right: 0px;
+								height: 90px;
 								&--footer{
 									bottom: 0px;
 									right: 0px;
@@ -227,6 +242,38 @@
 								opacity: 0;
 							}
 						}// .is-active
+						@media screen and (max-width: $break-sm){
+							&--history_{
+								& .ShadowBox--tab{
+									&Left--footer,
+									&Right--footer{
+										width: 50%;
+									}
+								}
+							}
+						}
+						&.is-clean{
+							& .ShadowBox{
+								opacity: 0 !important;
+							}
+							&--left{
+								& .ShadowBox--tab{
+									&Left,
+									&Left--footer{
+										opacity: 0 !important;
+									}
+								}
+							}
+							&--right{
+								& .ShadowBox--tab{
+									&Right,
+									&Right--footer{
+										opacity: 0 !important;
+									}
+								}
+							}
+						}
+
 					} //-item	
 				}
 			}	
@@ -389,7 +436,7 @@
 					color: $color_2;
 				}
 				&-resume{
-					color: $color_2;
+					color: $color_10;
 				}
 
 				&-caption{
@@ -1500,6 +1547,55 @@ A VIGNOLI
  */
 
  	&--aVignoli{
+ 		& .Section{}
+ 		& .subSection{
+ 			&-items{
+ 				position: relative;
+ 				&:before{
+ 					position: absolute;
+ 					display: block;
+ 					height: 3px;
+ 					width: 100%;
+ 					content: "";
+ 					background: $color_6;
+ 					top: 32px;
+ 					opacity: 0.55;
+ 				}
+ 				&-item{
+ 					& .DotHistoty{
+ 						position: relative;
+ 						display: block;
+ 						height: 41px;
+ 						padding-bottom: 30px;
+ 						margin-bottom: 20px;
+ 						&-year{
+ 							color: $color_2;
+ 							font-size: 14px;
+ 							position: relative;
+ 							display: block;
+ 							text-align: center;
+ 						}
+ 						&:before{
+ 								position: absolute;
+ 								display: block;
+ 								width: 15px;
+ 								height: 15px;
+ 								content: "";
+ 								bottom: 0px;
+ 								left: 50%;
+ 								-moz-transform: translateX(-50%) rotate(45deg);
+ 								-webkit-transform: translateX(-50%) rotate(45deg);
+ 								-o-transform: translateX(-50%) rotate(45deg);
+ 								transform: translateX(-50%) rotate(45deg);
+ 								background: $color_6;
+ 							}
+ 					}
+ 					&-title{
+ 						color: $color_11;
+ 					}
+ 				}
+ 			}
+ 		}
  		@media screen and (min-width: $break-sm){
  			& .owl-dots{
  				flex-direction: row-reverse;

@@ -2,19 +2,35 @@
 // INICIO MAIN JS
 ========================================================================================= */
 
-
 jQuery(function($) {
 	$(document).ready(function() {
-/*
+
 window.onload = function() {
-    var element = document.createElement("script");
+
+    $('#avignoli .Gallery--fotos').load('http://localhost/vignoli/galeria-de-fotos/');
+    $('#avignoli .Gallery--videos').load('http://localhost/vignoli/galeria-de-videos/');
+    
+    //var element = document.createElement("script");
     //element.src = "myScript.js";
     //
    // document.body.appendChild(element);
-   alert('Carregou! ')
+   //alert('Carregou! ')
 };
-*/
 
+
+
+//LightBox Fotos
+$('.Gallery--fotos .gallery-item a').click(function(event){        
+        event.preventDefault();
+
+var src = $(this).attr('href');
+var title = $(this).find('img').attr('alt');
+
+   $('#Lightbox--container').removeClass('Lightbox--active');
+   $('#Lightbox--container').addClass('Lightbox--inactive');
+   $('.Lightbox-window-content').html( '<img class="" src="' + src + '" alt="' + title + '" />' );
+
+});
 
 
 //=======================================================
@@ -392,8 +408,24 @@ $('#depoimentos-carousel .owl-nav').append('<a class="navController navControlle
 
 function NavigationTabs(section, tab){
     //alert( section + ' , ' + tab );
+   $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item').removeClass('is-clean');
+  
+   if( tab == 1) {
+        $('.Section--' + section + ' .Navigation--tabs #tab-3').addClass('is-clean');
+        $('.Section--' + section + ' .Navigation--tabs #tab-2').addClass('is-clean--right');
+        $('.Section--' + section + ' .Navigation--tabs #tab-2').removeClass('is-clean--left');
+    } else  if( tab == 2) {
+        $('.Section--' + section + ' .Navigation--tabs #tab-2').addClass('is-clean');
+    } else  if( tab == 3) {
+        $('.Section--' + section + ' .Navigation--tabs #tab-1').addClass('is-clean');
+        $('.Section--' + section + ' .Navigation--tabs #tab-2').addClass('is-clean--left');
+         $('.Section--' + section + ' .Navigation--tabs #tab-2').removeClass('is-clean--right');
+    }
+
+
     $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item, .Section--' + section + ' .Items--tabs .Item, .Section--' + section + ' .Subsection-imageMain').removeClass('is-active');
     $('.Section--' + section + ' .Navigation--tabs #tab-' + tab + ', .Section--' + section + ' .Items--tabs #tabContent-' + tab +', .Section--' + section + ' #tabImage-' + tab).addClass('is-active');
+    
     //$('.Section--' + section + ' .Subsection-imageMain .Subsection-imageMain-src').fadeOut();
     //$('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab + ' .Subsection-imageMain-src').fadeIn();
     //alert('clicked');
