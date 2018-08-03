@@ -1,3 +1,4 @@
+ 
 /*=========================================================================================
 // INICIO MAIN JS
 ========================================================================================= */
@@ -7,7 +8,7 @@ jQuery(function($) {
 
 window.onload = function() {
 
-    //$('#avignoli .Gallery--fotos').load('http://localhost/vignoli/galeria-de-fotos/');
+    $('#avignoli .Gallery--fotos').load('http://localhost/vignoli/galeria-de-fotos/');
     $('#avignoli .Gallery--videos').load('http://localhost/vignoli/galeria-de-videos/');
     
     //var element = document.createElement("script");
@@ -16,12 +17,6 @@ window.onload = function() {
    // document.body.appendChild(element);
    //alert('Carregou! ')
    //
-   $.ajax({​
-url: 'http://localhost/vignoli/galeria-de-fotos/',​
-success: function(data) {​
-alert(data);​
-}​
-});
 
 };
 
@@ -246,8 +241,7 @@ function LightboxClose(iFrame) {
   //alert( "clicked" );
    $('#Lightbox--container').removeClass('Lightbox--active');
    $('#Lightbox--container').addClass('Lightbox--inactive');
-   $('.Lightbox-window-content').html( iFrame );
-   alert(iframe);
+   $('.Lightbox-window-content').html('');
 }
 
 $( ".LightboxClose" ).on( "click", LightboxClose );

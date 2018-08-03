@@ -107,11 +107,7 @@
 
 	@media screen and (min-width: $break-sm){
 
-		&-window{
-
-			&-content{
-			}
-		}
+		
 
 		&--active{
 			display: block;
@@ -125,11 +121,7 @@
 
 	@media screen and (min-width: $break-md){
 
-		&-window{
-
-			&-content{
-			}
-		}
+	
 
 		&--active{
 			display: block;
@@ -157,6 +149,40 @@
 				height: 38px;
 			}
 		}
+	}
+	&.GalleryPhoto{
+		& .Lightbox{
+			&-window{
+				top: calc(50% + 19px) !important;
+				&-content{
+					&:before{
+						position: absolute;
+						@media screen and (min-width: $break-sm){
+							padding-top: inherit;
+						}
+					}
+				}
+			}
+		}
+		& .GalleryPhoto{
+			&-src{
+				height: calc(100vh - 100px);
+				max-width: 100%;
+			}
+		}
+
+		& .Lightbox-window{
+					width: auto !important;
+					@media screen and (min-width: $break-sm){
+						width: auto !important;
+					}
+					@media screen and (min-width: $break-md){
+						width: auto !important;
+					}
+					// opacity: 1;
+					// height: auto;
+				}
+
 	}
 }
 

@@ -1,3 +1,4 @@
+ 
 /*=========================================================================================
 // INICIO MAIN JS
 ========================================================================================= */
@@ -240,8 +241,7 @@ function LightboxClose(iFrame) {
   //alert( "clicked" );
    $('#Lightbox--container').removeClass('Lightbox--active');
    $('#Lightbox--container').addClass('Lightbox--inactive');
-   $('.Lightbox-window-content').html( iFrame );
-   alert(iframe);
+   $('.Lightbox-window-content').html('');
 }
 
 $( ".LightboxClose" ).on( "click", LightboxClose );

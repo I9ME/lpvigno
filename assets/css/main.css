@@ -4651,6 +4651,9 @@ th.u-isShown {
   .u-heightAuto {
     height: auto;
   }
+  .u-maxHeight100 {
+    max-height: 100%;
+  }
   /* Intrinsic widths
    ========================================================================== */
   /**
@@ -5070,6 +5073,9 @@ th.u-isShown {
   .u-heightAuto {
     height: auto;
   }
+  .u-maxHeight100 {
+    max-height: 100%;
+  }
   /* Intrinsic widths
    ========================================================================== */
   /**
@@ -5488,6 +5494,9 @@ th.u-isShown {
   }
   .u-heightAuto {
     height: auto;
+  }
+  .u-maxHeight100 {
+    max-height: 100%;
   }
   /* Intrinsic widths
    ========================================================================== */
@@ -6147,6 +6156,9 @@ th.u-isShown {
   }
   .u-heightAuto {
     height: auto;
+  }
+  .u-maxHeight100 {
+    max-height: 100%;
   }
   /* Intrinsic widths
    ========================================================================== */
@@ -6919,6 +6931,41 @@ input[type="submit"] {
 .Lightbox-closeButton svg use {
   width: 38px;
   height: 38px;
+}
+
+.Lightbox.GalleryPhoto .Lightbox-window {
+  top: calc(50% + 19px) !important;
+}
+
+.Lightbox.GalleryPhoto .Lightbox-window-content:before {
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .Lightbox.GalleryPhoto .Lightbox-window-content:before {
+    padding-top: inherit;
+  }
+}
+
+.Lightbox.GalleryPhoto .GalleryPhoto-src {
+  height: calc(100vh - 100px);
+  max-width: 100%;
+}
+
+.Lightbox.GalleryPhoto .Lightbox-window {
+  width: auto !important;
+}
+
+@media screen and (min-width: 768px) {
+  .Lightbox.GalleryPhoto .Lightbox-window {
+    width: auto !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .Lightbox.GalleryPhoto .Lightbox-window {
+    width: auto !important;
+  }
 }
 
 #myList li {

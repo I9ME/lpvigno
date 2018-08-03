@@ -8,7 +8,7 @@
 		<div class="Lightbox-window-content u-sizeFull u-overflowYauto u-positionRelative u-displayBlock">
 		</div>
 	</div>
-	<div class="Lightbox-mask LightboxClose is-animating u-positionAbsolute u-displayBlock u-sizeFull u-sizeHeight100"></div>
+	<div class="Lightbox-mask LightboxClose is-animating u-positionAbsolute u-displayBlock u-sizeFull u-sizeHeight100 u-overflowHidden"></div>
 
 </div>
 
