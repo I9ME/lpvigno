@@ -7,7 +7,7 @@ jQuery(function($) {
 
 window.onload = function() {
 
-    $('#avignoli .Gallery--fotos').load('http://localhost/vignoli/galeria-de-fotos/');
+    //$('#avignoli .Gallery--fotos').load('http://localhost/vignoli/galeria-de-fotos/');
     $('#avignoli .Gallery--videos').load('http://localhost/vignoli/galeria-de-videos/');
     
     //var element = document.createElement("script");
@@ -15,22 +15,35 @@ window.onload = function() {
     //
    // document.body.appendChild(element);
    //alert('Carregou! ')
+   //
+   $.ajax({​
+url: 'http://localhost/vignoli/galeria-de-fotos/',​
+success: function(data) {​
+alert(data);​
+}​
+});
+
 };
 
 
 
 //LightBox Fotos
-$('.Gallery--fotos .gallery-item a').click(function(event){        
+/*
+$(".Gallery--fotos .gallery-item a").click(function(event){        
         event.preventDefault();
+
+        alert('clicou!');
 
 var src = $(this).attr('href');
 var title = $(this).find('img').attr('alt');
 
    $('#Lightbox--container').removeClass('Lightbox--active');
    $('#Lightbox--container').addClass('Lightbox--inactive');
-   $('.Lightbox-window-content').html( '<img class="" src="' + src + '" alt="' + title + '" />' );
+   $('.Lightbox-window-content').html( '<h1>TESTE</h1>' );
 
-});
+});*/
+
+
 
 
 //=======================================================
