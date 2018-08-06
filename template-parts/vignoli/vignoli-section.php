@@ -1,5 +1,4 @@
-<section id="avignoli" class="Section Section--style1 Section--aVignoli">
-	<div class="Section-contentContainer u-paddingTop">
+<section id="avignoli" class="Section Section--style1 Section--aVignoli u-paddingTop">
 		<div class="u-maxSize--container u-alignCenterBox"><!-- Max Size Container -->
 			<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-paddingVertical u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter">
 				<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
@@ -37,17 +36,16 @@
 				</nav>
 
 				<ul class="Section-items Items Items--tabs u-marginTop--inter u-positionRelative">
-					<li id="tabContent-1" class="Section-items-item Item Item--tab is-animating u-sizeFull u-positionRelative is-animating">
+					<li id="tabContent-1" class="Section-items-item Item Item--tab u-sizeFull u-positionRelative u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom is-animating">
 						<?php get_template_part( 'template-parts/vignoli/section-part', 'fotos' ); ?>
 					</li>
-					<li id="tabContent-2" class="Section-items-item Item Item--tab is-animating u-sizeFull u-positionRelative is-active is-animating">
+					<li id="tabContent-2" class="Section-items-item Item Item--tab u-sizeFull u-positionRelative is-active u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom is-animating">
 						<?php get_template_part( 'template-parts/vignoli/section-part', 'history' ); ?>
 					</li>
-					<li id="tabContent-3" class="Section-items-item Item Item--tab is-animating u-sizeFull u-positionRelative  is-animating">
+					<li id="tabContent-3" class="Section-items-item Item Item--tab u-sizeFull u-positionRelative u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom is-animating">
 						<?php get_template_part( 'template-parts/vignoli/section-part', 'videos' ); ?>
 					</li>
 				</ul>
 			</div>
 		</div>
-	</div>
 </section>

@@ -1575,8 +1575,9 @@ FOOTER .Site--foter .Section--footerContent
   position: absolute;
   display: block;
   width: 100%;
-  background: #FFFFFF;
+  height: 60%;
   left: 0px;
+  top: 60%;
   content: "";
   -webkit-transform: skew(0deg, -7deg);
   -moz-transform: skew(0deg, -7deg);
@@ -1585,50 +1586,24 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .Section--aVignoli:before {
-  top: 100px;
-  height: 50%;
-  z-index: -2;
-  /* moz-background: linear-gradient(to bottom, $color_2 0%, $color_5 50%);
-		    -webkit-background: linear-gradient(to bottom, $color_2 0%, $color_5 50%);
-		    background: linear-gradient(to bottom, $color_2 0%, $color_5 50%); */
-}
-
-.Section--aVignoli:after {
-  background-image: url("../images/bg-avignoli.png");
-  background-position: center -20%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  top: 50%;
-  height: calc(50% + 100px);
-  background-attachment: fixed;
-  z-index: -2;
-}
-
-.Section--aVignoli .Section-contentContainer {
-  position: relative;
-}
-
-.Section--aVignoli .Section-contentContainer:after {
-  position: absolute;
-  display: block;
-  width: 100%;
   z-index: -1;
-  left: 0px;
-  content: "";
-  -webkit-transform: skew(0deg, -7deg);
-  -moz-transform: skew(0deg, -7deg);
-  -o-transform: skew(0deg, -7deg);
-  transform: skew(0deg, -7deg);
-  top: 50%;
-  height: calc(50% + 100px);
-  opacity: 1;
   moz-background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, #edeae3 50%);
   -webkit-background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, #edeae3 50%);
   background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, #edeae3 50%);
 }
 
-.Section--aVignoli .Section-items {
+.Section--aVignoli:after {
+  z-index: -2;
+  background-image: url("../images/bg-avignoli.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.Section--aVignoli .Section-items-item {
   background: #FFFFFF;
+  min-height: 480px;
 }
 
 .Section--aVignoli .subSection-items {
