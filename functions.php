@@ -74,11 +74,11 @@ function skeleton_scripts() {
 
 	// Theme stylesheet.
 	wp_enqueue_style('css-main', get_template_directory_uri() . '/assets/css/main.min.css', array(), $skeleton_version, 'all');
-	wp_enqueue_script( 'js-jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', array(), true );
 	wp_enqueue_script( 'js-main', get_template_directory_uri() . '/assets/js/main.min.js', array(), $skeleton_version, true );
+	/*wp_enqueue_script( 'js-jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', array(), true );
 	wp_enqueue_script( 'js-paroller', get_template_directory_uri() . '/assets/js/jquery.paroller.min.js', array(), true );
 	wp_enqueue_style('css-owl', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), true);
-	wp_enqueue_script( 'js-owl', get_theme_file_uri( '/assets/js/owl.carousel.min.js' ), array(), true );
+	wp_enqueue_script( 'js-owl', get_theme_file_uri( '/assets/js/owl.carousel.min.js' ), array(), true );*/
 	
 
 
@@ -161,6 +161,18 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 <symbol id="iconQuoteLeft" viewBox="0 0 26 28">
 <path d="M12 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3zM26 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3z"></path>
 </symbol>
+<symbol id="iconHelp" viewBox="0 0 24 28">
+<path d="M14 21.5v-3c0-0.281-0.219-0.5-0.5-0.5h-3c-0.281 0-0.5 0.219-0.5 0.5v3c0 0.281 0.219 0.5 0.5 0.5h3c0.281 0 0.5-0.219 0.5-0.5zM18 11c0-2.859-3-5-5.688-5-2.547 0-4.453 1.094-5.797 3.328-0.141 0.219-0.078 0.5 0.125 0.656l2.063 1.563c0.078 0.063 0.187 0.094 0.297 0.094 0.141 0 0.297-0.063 0.391-0.187 0.734-0.938 1.047-1.219 1.344-1.437 0.266-0.187 0.781-0.375 1.344-0.375 1 0 1.922 0.641 1.922 1.328 0 0.812-0.422 1.219-1.375 1.656-1.109 0.5-2.625 1.797-2.625 3.313v0.562c0 0.281 0.219 0.5 0.5 0.5h3c0.281 0 0.5-0.219 0.5-0.5v0c0-0.359 0.453-1.125 1.188-1.547 1.188-0.672 2.812-1.578 2.812-3.953zM24 14c0 6.625-5.375 12-12 12s-12-5.375-12-12 5.375-12 12-12 12 5.375 12 12z"></path>
+</symbol>
+<symbol id="iconCity" viewBox="0 0 24 24">
+<path d="M18.984 15v-2.016h-1.969v2.016h1.969zM18.984 18.984v-1.969h-1.969v1.969h1.969zM12.984 6.984v-1.969h-1.969v1.969h1.969zM12.984 11.016v-2.016h-1.969v2.016h1.969zM12.984 15v-2.016h-1.969v2.016h1.969zM12.984 18.984v-1.969h-1.969v1.969h1.969zM6.984 11.016v-2.016h-1.969v2.016h1.969zM6.984 15v-2.016h-1.969v2.016h1.969zM6.984 18.984v-1.969h-1.969v1.969h1.969zM15 11.016h6v9.984h-18v-14.016h6v-1.969l3-3 3 3v6z"></path>
+</symbol>
+<symbol id="iconLocation" viewBox="0 0 20 20">
+<path d="M19.367 18.102l-1.367-4.102h-1.5l0.833 4h-14.666l0.833-4h-1.5l-1.368 4.102c-0.347 1.044 0.268 1.898 1.368 1.898h16c1.1 0 1.715-0.854 1.367-1.898zM15 5c0-2.761-2.238-5-5-5s-5 2.239-5 5c0 4.775 5 10 5 10s5-5.225 5-10zM7.3 5.060c0-1.491 1.208-2.699 2.7-2.699s2.7 1.208 2.7 2.699c0 1.492-1.209 2.7-2.7 2.7s-2.7-1.209-2.7-2.7z"></path>
+</symbol>
+<symbol id="iconMoney" viewBox="0 0 20 20">
+<path d="M11 16.755v2.245h-2v-2.143c-1.712-0.1-3.066-0.589-4.241-1.797l1.718-1.74c0.859 0.87 2.023 1.16 3.282 1.16 1.565 0 2.405-0.599 2.405-1.702 0-0.483-0.133-0.889-0.42-1.16-0.267-0.251-0.572-0.387-1.202-0.483l-1.642-0.232c-1.164-0.174-2.022-0.541-2.634-1.141-0.648-0.657-0.973-1.546-0.973-2.707 0-2.155 1.382-3.743 3.707-4.1v-1.955h2v1.932c1.382 0.145 2.465 0.62 3.415 1.551l-1.679 1.682c-0.859-0.832-1.889-0.947-2.787-0.947-1.412 0-2.099 0.792-2.099 1.74 0 0.348 0.115 0.716 0.401 0.986 0.267 0.252 0.706 0.464 1.26 0.541l1.602 0.232c1.241 0.174 2.023 0.522 2.596 1.063 0.726 0.696 1.050 1.702 1.050 2.92 0 2.25-1.567 3.662-3.759 4.055z"></path>
+</symbol>
 </defs>
 </svg>';
 
@@ -178,9 +190,23 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 
 ?>
 <!-- 
+	wp_enqueue_script( 'js-jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', array(), true );
+	wp_enqueue_script( 'js-paroller', get_template_directory_uri() . '/assets/js/jquery.paroller.min.js', array(), true );
+	wp_enqueue_style('css-owl', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), true);
+	wp_enqueue_script( 'js-owl', get_theme_file_uri( '/assets/js/owl.carousel.min.js' ), array(), true );
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
  -->
+ <link rel="stylesheet"  type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/owl.carousel.min.css" />
+ 
+<!-- 
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"> -->
+
+ <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.2.1.min.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.paroller.min.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
+
 <?php
 }
 add_action( 'wp_footer', 'theme_footer_script' );

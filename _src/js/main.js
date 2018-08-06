@@ -6,15 +6,40 @@
 jQuery(function($) {
 	$(document).ready(function() {
 
+//alert(document.location.origin);
+//alert(document.location.pathname);
+//
+var hostname = location.hostname;
+if ( hostname == 'localhost' ) {
+    url = 'http://localhost/vignoli';
+} else {
+    url = 'http://'+hostname+'/vignoli/homolog';
+}
+
 window.onload = function() {
 
-    $('#avignoli .Gallery--fotos').load('http://localhost/vignoli/galeria-de-fotos/');
-    $('#avignoli .Gallery--videos').load('http://localhost/vignoli/galeria-de-videos/');
+
+    var w = window.innerWidth;
+    if( w < 768 ) { 
+        var mobile = '--mobile';
+    } else {
+        var mobile = '';
+    }
     
-    //var element = document.createElement("script");
-    //element.src = "myScript.js";
-    //
-   // document.body.appendChild(element);
+    $('#afranquia #tabImage-1.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza'+mobile+'.png" />');
+    $('#afranquia #tabImage-2.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza--expresso'+mobile+'.png" />');
+    $('#onde-estamos .Section-items-figure').html('<img class="u-objectFitCover u-sizeHeight100 u-sizeFull u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="'+url+'/wp-content/themes/lpvigno/assets/images/brazil-pizza'+mobile+'.png" />');
+
+
+    $('#avignoli .Gallery--fotos').load(url+'/galeria-de-fotos/');
+    $('#avignoli .Gallery--videos').load(url+'/galeria-de-videos/');
+
+
+    
+    // var element = document.createElement("script");
+    // element.src = "myScript.js";
+    
+    // document.body.appendChild(element);
    //alert('Carregou! ')
    //
 
@@ -297,13 +322,12 @@ $(window).scroll(function(){
 $('#namidia-carousel').owlCarousel({
     loop:true,
     dots: true,
-    nav: true,
+    nav: false,
     responsiveClass: true,
     responsive:{
         0:{
             items:1,
             //margin:50
-            nav:false
         },
         768:{
             items:2,

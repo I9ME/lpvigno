@@ -1547,7 +1547,78 @@ A VIGNOLI
  */
 
  	&--aVignoli{
- 		& .Section{}
+ 		//background: $color_5;
+ 		position: relative;
+ 		&:before,
+ 		&:after{
+			position: absolute;
+			display: block;
+			width: 100%;
+			background: $color_1;
+			left: 0px;
+			content: "";
+			-webkit-transform: skew(0deg, -7deg);
+		       -moz-transform: skew(0deg, -7deg);
+		         -o-transform: skew(0deg, -7deg);
+		         transform: skew(0deg, -7deg);
+		}
+		&:before{
+			top: 100px;
+			height: 50%;
+			z-index: -2;
+
+			
+
+			/* moz-background: linear-gradient(to bottom, $color_2 0%, $color_5 50%);
+		    -webkit-background: linear-gradient(to bottom, $color_2 0%, $color_5 50%);
+		    background: linear-gradient(to bottom, $color_2 0%, $color_5 50%); */
+		}
+		&:after{
+			background-image: url('../images/bg-avignoli.png');
+			background-position: center -20%;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			top: 50%;
+			height: calc(50% + 100px);
+			background-attachment: fixed;
+			z-index: -2;
+		}
+
+
+ 		& .Section{
+ 			&-content{
+ 				&Container{
+					position: relative;
+				
+					&:after{
+						position: absolute;
+						display: block;
+						width: 100%;
+						z-index: -1;
+						left: 0px;
+						content: "";
+						-webkit-transform: skew(0deg, -7deg);
+					       -moz-transform: skew(0deg, -7deg);
+					         -o-transform: skew(0deg, -7deg);
+					         transform: skew(0deg, -7deg);
+
+						top: 50%;
+						height: calc(50% + 100px);
+
+						opacity: 1;
+
+						moz-background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, $color_5 50%);
+					    -webkit-background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, $color_5 50%);
+					    background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, $color_5 50%);
+					}
+
+				}
+ 			}
+ 			&-items{
+ 				background: $color_1;
+ 			}
+
+ 		}
  		& .subSection{
  			&-items{
  				position: relative;
@@ -1596,12 +1667,90 @@ A VIGNOLI
  				}
  			}
  		}
+
+ 		& .gallery{
+ 			position: relative;
+ 			display: flex;
+ 			flex-wrap: wrap;
+ 			justify-content: center;
+ 			&-item{
+ 				min-width: 100px;
+ 				max-width: calc(50% - 10px) !important;
+ 				margin: 5px !important;
+ 				& a{
+	 					position: relative;
+	 					display: block;
+	 					line-height: 0px;
+	 				}
+ 				& .attachment-thumbnail{
+ 					border: none !important;
+ 					width: 100%;
+ 					object-fit: cover;
+ 				}
+ 			}
+ 		}
+
  		@media screen and (min-width: $break-sm){
  			& .owl-dots{
  				flex-direction: row-reverse;
  			}
+
+ 			& .gallery{
+	 			
+	 			&-item{
+	 				min-width: 100px;
+	 				max-width: calc(33.33% - 10px) !important;
+	 				margin: 5px !important;
+
+	 				& .attachment-thumbnail{
+	 					
+	 				}
+	 			}
+	 		}
+
  		}
+ 		@media screen and (min-width: $break-sm){
+
+ 			& .gallery{
+	 			
+	 			&-item{
+	 				min-width: 100px;
+	 				max-width: calc(25% - 10px) !important;
+	 				margin: 5px !important;
+
+	 				& .attachment-thumbnail{
+	 					
+	 				}
+	 			}
+	 		}
+
+ 		}
+
+ 		
  	}
+
+ 	&--sejaFranqueado{
+		background: $color_5;
+		& .Form{
+			&-input{
+				&:not([type="submit"]){
+					border: none !important;
+				}
+				&[type="submit"]{
+					background: $color_4;
+					color: $color_1;
+					border: 2px solid $color_4 !important;
+					&:hover{
+						background: transparent;
+						color: $color_4;
+						border: 2px solid $color_4 !important;
+					}
+				}
+			}
+		}
+	}
+
+
 /*
 NA MÍDIA .Section--naMidia
  */
@@ -1609,6 +1758,8 @@ NA MÍDIA .Section--naMidia
 		
 
 	}
+
+
 /*
 FOOTER .Site--foter .Section--footerContent
  */
@@ -1628,6 +1779,9 @@ FOOTER .Site--foter .Section--footerContent
 					@media screen and (min-width: $break-sm){
 						top: -20px;
 						padding-bottom: 164px;
+					}
+					&--formSpace{
+						border-bottom: 1px solid $color_6;
 					}
 			}
 			&-items{
@@ -1660,6 +1814,29 @@ FOOTER .Site--foter .Section--footerContent
 		& .Form-row{
 			border:1px solid $color_16;
 		}
+
+		& .LogoFooter{
+			&:before,
+			&:after{
+				position: absolute;
+				display: block;
+				width: calc(50% - 90px);
+				height: 1px;
+				background: transparent;
+				content: "";
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: 2;
+				border-bottom: 1px solid $color_6;
+			}
+			&:before{
+				left: 0px;
+			}
+			&:after{
+				right: 0px;
+			}
+		}
+
 	}
 	&--locais{
 		background: $color_20;

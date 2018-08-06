@@ -5,7 +5,6 @@ Author: Diogo Soares | I9ME WEB & DESIGN
 Author URI: http://www.i9me.com.br
 Escrita de CSS baseada em SUIT CSS - https://github.com/suitcss/suit
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 .color_1 {
   background: #FFFFFF;
 }
@@ -1568,6 +1567,70 @@ FOOTER .Site--foter .Section--footerContent
   min-height: 200px;
 }
 
+.Section--aVignoli {
+  position: relative;
+}
+
+.Section--aVignoli:before, .Section--aVignoli:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background: #FFFFFF;
+  left: 0px;
+  content: "";
+  -webkit-transform: skew(0deg, -7deg);
+  -moz-transform: skew(0deg, -7deg);
+  -o-transform: skew(0deg, -7deg);
+  transform: skew(0deg, -7deg);
+}
+
+.Section--aVignoli:before {
+  top: 100px;
+  height: 50%;
+  z-index: -2;
+  /* moz-background: linear-gradient(to bottom, $color_2 0%, $color_5 50%);
+		    -webkit-background: linear-gradient(to bottom, $color_2 0%, $color_5 50%);
+		    background: linear-gradient(to bottom, $color_2 0%, $color_5 50%); */
+}
+
+.Section--aVignoli:after {
+  background-image: url("../images/bg-avignoli.png");
+  background-position: center -20%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 50%;
+  height: calc(50% + 100px);
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.Section--aVignoli .Section-contentContainer {
+  position: relative;
+}
+
+.Section--aVignoli .Section-contentContainer:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  z-index: -1;
+  left: 0px;
+  content: "";
+  -webkit-transform: skew(0deg, -7deg);
+  -moz-transform: skew(0deg, -7deg);
+  -o-transform: skew(0deg, -7deg);
+  transform: skew(0deg, -7deg);
+  top: 50%;
+  height: calc(50% + 100px);
+  opacity: 1;
+  moz-background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, #edeae3 50%);
+  -webkit-background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, #edeae3 50%);
+  background: linear-gradient(to bottom, rgba(110, 27, 29, 0.5) 0%, #edeae3 50%);
+}
+
+.Section--aVignoli .Section-items {
+  background: #FFFFFF;
+}
+
 .Section--aVignoli .subSection-items {
   position: relative;
 }
@@ -1618,10 +1681,68 @@ FOOTER .Site--foter .Section--footerContent
   color: #000000;
 }
 
+.Section--aVignoli .gallery {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Section--aVignoli .gallery-item {
+  min-width: 100px;
+  max-width: calc(50% - 10px) !important;
+  margin: 5px !important;
+}
+
+.Section--aVignoli .gallery-item a {
+  position: relative;
+  display: block;
+  line-height: 0px;
+}
+
+.Section--aVignoli .gallery-item .attachment-thumbnail {
+  border: none !important;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .Section--aVignoli .owl-dots {
     flex-direction: row-reverse;
   }
+  .Section--aVignoli .gallery-item {
+    min-width: 100px;
+    max-width: calc(33.33% - 10px) !important;
+    margin: 5px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Section--aVignoli .gallery-item {
+    min-width: 100px;
+    max-width: calc(25% - 10px) !important;
+    margin: 5px !important;
+  }
+}
+
+.Section--sejaFranqueado {
+  background: #edeae3;
+}
+
+.Section--sejaFranqueado .Form-input:not([type="submit"]) {
+  border: none !important;
+}
+
+.Section--sejaFranqueado .Form-input[type="submit"] {
+  background: #63974d;
+  color: #FFFFFF;
+  border: 2px solid #63974d !important;
+}
+
+.Section--sejaFranqueado .Form-input[type="submit"]:hover {
+  background: transparent;
+  color: #63974d;
+  border: 2px solid #63974d !important;
 }
 
 .Section--footerContent .Section-header-title {
@@ -1644,6 +1765,10 @@ FOOTER .Site--foter .Section--footerContent
     top: -20px;
     padding-bottom: 164px;
   }
+}
+
+.Section--footerContent .Section-content--formSpace {
+  border-bottom: 1px solid #ab696b;
 }
 
 .Section--footerContent .Section-items {
@@ -1673,6 +1798,27 @@ FOOTER .Site--foter .Section--footerContent
 
 .Section--footerContent .Form-row {
   border: 1px solid #d2c6aa;
+}
+
+.Section--footerContent .LogoFooter:before, .Section--footerContent .LogoFooter:after {
+  position: absolute;
+  display: block;
+  width: calc(50% - 90px);
+  height: 1px;
+  background: transparent;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-bottom: 1px solid #ab696b;
+}
+
+.Section--footerContent .LogoFooter:before {
+  left: 0px;
+}
+
+.Section--footerContent .LogoFooter:after {
+  right: 0px;
 }
 
 .Section--locais {
@@ -6470,6 +6616,11 @@ input[type="submit"] {
   top: 28px;
   left: 10px;
   background-repeat: no-repeat;
+  font-size: 18px;
+}
+
+.Form .Form-row .FigureIcon svg {
+  font-size: 18px;
 }
 
 .Form .Form-label {
@@ -6517,9 +6668,9 @@ input[type="submit"] {
 
 .Form--style1 span.required {
   position: absolute;
-  font-size: 20px;
-  color: #edeae3;
-  right: -8px;
+  font-size: 18px;
+  color: #6e1b1d;
+  right: -10px;
   line-height: 12px;
   display: block;
   height: 12px;
@@ -6948,12 +7099,18 @@ input[type="submit"] {
 }
 
 .Lightbox.GalleryPhoto .GalleryPhoto-src {
-  height: calc(100vh - 100px);
+  height: auto;
   max-width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .Lightbox.GalleryPhoto .GalleryPhoto-src {
+    height: calc(100vh - 100px);
+  }
+}
+
 .Lightbox.GalleryPhoto .Lightbox-window {
-  width: auto !important;
+  width: 90% !important;
 }
 
 @media screen and (min-width: 768px) {

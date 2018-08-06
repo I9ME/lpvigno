@@ -5,39 +5,35 @@
 
 			<ul class="Section-items u-displayFlex u-flexJustifyContentCenter u-positionAbsolute u-flexFollowSize u-heightFull u-sizeFull">
 				<li class="Section-items-item u-size8of24">
-					<a class="u-displayFlex u-flexDirectionColumn u-justifyContentCenter u-heightFull" href="#">
-						<div class="Section-items-item-content u-displayFlex u-justifyContentCenter">
-							<i class="FigureIcon u-marginRight--inter">
+					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="#">
+							<i class="FigureIcon u-marginRight--inter u-lineHeight0">
 								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
 									<use xlink:href="#iconFacebook"></use>
 								</svg>
 						 	</i>
 							<p class="Section-items-item-resume">/pizzavignoli</p>
-						</div>
 					</a>
 				</li>
 				<li class="Section-items-item u-size8of24">
-					<a class="u-displayFlex u-flexDirectionColumn u-justifyContentCenter u-heightFull" href="#">
-						<div class="Section-items-item-content u-displayFlex u-justifyContentCenter">
-							<i class="FigureIcon u-marginRight--inter">
+					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="#">
+							<i class="FigureIcon u-marginRight--inter u-lineHeight0">
 								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
 									<use xlink:href="#iconInstagram"></use>
 								</svg>
 						 	</i>
 							<p class="Section-items-item-resume">/pizzavignoli</p>
-						</div>
+					
 					</a>
 				</li>
 				<li class="Section-items-item u-size8of24">
-					<a class="u-displayFlex u-flexDirectionColumn u-justifyContentCenter u-heightFull" href="#">
-						<div class="Section-items-item-content u-displayFlex u-justifyContentCenter">
-							<i class="FigureIcon u-marginRight--inter">
+					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="#">
+							<i class="FigureIcon u-marginRight--inter u-lineHeight0">
 								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
 									<use xlink:href="#iconYoutube"></use>
 								</svg>
 						 	</i>
 							<p class="Section-items-item-resume">/pizzavignoli</p>
-						</div>
+
 					</a>
 				</li>
 			</ul>
@@ -50,7 +46,7 @@
 			<header class="Section-header u-marginBottom--inter--half u-alignCenterBox u-paddingVertical u-paddingHorizontal--inter--half u-sizeFull">
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-marginBottom--inter--half">RECEBA AS NOSSAS <strong>NOVIDADES</strong></h2>
 		</header>
-			<div class="Section-content--formSpace u-size24of24 u-displayFlex u-flexJustifyContentCenter u-flexDirectionColumn">
+			<div class="Section-content--formSpace u-size24of24 u-displayFlex u-flexJustifyContentCenter u-flexDirectionColumn u-paddingBottom--inter">
 				<form class="Form Form--style3 u-displayFlex u-sizeFull">
 					<fieldset class="Form-fieldset u-displayFlex u-justifyContentCenter u-sizeFull">
 						<div class="Form-line u-displayFlex u-justifyContentCenter">
@@ -68,12 +64,17 @@
 							</div>
 							</div>
 						</div>
+						<div class="u-displayFlex U-sizeFull  u-flexAlignItemsCenter u-flexDirectionColumn">
+							<div class="ShadowBox--bottom u-displayBlock"></div>
+						</div>
 					</fieldset>
+					
 				</form>
 
-				<figure class="Section-content-figure u-displayFlex u-flexJustifyContentCenter u-marginTop--inter u-marginBottom--inter--half">
+				<figure class="Section-content-figure u-positionRelative LogoFooter u-displayFlex u-flexJustifyContentCenter u-marginTop--inter u-marginBottom--inter--half">
 					<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/vignoli--logo--footer.png">
 				</figure>
+
 				<ul class="Section-items--contact u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-alignCenterBox">
 					<li class="Section-items--contact-item u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-flexAlignItemsCenter u-marginTop--inter--half">
 						<i class="figureIcon"></i>

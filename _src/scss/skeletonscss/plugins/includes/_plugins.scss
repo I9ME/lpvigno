@@ -166,13 +166,20 @@
 		}
 		& .GalleryPhoto{
 			&-src{
-				height: calc(100vh - 100px);
+				height: auto;
 				max-width: 100%;
+			}
+		}
+		@media screen and (min-width: $break-sm){
+			 & .GalleryPhoto{
+				&-src{
+					height: calc(100vh - 100px);
+				}
 			}
 		}
 
 		& .Lightbox-window{
-					width: auto !important;
+					width: 90% !important;
 					@media screen and (min-width: $break-sm){
 						width: auto !important;
 					}
