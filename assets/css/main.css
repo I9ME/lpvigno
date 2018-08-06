@@ -1594,11 +1594,14 @@ FOOTER .Site--foter .Section--footerContent
 
 .Section--aVignoli:after {
   z-index: -2;
-  background-image: url("../images/bg-avignoli.png");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.Section--aVignoli.imgAfter:after {
+  background-image: url("../images/bg-avignoli.png");
 }
 
 .Section--aVignoli .Section-items-item {
