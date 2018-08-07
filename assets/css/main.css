@@ -5,6 +5,7 @@ Author: Diogo Soares | I9ME WEB & DESIGN
 Author URI: http://www.i9me.com.br
 Escrita de CSS baseada em SUIT CSS - https://github.com/suitcss/suit
 */
+s
 .color_1 {
   background: #FFFFFF;
 }
@@ -416,6 +417,7 @@ FOOTER .Site--foter .Section--footerContent
 .Section .Navigation--tabs-items-item .ShadowBox--tabLeft--footer {
   bottom: 0px;
   left: 0px;
+  height: 18px !important;
 }
 
 .Section .Navigation--tabs-items-item .ShadowBox--tabRight {
@@ -1196,6 +1198,29 @@ FOOTER .Site--foter .Section--footerContent
   max-width: 100%;
 }
 
+.Section--aFranquia .Features-items-item {
+  overflow: hidden;
+  width: 0px;
+  opacity: 0;
+}
+
+.Section--aFranquia .Features-items-item-figure, .Section--aFranquia .Features-items-item-title, .Section--aFranquia .Features-items-item-value {
+  opacity: 0;
+  transition: all 0.3s;
+  transition-delay: 0.5s;
+}
+
+.Section--aFranquia .Features-items-item.u-isScrollFade--on {
+  width: 100%;
+  opacity: 1;
+}
+
+.Section--aFranquia .Features-items-item.u-isScrollFade--on .Features-items-item-figure, .Section--aFranquia .Features-items-item.u-isScrollFade--on .Features-items-item-title, .Section--aFranquia .Features-items-item.u-isScrollFade--on .Features-items-item-value {
+  opacity: 1;
+  transition: all 0.3s;
+  transition-delay: 0.5s;
+}
+
 .Section--aFranquia .Features-items-item-title {
   font-size: 16px;
 }
@@ -1279,6 +1304,26 @@ FOOTER .Site--foter .Section--footerContent
   background: #FFFFFF;
 }
 
+.Section--aFranquia .Section-subSection .Subsection-content-header {
+  width: 100%;
+  text-align: center;
+  top: -40px;
+}
+
+.Section--aFranquia .Section-subSection .Subsection-content-header-title {
+  color: #FFFFFF;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  font-size: 41px;
+  text-shadow: 3px 5px 15px #DDD;
+  letter-spacing: -3px;
+}
+
+.Section--aFranquia .Section-subSection .Subsection-content-header-title.u-isScrollFade--on {
+  text-shadow: 4px 6px 17px #CCC;
+}
+
 .Section--aFranquia .Section-subSection .Subsection-imageMain {
   display: none;
 }
@@ -1288,11 +1333,13 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 @media screen and (min-width: 768px) {
-  .Section--aFranquia .Section-subSection .Subsection {
-    /* &-content{
-						padding-left: $h_spacing;
-						padding-right: $h_spacing;
-					} */
+  .Section--aFranquia .Section-subSection .Subsection-content-header {
+    top: -40px;
+  }
+  .Section--aFranquia .Section-subSection .Subsection-content-header-title {
+    font-size: 60px;
+    text-shadow: 2px 7px 15px #e4e4e4;
+    letter-spacing: -4px;
   }
   .Section--aFranquia .Section-subSection .Subsection-imageMain {
     position: absolute;
@@ -1454,7 +1501,7 @@ FOOTER .Site--foter .Section--footerContent
   }
   .Section--videos .Section-imageMain {
     margin-top: 0px;
-    min-height: 300px;
+    min-height: 480px;
   }
   .Section--videos .Section-imageMain-ButtonCommand {
     left: -57.5px !important;
@@ -6344,42 +6391,42 @@ th.u-isShown {
 
 .ArabescoBottom--bottom {
   background-image: url(../images/sprite.png);
-  background-position: -411px -622px;
+  background-position: -411px -676px;
   width: 243px;
   height: 53px;
 }
 
 .ArabescoTop--color_15 {
   background-image: url(../images/sprite.png);
-  background-position: -411px -705px;
+  background-position: -240px -771px;
   width: 182px;
   height: 32px;
 }
 
 .ArabescoTop--intro {
   background-image: url(../images/sprite.png);
-  background-position: -388px -375px;
+  background-position: -411px -622px;
   width: 243px;
   height: 54px;
 }
 
 .FigureIcon--moedas {
   background-image: url(../images/sprite.png);
-  background-position: -240px -741px;
+  background-position: -812px 0px;
   width: 85px;
   height: 65px;
 }
 
 .FigureIcon--money {
   background-image: url(../images/sprite.png);
-  background-position: -696px -304px;
+  background-position: -696px -370px;
   width: 93px;
   height: 70px;
 }
 
 .FigureIcon--newsletter {
   background-image: url(../images/sprite.png);
-  background-position: -716px -375px;
+  background-position: -812px -117px;
   width: 53px;
   height: 50px;
 }
@@ -6393,7 +6440,7 @@ th.u-isShown {
 
 .FigureIcon--send {
   background-image: url(../images/sprite.png);
-  background-position: -631px -375px;
+  background-position: -812px -65px;
   width: 85px;
   height: 52px;
 }
@@ -6403,6 +6450,13 @@ th.u-isShown {
   background-position: -686px -450px;
   width: 83px;
   height: 73px;
+}
+
+.FigureIcon--tipoDeFranquia {
+  background-image: url(../images/sprite.png);
+  background-position: -388px -304px;
+  width: 400px;
+  height: 66px;
 }
 
 .Flatlay--azeite {
@@ -6463,14 +6517,14 @@ th.u-isShown {
 
 .Intro--nameVignoli {
   background-image: url(../images/sprite.png);
-  background-position: -388px -304px;
+  background-position: -388px -370px;
   width: 308px;
   height: 71px;
 }
 
 .ShadowBox--bottom {
   background-image: url(../images/sprite.png);
-  background-position: -411px -675px;
+  background-position: -240px -741px;
   width: 293px;
   height: 30px;
 }
@@ -6484,7 +6538,7 @@ th.u-isShown {
 
 .ShadowBox--tabLeft {
   background-image: url(../images/sprite.png);
-  background-position: -812px 0px;
+  background-position: -812px -167px;
   width: 19px;
   height: 113px;
 }
@@ -6498,14 +6552,14 @@ th.u-isShown {
 
 .ShadowBox--tabRight {
   background-image: url(../images/sprite.png);
-  background-position: -812px -113px;
+  background-position: -831px -167px;
   width: 19px;
   height: 113px;
 }
 
 .borderBox--gadient {
   background-image: url(../images/sprite.png);
-  background-position: -388px -429px;
+  background-position: -388px -441px;
   width: 290px;
   height: 1px;
 }

@@ -1,7 +1,7 @@
 
 <div class="Section-items-item-content">
 	<h4 class="Section-items-item-title u-marginBottom--inter">
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry
+		Detalhes que fazem a diferença e proporcionam uma experiência gastronômica inesquecível.
 	</h4>
 	<div class="Section-items-item-gallery Gallery Gallery--videos">
 		<ul class="Gallery-items u-displayFlex u-flexWrapWrap u-flexAlignItemsCenter">
