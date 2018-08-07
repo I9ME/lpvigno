@@ -254,3 +254,721 @@ function switch_img_Mobile() {
 			return $var_img_file;
 		}
 	}
+
+
+
+
+
+
+class Custom_Post_Type_Image_Upload {
+	
+	
+	public function __construct() {
+		
+		add_action( 'init', array( &$this, 'init' ) );
+		
+		if ( is_admin() ) {
+			add_action( 'admin_init', array( &$this, 'admin_init' ) );
+		}
+	}
+	
+	
+	/** Frontend methods ******************************************************/
+	
+	//===========================================================================
+	// CUSTOM POST TYPES
+	//===========================================================================
+
+	/**
+	 * Register the custom post type
+	 */
+	public function init() {
+		
+	// Projetos
+	$labels_projetos = array(
+		"name" => __( "Projetos", "" ),
+		"singular_name" => __( "Projeto", "" ),
+		"menu_name" => __( "Projetos", "" ),
+		"all_items" => __( "Todos os projetos", "" ),
+		"add_new" => __( "Adicionar novo", "" ),
+		"add_new_item" => __( "Adicionar novo", "" ),
+		"edit_item" => __( "Editar", "" ),
+		"new_item" => __( "Novo projeto", "" ),
+		"view_item" => __( "Visualizar", "" ),
+		"view_items" => __( "Visualizar", "" ),
+		"search_items" => __( "Pesquisar", "" ),
+		"not_found" => __( "Sem resultados", "" ),
+		"not_found_in_trash" => __( "Sem resultados", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+		"featured_image" => __( "Imagem destacada", "" ),
+		"set_featured_image" => __( "Editar imagem destacada", "" ),
+		"remove_featured_image" => __( "Remover imagem destacada", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+	);
+
+	$args_projetos = array(
+		"label" => __( "Projetos", "" ),
+		"labels" => $labels_projetos,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => true,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "projetos", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-welcome-write-blog",
+		"supports" => array( "title", "excerpt", "thumbnail"),
+		//'register_meta_box_cb' => 'noticias_meta_box'
+	);
+
+	register_post_type( "projetos", $args_projetos );
+
+
+
+	// Clippings
+	$labels_clipping = array(
+		"name" => __( "Clippings", "" ),
+		"singular_name" => __( "Clipping", "" ),
+		"menu_name" => __( "Na Mídia", "" ),
+		"all_items" => __( "Todos os clippings", "" ),
+		"add_new" => __( "Adicionar novo", "" ),
+		"add_new_item" => __( "Adicionar novo", "" ),
+		"edit_item" => __( "Editar", "" ),
+		"new_item" => __( "Novo clipping", "" ),
+		"view_item" => __( "Visualizar", "" ),
+		"view_items" => __( "Visualizar", "" ),
+		"search_items" => __( "Pesquisar", "" ),
+		"not_found" => __( "Sem resultados", "" ),
+		"not_found_in_trash" => __( "Sem resultados", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+		"featured_image" => __( "Imagem destacada", "" ),
+		"set_featured_image" => __( "Editar imagem destacada", "" ),
+		"remove_featured_image" => __( "Remover imagem destacada", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+	);
+
+	$args_clipping = array(
+		"label" => __( "Clippings", "" ),
+		"labels" => $labels_clipping,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => true,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "clippings", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-paperclip",
+		"supports" => array( "title", "excerpt", "thumbnail"),
+		//'register_meta_box_cb' => 'noticias_meta_box'
+	);
+
+	register_post_type( "clippings", $args_clipping );
+
+
+	
+	// Depoimentos
+	$labels_depoimentos = array(
+		"name" => __( "Depoimentos", "" ),
+		"singular_name" => __( "Depoimento", "" ),
+		"menu_name" => __( "Depoimentos", "" ),
+		"all_items" => __( "Todos os depoimentos", "" ),
+		"add_new" => __( "Adicionar novo", "" ),
+		"add_new_item" => __( "Adicionar novo", "" ),
+		"edit_item" => __( "Editar", "" ),
+		"new_item" => __( "Novo projeto", "" ),
+		"view_item" => __( "Visualizar", "" ),
+		"view_items" => __( "Visualizar", "" ),
+		"search_items" => __( "Pesquisar", "" ),
+		"not_found" => __( "Sem resultados", "" ),
+		"not_found_in_trash" => __( "Sem resultados", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+		"featured_image" => __( "Imagem destacada", "" ),
+		"set_featured_image" => __( "Editar imagem destacada", "" ),
+		"remove_featured_image" => __( "Remover imagem destacada", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+	);
+
+	$args_depoimentos = array(
+		"label" => __( "Depoimentos", "" ),
+		"labels" => $labels_depoimentos,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => true,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "depoimentos", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-format-quote",
+		"supports" => array( "title", "excerpt", "thumbnail"),
+		//'register_meta_box_cb' => 'noticias_meta_box'
+	);
+
+	register_post_type( "depoimentos", $args_depoimentos );
+
+
+/*	// MATERIAIS
+	$labels_materiais = array(
+		"name" => __( "Materiais", "" ),
+		"singular_name" => __( "Material", "" ),
+		"menu_name" => __( "Materiais de sucesso", "" ),
+		"all_items" => __( "Todos os materiais", "" ),
+		"add_new" => __( "Adicionar novo material", "" ),
+		"add_new_item" => __( "Adicionar novo material", "" ),
+		"edit_item" => __( "Editar material", "" ),
+		"new_item" => __( "Novo material", "" ),
+		"view_item" => __( "Visualizar material", "" ),
+		"view_items" => __( "Visualizar materiais", "" ),
+		"search_items" => __( "Pesquisar materiais", "" ),
+		"not_found" => __( "Sem resultados", "" ),
+		"not_found_in_trash" => __( "Sem resultados", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+		"featured_image" => __( "Imagem destacada", "" ),
+		"set_featured_image" => __( "Editar imagem destacada", "" ),
+		"remove_featured_image" => __( "Remover imagem destacada", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+	);*/
+
+	/*$args_materiais = array(
+		"label" => __( "Materiais", "" ),
+		"labels" => $labels_materiais,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "material", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-welcome-learn-more",
+		"supports" => array( "title", "editor", "thumbnail"),
+	);
+
+	register_post_type( "material", $args_materiais );*/
+
+
+
+	// VÍDEOS
+	$labels_videos = array(
+		"name" => __( "Vídeos", "" ),
+		"singular_name" => __( "Vídeos", "" ),
+		"menu_name" => __( "Vídeos", "" ),
+		"all_items" => __( "Todos os vídeos", "" ),
+		"add_new" => __( "Adicionar novo vídeo", "" ),
+		"add_new_item" => __( "Adicionar novo vídeo", "" ),
+		"edit_item" => __( "Editar vídeo", "" ),
+		"new_item" => __( "Novo vídeo", "" ),
+		"view_item" => __( "Visualizar vídeo", "" ),
+		"view_items" => __( "Visualizar vídeos", "" ),
+		"search_items" => __( "Pesquisar vídeos", "" ),
+		"not_found" => __( "Sem resultados", "" ),
+		"not_found_in_trash" => __( "Sem resultados", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+		"featured_image" => __( "Imagem destacada", "" ),
+		"set_featured_image" => __( "Editar imagem destacada", "" ),
+		"remove_featured_image" => __( "Remover imagem destacada", "" ),
+		"parent_item_colon" => __( "Relacionados", "" ),
+	);
+
+	$args_videos = array(
+		"label" => __( "Materiais", "" ),
+		"labels" => $labels_videos,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => true,
+		"show_in_menu" => true,
+		"exclude_from_search" => true,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => true,
+		"rewrite" => array( "slug" => "video", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-video-alt",
+		"supports" => array("title", "excerpt", "thumbnail"),
+	);
+
+	register_post_type( "video", $args_videos );
+
+	}
+
+//==========================================
+// METABOX
+//========================================
+
+
+
+
+//================================
+// CASES DE SUCESSO
+//================================
+	
+	
+	/** Admin methods ******************************************************/
+	
+	
+	/**
+	 * Initialize the admin, adding actions to properly display and handle 
+	 * the Book custom post type add/edit page
+	 */
+	public function admin_init() {
+		global $pagenow;
+		
+		if ( $pagenow == 'post-new.php' || $pagenow == 'post.php' || $pagenow == 'edit.php' ) {
+			
+			add_action( 'add_meta_boxes', array( &$this, 'meta_boxes' ) );
+			add_filter( 'enter_title_here', array( &$this, 'enter_title_here' ), 1, 2 );
+			add_action( 'save_post', array( &$this, 'meta_boxes_save' ), 1, 2 );
+		}
+	}
+	
+	
+	/**
+	 * Save meta boxes
+	 * 
+	 * Runs when a post is saved and does an action which the write panel save scripts can hook into.
+	 */
+	public function meta_boxes_save( $post_id, $post ) {
+		if ( empty( $post_id ) || empty( $post ) || empty( $_POST ) ) return;
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+		if ( is_int( wp_is_post_revision( $post ) ) ) return;
+		if ( is_int( wp_is_post_autosave( $post ) ) ) return;
+		if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+		if ( $post->post_type != 'projetos' ) return;
+			
+		$this->process_book_meta( $post_id, $post );
+	}
+	
+	
+	/**
+	 * Function for processing and storing all book data.
+	 */
+	private function process_book_meta( $post_id, $post ) {
+		update_post_meta( $post_id, '_image_id', $_POST['upload_image_id'] );
+		//update_post_meta( $post_id, 'iframe_video', $_POST['multimidia_iframe_video'] );
+		update_post_meta( $post_id, 'var_tipo', $_POST['multimidia_tipo'] );
+		update_post_meta( $post_id, 'value_line_1', $_POST['multimidia_value_line_1'] );
+		update_post_meta( $post_id, 'value_line_2', $_POST['multimidia_value_line_2'] );
+
+	}
+	
+	
+	/**
+	 * Set a more appropriate placeholder text for the New Book title field
+	 */
+	public function enter_title_here( $text, $post ) {
+		if ( $post->post_type == 'projetos' ) return __( 'Título do Projeto' );
+		return $text;
+	}
+	
+	
+	/**
+	 * Add and remove meta boxes from the edit page
+	 */
+	public function meta_boxes() {
+		add_meta_box( 'book-image', __( 'Multimidia' ), array( &$this, 'book_image_meta_box' ), 'projetos', 'normal', 'high' );
+	}
+	
+	
+	/**
+	 * Display the image meta box
+	 */
+	public function book_image_meta_box() {
+		global $post;
+
+		$var_tipo = intval( get_post_meta( $post->ID, 'var_tipo', true ) );
+		//$iframe_video = esc_html( get_post_meta( $post->ID, 'iframe_video', true ) );
+    	$value_line_1 = esc_html( get_post_meta( $post->ID, 'value_line_1', true ) );
+    	$value_line_2 = esc_html( get_post_meta( $post->ID, 'value_line_2', true ) );
+		
+		$image_src = '';
+		
+		$image_id = get_post_meta( $post->ID, '_image_id', true );
+		$image_src = wp_get_attachment_url( $image_id );
+		
+		?>
+
+		<table>
+		 <tr>
+            <td style="width: 100%;">Tipo</td>
+            <td>
+                <select id="tipoCase" style="width: 200px" name="multimidia_tipo" onchange="showdiv()">
+                <?php
+                // Generate all items of drop-down list
+                for ( $tipo = 8; $tipo >= 1; $tipo -- ) {
+                	
+                	switch ( $tipo ) {
+                		case 1 : 
+                			$titleOption = 'Emprego e Renda';
+                			break;
+                		
+                		case 2 : 
+                			$titleOption = 'Educação';
+                			break;
+
+                		case 3 : 
+                			$titleOption = 'Saúde';
+                			break;
+
+                		case 4 : 
+                			$titleOption = 'Transparência';
+                			break;
+
+                		case 5 : 
+                			$titleOption = 'Infraestrutura';
+                			break;
+
+                		case 6 : 
+                			$titleOption = 'Economia';
+                			break;
+
+                		case 7 : 
+                			$titleOption = 'Assistência Social';
+                			break;
+
+                		case 8 : 
+                			$titleOption = 'Habitação';
+                			break;
+                	}
+
+
+                ?>
+                    <option value="<?php echo $tipo; ?>" <?php echo selected( $tipo, $var_tipo ) ?>  data-div="Div<?php echo $tipo; ?>">
+                    	<?php echo $titleOption; ?>  
+					</option>
+                    <?php } ?>
+                </select>
+            </td>
+        </tr>
+
+       <!--  <tr id="Div1" class="contentTipo Div1 Div2 Div3 Div4 Div5 Div6 Div7" style="display: none;">
+           <td style="width: 100%"><strong>Iframe ou Embed do vídeo</strong></td>
+           <td><input type="text" size="80" name="multimidia_iframe_video" value="<?php //echo $iframe_video; ?>" placeholder="Cole o código HTML do iframe ou embed do vídeo" /></td>
+       </tr> -->
+    	 <tr id="Div2" class="contentTipo Div1 Div2 Div3 Div4 Div5 Div6 Div7 Div8 Div9 Div10 Div11 Div12" style="display: none;">
+            <td style="width: 100%"><strong>Valor Linha 1</strong></td>
+            <td><input type="text" size="80" name="multimidia_value_line_1" value="<?php echo $value_line_1; ?>" /></td>
+        </tr>
+         <tr id="Div2" class="contentTipo Div1 Div2 Div3 Div4 Div5 Div6 Div7 Div8 Div9 Div10 Div11 Div12" style="display: none;">
+            <td style="width: 100%"><strong>Valor Linha 2</strong></td>
+            <td><input type="text" size="80" name="multimidia_value_line_2" value="<?php echo $value_line_2; ?>" /></td>
+        </tr>
+         <tr id="Div1" class="contentTipo Div1 Div2 Div3 Div4 Div5 Div6 Div7 Div8 Div9 Div10 Div11 Div12" style="display: none;">
+            <td style="width: 100%"><strong>Imagem de capa</strong></td>
+            <td>
+            	<img id="book_image" src="<?php echo $image_src ?>" style="max-width:280px;" />
+		<input type="hidden" name="upload_image_id" id="upload_image_id" value="<?php echo $image_id; ?>" />
+		<p>
+			<a title="<?php esc_attr_e( 'Incluir / Alterar imagem' ) ?>" href="#" id="set-book-image"><?php _e( 'Incluir / Alterar imagem' ) ?></a>
+			<a title="<?php esc_attr_e( 'Remover imagem' ) ?>" href="#" id="remove-book-image" style="<?php echo ( ! $image_id ? 'display:none;' : '' ); ?>"><?php _e( 'Remover imagem' ) ?></a>
+		</p>
+            </td>
+        </tr>
+    </table>
+		
+		<script type="text/javascript">
+			
+			function showdiv()
+				{
+				   var divID = $("#tipoCase option:selected").attr("data-div");
+				   divID = divID.replace(" ","");
+				   // $("tr#"+divID).show();
+				   // $("tr#"+divID).siblings().hide();
+   					$("tr.contentTipo").hide();
+   					$("tr."+divID).show();
+				}
+
+		jQuery(document).ready(function($) {
+
+			// Hide Or show by Tipo
+			var divID = $("#tipoCase option:selected").attr("data-div");
+			$("tr."+divID).show();
+			
+			// save the send_to_editor handler function
+			window.send_to_editor_default = window.send_to_editor;
+	
+			$('#set-book-image').click(function(){
+				
+				// replace the default send_to_editor handler function with our own
+				window.send_to_editor = window.attach_image;
+				tb_show('', 'media-upload.php?post_id=<?php echo $post->ID ?>&amp;type=image&amp;TB_iframe=true');
+				
+				return false;
+			});
+			
+			$('#remove-book-image').click(function() {
+				
+				$('#upload_image_id').val('');
+				$('img').attr('src', '');
+				$(this).hide();
+				
+				return false;
+			});
+			
+			// handler function which is invoked after the user selects an image from the gallery popup.
+			// this function displays the image and sets the id so it can be persisted to the post meta
+			window.attach_image = function(html) {
+				
+				// turn the returned image html into a hidden image element so we can easily pull the relevant attributes we need
+				$('body').append('<div id="temp_image">' + html + '</div>');
+					
+				var img = $('#temp_image').find('img');
+				
+				imgurl   = img.attr('src');
+				imgclass = img.attr('class');
+				imgid    = parseInt(imgclass.replace(/\D/g, ''), 10);
+	
+				$('#upload_image_id').val(imgid);
+				$('#remove-book-image').show();
+	
+				$('img#book_image').attr('src', imgurl);
+				try{tb_remove();}catch(e){};
+				$('#temp_image').remove();
+				
+				// restore the send_to_editor handler function
+				window.send_to_editor = window.send_to_editor_default;
+				
+			}
+	
+		});
+		</script>
+		<?php
+	}
+}
+
+// finally instantiate our plugin class and add it to the set of globals
+$GLOBALS['custom_post_type_image_upload'] = new Custom_Post_Type_Image_Upload();
+
+
+
+
+//================================
+// MATERIAIS e VÍDEOS
+//================================
+
+
+
+// Cria a meta_box
+function conteudo_metabox() {
+	
+	// Tipos de post para a metabox
+	$screens = array( 'clippings', 'video', 'depoimentos' );
+
+	foreach ( $screens as $screen ) {
+
+		add_meta_box(
+			'conteudo_meta_box',          // ID da Meta Box 
+			'Campos adicionais do conteúdo',   // Título
+			'conteudo_metabox_callback',  // Função de callback
+			$screen,                    // Local onde ela vai aparecer
+			'normal',                   // Contexto
+			'high'                      // Prioridade
+		);
+		
+	} // foreach
+	
+} // Cria a meta_box
+add_action( 'add_meta_boxes', 'conteudo_metabox', 1 );
+
+// Essa é a função que vai exibir os dados para o usuário
+function conteudo_metabox_callback( $post ) {
+
+	// Adiciona um campo para verificação posterior
+	wp_nonce_field( 'conteudo_custom_metabox', 'conteudo_custom_metabox_nonce' );
+	
+	$_urlswitch = get_post_meta( $post->ID, '_urlswitch', true );
+
+	if ( 'clippings' == get_post_type() ) {
+		$placeholder = 'Cole aqui o novo link do post';
+		$title = 'LINK';
+	}
+	elseif ( 'video' == get_post_type() ) {
+		$placeholder = 'Cole aqui embed ou iframe do Vídeo';
+		$title = 'EMBED DO VÍDEO';
+	}
+	elseif ( 'depoimentos' == get_post_type() ) {
+		$placeholder = 'Digite aqui o cargo';
+		$title = 'CARGO';
+	}
+
+	
+	echo '<h4>' . $title . '</h4>';
+	echo '<input type="text" name="_urlswitch" class="widefat" value="' . esc_html( $_urlswitch ) . '" placeholder="' . $placeholder . '" />';
+}
+
+function conteudo_save_custom_metabox_data( $post_id ) {
+
+	// Verifica o campo nonce
+	if ( ! isset( $_POST['conteudo_custom_metabox_nonce'] ) ) {
+		return;
+	}
+
+	// Verifica se o campo nonce é válido
+	if ( ! wp_verify_nonce( $_POST['conteudo_custom_metabox_nonce'], 'conteudo_custom_metabox' ) ) {
+		return;
+	}
+
+	// Se o formulário ainda não foi enviado (estiver fazendo autosave) 
+	// não faremos nada
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+
+	// Verifica as permissões do usuário (mínimo: editar post).
+	if ( isset( $_POST['post_type'] ) && 'contato' == $_POST['post_type'] ) {
+
+		if ( ! current_user_can( 'edit_post', $post_id ) ) {
+			return;
+		}
+	}
+
+	/* Perfeito, agora vamos aos campos. */
+	
+	$_urlswitch = isset( $_POST['_urlswitch'] ) ? $_POST['_urlswitch'] : null;
+
+	// Atualiza os dados no BD
+	
+	update_post_meta( $post_id, '_urlswitch', $_urlswitch );
+}
+add_action( 'save_post', 'conteudo_save_custom_metabox_data' );
+
+
+
+
+
+
+//======================
+// Taxonomies
+//=====================
+
+add_action( 'init', 'create_my_taxonomies', 0 );
+
+function create_my_taxonomies() {
+    register_taxonomy(
+        'categoria-material',
+        'material',
+        array(
+            'labels' => array(
+                'name' => 'Categoria de Material',
+                'add_new_item' => 'Adicionar nova Categoria',
+                'new_item_name' => "Nova Categoria"
+            ),
+            'show_ui'           => true,
+	        'show_admin_column' => true,
+	        'query_var'         => true,
+	        'rewrite'           => array( 'slug' => 'categoria-material' ),
+	        'public' => true,
+	        'hierarchical' => true,
+	        'show_ui' => true,
+	        'show_in_nav_menus' => true,
+	        'query_var' => true,
+	        'publicly_queryable' => true,
+	        'capability_type' => 'post',
+	        'hierarchical' => true,
+	        'has_archive' => true
+        )
+    );
+    register_taxonomy(
+        'categoria-video',
+        'video',
+        array(
+            'labels' => array(
+                'name' => 'Categoria de Vídeo',
+                'add_new_item' => 'Adicionar nova Categoria',
+                'new_item_name' => "Nova Categoria"
+            ),
+            'show_ui' => true,
+            'show_tagcloud' => false,
+            'show_admin_column' => true,
+			'query_var'         => true,
+			'rewrite' => array( 'slug' => 'categoria-video' ),
+			'hierarchical' => true,
+        )
+    );
+}
+
+//==================================
+// Filter and Columns in postTypes
+//==================================
+
+add_filter( 'manage_edit-cases_sucesso_columns', 'my_columns' );
+
+function my_columns( $columns ) {
+    $columns['var_tipo'] = 'Tipo';
+    unset( $columns['comments'] );
+    return $columns;
+}
+
+add_action( 'manage_posts_custom_column', 'populate_columns' );
+
+function populate_columns( $column ) {
+    if ( 'var_tipo' == $column ) {
+        $tipo = get_post_meta( get_the_ID(), 'var_tipo', true );
+        
+        switch ($tipo) {
+        	case 1:
+        		echo 'Vídeo';
+        		break;
+        	case 2:
+        		echo 'Depoimento';
+        		break;
+        	case 3:
+        		echo 'Apenas logotipo';
+        		break;
+        	
+        }
+    }
+}
+
+add_filter( 'manage_edit-cases_sucesso_sortable_columns', 'sort_me' );
+
+function sort_me( $columns ) {
+    $columns['var_tipo'] = 'var_tipo';
+ 
+    return $columns;
+}
+
+
+//add_filter( 'request', 'column_ordering' );
+ 
+add_filter( 'request', 'column_orderby' );
+ 
+function column_orderby ( $vars ) {
+    if ( !is_admin() )
+        return $vars;
+    
+    if ( isset( $vars['orderby'] ) && 'var_tipo' == $vars['orderby'] ) {
+        $vars = array_merge( $vars, array( 'meta_key' => 'var_tipo', 'orderby' => 'meta_value_num' ) );
+    }
+    return $vars;
+}
+

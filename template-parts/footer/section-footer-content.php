@@ -78,11 +78,11 @@
 				<ul class="Section-items--contact u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-alignCenterBox">
 					<li class="Section-items--contact-item u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-flexAlignItemsCenter u-marginTop--inter--half">
 						<i class="figureIcon"></i>
-						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter">(85)3333-3333</p>
+						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter">(85) 3267-9450</p>
 					</li>
 					<li class="Section-items--contact-item u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-flexAlignItemsCenter u-marginTop--inter--half">
 						<i class="figureIcon"></i>
-						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter u-size12of24 u-alignCenter">Rua xxxxxxxxxxxx, xxx, xxxxxxx, xxxxx, <br> XXXXX-XXX</p>
+						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter u-size12of24 u-alignCenter">franquia@vignoli.com.br</p>
 					</li>
 				</ul>
 

@@ -9,7 +9,7 @@
 				<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24 u-paddingTop--inter--half u-paddingVertical">
 					<div class="Section-content u-alignCenter">
 						<h3 class="Section-content-subtitle">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Um empreendimento de sucesso! Visando chegar em novos horizontes e expandir o seu nome, o Vignoli está constantemente em expansão e crescimento.
 						</h3>
 						
 						<i class="u-positionRelative u-displayInlineBlock u-marginTop--inter--half">

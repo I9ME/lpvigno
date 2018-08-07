@@ -217,6 +217,7 @@
 								&--footer{
 									bottom: 0px;
 									left: 0px;
+									height: 18px !important;
 								}
 							}
 							&--tabRight{
@@ -1065,6 +1066,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 		& .Features{
 				&-items{
 					&-item{
+						overflow: hidden;
+						width: 0px;
+						opacity: 0;
+						&-figure,
+						&-title,
+						&-value{
+							opacity: 0;
+							transition: all 0.3s;
+							transition-delay: 0.5s;
+						}
+						&.u-isScrollFade--on{
+							width: 100%;
+							opacity: 1;
+							& .Features{
+								&-items{
+									&-item{
+										&-figure,
+										&-title,
+										&-value{
+											opacity: 1;
+											transition: all 0.3s;
+											transition-delay: 0.5s;
+										}
+									}
+								}
+							}
+						}
 						&-title{
 							font-size: $font_size_text;
 						}
@@ -1155,7 +1183,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 			    background: $color_1;
 			}
 
+
 			& .Subsection{
+
+				&-content{
+					&-header{
+						width: 100%;
+    					text-align: center;
+    					top: -40px;
+						&-title{
+						    color: $color_1;
+						    font-style: italic;
+						    width: 100%;
+						    text-align: center;
+
+						    font-size: 41px;
+						    text-shadow: 3px 5px 15px #DDD;
+						    letter-spacing: -3px;
+						    &.u-isScrollFade--on{
+								text-shadow: 4px 6px 17px #CCC;	
+							}
+						}
+					}
+				}
 
 				&-items{
 						&-item{
@@ -1184,10 +1234,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 			@media screen and (min-width: $break-sm){
 					//Subsection-imageMain
 				& .Subsection{
-					/* &-content{
-						padding-left: $h_spacing;
-						padding-right: $h_spacing;
-					} */
+					&-content{
+						&-header{
+	    					top: -40px;
+							&-title{
+								font-size: 60px;
+							    text-shadow: 2px 7px 15px #e4e4e4;
+							    letter-spacing: -4px;
+							}
+						}
+					}
 
 					&-imageMain{
 						position: absolute;
@@ -1389,7 +1445,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 				}
 				&-imageMain{
 					margin-top: 0px;
-					min-height: 300px;
+					min-height: 480px;
 					&-ButtonCommand{
 						left: -57.5px !important;
 						top: 50% !important;

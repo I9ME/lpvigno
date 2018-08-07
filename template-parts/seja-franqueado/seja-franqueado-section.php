@@ -3,13 +3,13 @@
 		<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-paddingVertical u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter">
 			<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingHorizontal--inter--half u-sizeFull">SEJA UM <strong>FRANQUEADO VIGNOLI</strong></h2>
-			<h3 class="Section-header-subtitle u-alignCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet.</h3>
+			<h3 class="Section-header-subtitle u-alignCenter">Faça parte desse empreendimento de sucesso! Invista em na Vignoli e garanta uma das melhores franquias de pizzaria do país!</h3>
 		</header>
 		<div class="Section-content u-size18of24 u-paddingVertical u-alignCenterBox u-marginTop">
 			<form class="Form Form--style1 u-size12of24 u-sizeFull u-paddingVertical--inter--px">
 				<fieldset class="Form-fieldset u-sizeFull u-displayFlex u-flexDirectionColumn">
-					<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-marginBottom--inter--half">
-						<div class="Form-coll u-size12of24 u-positionRelative u-marginVertical--inter--half">
+					<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
+						<div class="Form-coll u-size12of24 u-positionRelative u-marginVertical--inter--half u-marginBottom--inter--half">
 							<label class="Form-label u-displayInlineBlock" for="firstname">Seu Nome<span class="required u-paddingLeft--inter--half--px">*</span></label>
 							<i class="FigureIcon u-icon">
 				            	<svg class="SocialBar-item-icon u-icon iconUser u-displayInlineBlock is-animating">
@@ -18,7 +18,7 @@
 					        </i>
 							<input type="text" name="firstname" placeholder="Digite o seu nome" class="Form-input Form-input--text u-sizeFull u-borderRadius5 Form-input Form-input--text u-boxShadow" required="required" />
 						</div>
-						<div class="Form-coll u-size12of24 u-positionRelative u-marginVertical--inter--half">
+						<div class="Form-coll u-size12of24 u-positionRelative u-marginVertical--inter--half u-marginBottom--inter--half">
 							<label class="Form-label u-displayInlineBlock" for="email">Seu E-mail<span class="required">*</span></label>
 						<i class="FigureIcon u-icon">
 			            	<svg class="SocialBar-item-icon u-icon iconEmail u-displayInlineBlock is-animating">
@@ -28,8 +28,8 @@
 						<input type="email" name="email" placeholder="Digite o seu e-mail" class="Form-input Form-input--text u-sizeFull u-borderRadius5 Form-input Form-input--text u-boxShadow" required="required" />
 						</div>
 					</div>
-					<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-marginBottom--inter--half">
-						<div class="Form-coll u-size8of24 u-positionRelative u-marginVertical--inter--half">
+					<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
+						<div class="Form-coll u-size8of24 u-positionRelative u-marginVertical--inter--half u-marginBottom--inter--half">
 							<label class="Form-label u-displayInlineBlock" for="firstname">Seu Telefone<span class="required u-paddingLeft--inter--half--px">*</span></label>
 							<i class="FigureIcon u-icon">
 				            	<svg class="SocialBar-item-icon u-icon iconPhone u-displayInlineBlock is-animating">
@@ -38,7 +38,7 @@
 					        </i>
 							<input type="tel" name="firstname" placeholder="Digite o seu telefone" class="Form-input Form-input--text u-sizeFull u-borderRadius5 Form-input Form-input--text u-boxShadow" required="required" />
 						</div>
-						<div class="Form-coll u-size8of24 u-positionRelative u-marginVertical--inter--half">
+						<div class="Form-coll u-size8of24 u-positionRelative u-marginVertical--inter--half u-marginBottom--inter--half">
 							<label class="Form-label u-displayInlineBlock" for="firstname">Seu Celular<span class="required u-paddingLeft--inter--half--px">*</span></label>
 							<i class="FigureIcon u-icon">
 				            	<svg class="SocialBar-item-icon u-icon iconWhatsapp u-displayInlineBlock is-animating">
@@ -47,7 +47,7 @@
 					        </i>
 							<input type="tel" name="firstname" placeholder="Digite o seu Celular" class="Form-input Form-input--text u-sizeFull u-borderRadius5 Form-input Form-input--text u-boxShadow" required="required" />
 						</div>
-						<div class="Form-coll u-size8of24 u-positionRelative u-marginVertical--inter--half">
+						<div class="Form-coll u-size8of24 u-positionRelative u-marginVertical--inter--half u-flexSwitchRow u-marginBottom--inter--half">
 							<label class="Form-label u-displayInlineBlock" for="firstname">Capital para investimento</label>
 							<i class="FigureIcon u-icon">
 				            	<svg class="SocialBar-item-icon u-icon iconMoney u-displayInlineBlock is-animating">
@@ -57,8 +57,8 @@
 							<input type="text" name="firstname" placeholder="Digite o seu capital" class="Form-input Form-input--text u-sizeFull u-borderRadius5 Form-input Form-input--text u-boxShadow" />
 						</div>
 					</div>
-					<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-marginBottom--inter--half">
-						<div class="Form-coll u-size12of24 u-positionRelative u-marginVertical--inter--half">
+					<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
+						<div class="Form-coll u-size12of24 u-positionRelative u-marginVertical--inter--half u-marginBottom--inter--half">
 							<label class="Form-label u-displayInlineBlock" for="firstname">Seu Estado<span class="required u-paddingLeft--inter--half--px">*</span></label>
 							<i class="FigureIcon u-icon">
 				            	<svg class="SocialBar-item-icon u-icon iconLocation u-displayInlineBlock is-animating">
@@ -67,7 +67,7 @@
 					        </i>
 							<input type="text" name="firstname" placeholder="Digite o seu estado" class="Form-input Form-input--text u-sizeFull u-borderRadius5 Form-input Form-input--text u-boxShadow" required="required" />
 						</div>
-						<div class="Form-coll u-size12of24 u-positionRelative u-marginVertical--inter--half">
+						<div class="Form-coll u-size12of24 u-positionRelative u-marginVertical--inter--half u-marginBottom--inter--half">
 							<label class="Form-label u-displayInlineBlock" for="firstname">Sua Cidade<span class="required u-paddingLeft--inter--half--px">*</span></label>
 							<i class="FigureIcon u-icon">
 				            	<svg class="SocialBar-item-icon u-icon iconCity u-displayInlineBlock is-animating">
@@ -78,8 +78,8 @@
 						</div>
 					</div>
 					
-					<div class="Form-row u-sizeFull u-marginTop--inter--half u-positionRelative u-flexDirectionColumn u-flexSwitchRow u-marginBottom--inter--half u-paddingVertical--inter--half">
-						<div class="Form-coll u-sizeFull u-positionRelative">
+					<div class="Form-row u-sizeFull u-positionRelative u-flexDirectionColumn u-paddingVertical--inter--half">
+						<div class="Form-coll u-sizeFull u-positionRelative u-flexSwitchRow u-marginBottom--inter--half">
 							<label class="Form-label u-displayInlineBlock" for="mensage">Observações<span class="required">*</span></label>
 							<i class="FigureIcon u-icon">
 				            	<svg class="SocialBar-item-icon u-icon iconChat u-displayInlineBlock is-animating">

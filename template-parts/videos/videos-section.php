@@ -21,10 +21,10 @@ $iframeVideo = $embed;
 				<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24 u-paddingTop--inter--half u-paddingBottom u-paddingVertical">
 					<div class="Section-content u-alignCenter">
 						<h3 class="Section-content-subtitle">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Conheça os diferenciais da Vignoli
 						</h3>
 						<p class="Section-content-text u-marginTop--inter--half">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+							Ingredientes bem escolhidos, que ao serem manipulados por mãos que entendem da arte de cozinhar, resultam em sabores marcantes.
 						</p>
 					</div>
 				</div>

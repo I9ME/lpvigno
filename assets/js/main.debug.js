@@ -160,15 +160,21 @@ $(window).scroll(function(){
         $('.u-isScrollFade').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height() + 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height() - 100;
+            var bottom_of_window_ = $(window).scrollTop() + $(window).height();
+
             
             /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
+            if( bottom_of_window > bottom_of_object && bottom_of_window < bottom_of_object + $(window).height() ){
                 
-                $(this).animate({'opacity':'1'},500);
+                //$(this).animate({'opacity':'1'},500);
                 $(this).addClass('u-isScrollFade--on'); 
                     
-            }
+            } else {
+
+               $(this).removeClass('u-isScrollFade--on'); 
+            
+            } 
             
         }); 
     
