@@ -75,10 +75,7 @@ function skeleton_scripts() {
 	// Theme stylesheet.
 	wp_enqueue_style('css-main', get_template_directory_uri() . '/assets/css/main.min.css', array(), $skeleton_version, 'all');
 	wp_enqueue_script( 'js-main', get_template_directory_uri() . '/assets/js/main.min.js', array(), $skeleton_version, true );
-	/*wp_enqueue_script( 'js-jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', array(), true );
-	wp_enqueue_script( 'js-paroller', get_template_directory_uri() . '/assets/js/jquery.paroller.min.js', array(), true );
-	wp_enqueue_style('css-owl', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), true);
-	wp_enqueue_script( 'js-owl', get_theme_file_uri( '/assets/js/owl.carousel.min.js' ), array(), true );*/
+	
 	
 
 
@@ -176,32 +173,9 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 </defs>
 </svg>';
 
-
-
-
-//wp_enqueue_script('jquery');
-
-//wp_enqueue_script( 'js-jquery', get_theme_file_uri( '/assets/js/jquery-3.2.1.min.js' ), array(), null );
-
-//wp_enqueue_script( 'js-stellar', get_theme_file_uri( '/assets/js/stellar.js' ), array(), null );
-//wp_enqueue_style('css-owl', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), null);
-//wp_enqueue_script( 'js-owl', get_theme_file_uri( '/assets/js/owl.carousel.min.js' ), array(), null );
-///wp_enqueue_script( 'js-stellar', get_theme_file_uri( '/assets/js/jquery.paroller.min.js' ), array(), null );
-
 ?>
-<!-- 
-	wp_enqueue_script( 'js-jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', array(), true );
-	wp_enqueue_script( 'js-paroller', get_template_directory_uri() . '/assets/js/jquery.paroller.min.js', array(), true );
-	wp_enqueue_style('css-owl', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), true);
-	wp_enqueue_script( 'js-owl', get_theme_file_uri( '/assets/js/owl.carousel.min.js' ), array(), true );
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
- -->
  <link rel="stylesheet"  type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/owl.carousel.min.css" />
  
-<!-- 
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"> -->
 
  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.2.1.min.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.paroller.min.js"></script>

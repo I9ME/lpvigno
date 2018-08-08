@@ -47,17 +47,17 @@
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-marginBottom--inter--half">RECEBA AS NOSSAS <strong>NOVIDADES</strong></h2>
 		</header>
 			<div class="Section-content--formSpace u-size24of24 u-displayFlex u-flexJustifyContentCenter u-flexDirectionColumn u-paddingBottom--inter">
-				<form class="Form Form--style3 u-displayFlex u-sizeFull">
+				<form class="Form Form--style3 u-displayFlex u-size12of24 u-alignCenterBox u-flexDirectionColumn u-overflowHidden">
 					<fieldset class="Form-fieldset u-displayFlex u-justifyContentCenter u-sizeFull">
 						<div class="Form-line u-displayFlex u-justifyContentCenter">
-							<div class="Form-row Form-row--email u-positionRelative u-size8of24">
+							<div class="Form-row Form-row--email u-positionRelative u-sizeFull">
 							<div class="Form-content u-positionRelative">
 								<i class="u-icon u-icon--envelope">
 									<svg class="iconEnvelope u-icon is-animating">
 										<use xlink:href="#iconEnvelope"></use>
 									</svg>
 								</i>
-								<input class="Form-input Form-input--text Form-border--0" placeholder="Digite o seu e-mail" type="text" name="email" />
+								<input class="Form-input Form-input--text u-sizeFull Form-border--0" placeholder="Digite o seu e-mail" type="text" name="email" />
 							</div>
 							<div class="Form-content u-positionRelative">
 								<input class="Form-input Form-input--submit is-animating hover" type="submit" value="OK" />
@@ -82,7 +82,7 @@
 					</li>
 					<li class="Section-items--contact-item u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-flexAlignItemsCenter u-marginTop--inter--half">
 						<i class="figureIcon"></i>
-						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter u-size12of24 u-alignCenter">franquia@vignoli.com.br</p>
+						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter u-size12of24 u-alignCenter">franquia@pizzavignoli.com.br</p>
 					</li>
 				</ul>
 

@@ -1820,6 +1820,9 @@ FOOTER .Site--foter .Section--footerContent
 					}
 					&--formSpace{
 						border-bottom: 1px solid $color_6;
+						& .Form{
+							max-width: 400px !important;
+						}
 					}
 			}
 			&-items{
