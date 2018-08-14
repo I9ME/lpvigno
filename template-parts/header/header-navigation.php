@@ -17,7 +17,7 @@
 		<?php if ( is_home() || is_front_page() ) { ?>
 		
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
-			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#afranquia">A FRANQUIA</a>
+			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#afranquia">FRANQUIA</a>
 		</li>
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
@@ -29,7 +29,11 @@
 		</li>
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
-			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#avignoli">A VIGNOLI</a>
+			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#avignoli">VIGNOLI</a>
+		</li>
+
+		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
+			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#seja-franqueado">SEJA FRANQUEADO</a>
 		</li>
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
