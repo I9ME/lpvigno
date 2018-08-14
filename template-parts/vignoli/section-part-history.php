@@ -1,14 +1,17 @@
 
 					<div class="Section-items-item-content">
 						<h4 class="Section-items-item-title u-marginBottom--inter">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry
+							PIONEIRA! ORIGINAL! INCOMPARÁVEL! NÃO É PIZZA, É VIGNOLI!
 						</h4>
 						<div class="Section-items-item-text u-alignJustify">
 							<p>
-								Há treze anos o Vignoli chegou em Fortaleza com a proposta de oferecer uma pizza leve, fininha e crocante a ser apreciada com as mãos, um diferencial que conquistou imediatamente os fortalezenses. Os sabores marcantes, aliados a um ambiente aconchegante, familiar e intimista, logo conquistaram também turistas e visitantes de outros locais, fazendo o Vignoli ser rapidamente reconhecido como a melhor pizza da cidade.
+								A primeira Vignoli chegou em meados de 2004, tendo como grande diferencial sua pizza leve, fininha e crocante a ser apreciada com as mãos.
 							</p>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem ipsum.
+								Os sabores marcantes e incomparáveis, aliados a um ambiente aconchegante, intimista e familiar logo conquistaram tanto os fortalezenses, quanto turistas de todas as partes do país que já elegiam a melhor pizza da cidade. Confirmado em 2005 com o título de melhor Pizzaria da Cidade pela Revista Veja Comer & Beber, ganho por 8 vezes consecutivas.
+							</p>
+							<p>
+								Atualmente, a Vignoli é reconhecida por ser a Pizzaria mais premiada do Brasil.
 							</p>
 
 							<div class="subSection">

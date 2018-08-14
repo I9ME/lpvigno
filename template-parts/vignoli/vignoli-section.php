@@ -27,7 +27,7 @@
 						</li>
 						<li id="tab-3" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter u-positionRelative u-paddingLeft--inter--half--px">
 							<h3>
-								<a class="Navigation-link u-displayBlock is-animating u-paddingHorizontal--vrt--inter--half--px" href="javascript:NavigationTabs('aVignoli','3');">Vídeos</a>
+								<a class="Navigation-link u-displayBlock is-animating u-paddingHorizontal--vrt--inter--half--px" href="javascript:NavigationTabs('aVignoli','3');">Diferenciais</a>
 							</h3>
 							<figure class="ShadowBox ShadowBox--tabLeft--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
 							<figure class="ShadowBox ShadowBox--tabLeft u-positionAbsolute u-zIndex1 is-animating"></figure>
@@ -43,7 +43,7 @@
 						<?php get_template_part( 'template-parts/vignoli/section-part', 'history' ); ?>
 					</li>
 					<li id="tabContent-3" class="Section-items-item Item Item--tab u-sizeFull u-positionRelative u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom is-animating">
-						<?php get_template_part( 'template-parts/vignoli/section-part', 'videos' ); ?>
+						<?php get_template_part( 'template-parts/vignoli/section-part', 'diferenciais' ); ?>
 					</li>
 				</ul>
 			</div>

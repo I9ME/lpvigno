@@ -32,7 +32,7 @@ window.onload = function() {
     $('#avignoli').addClass('imgAfter');
 
     $('#avignoli .Gallery--fotos').load(url+'/galeria-de-fotos/');
-    $('#avignoli .Gallery--videos').load(url+'/galeria-de-videos/');
+    //$('#avignoli .Gallery--videos').load(url+'/galeria-de-videos/');
 
 
     
@@ -64,6 +64,7 @@ var title = $(this).find('img').attr('alt');
 });*/
 
 
+//$('.Section--intro .Form-input--email').val($('.Form--modal .Form-input--email').val());
 
 
 //=======================================================
@@ -172,7 +173,7 @@ $(window).scroll(function(){
                     
             } else {
 
-               $(this).removeClass('u-isScrollFade--on'); 
+               //$(this).removeClass('u-isScrollFade--on'); 
             
             } 
             
@@ -273,6 +274,7 @@ function LightboxClose(iFrame) {
    $('#Lightbox--container').removeClass('Lightbox--active');
    $('#Lightbox--container').addClass('Lightbox--inactive');
    $('.Lightbox-window-content').html('');
+   jQuery('body').css({'overflow-y':'auto'});
 }
 
 $( ".LightboxClose" ).on( "click", LightboxClose );
@@ -481,11 +483,19 @@ function NavigationTabs(section, tab){
 
 
 // Abre o Lightbox
-function LightboxCall(iFrame) {
+function LightboxCall(iFrame, type) {
+
   //alert( "clicked" );
   jQuery('#Lightbox--container').removeClass('Lightbox--inactive');
   jQuery('#Lightbox--container').addClass('Lightbox--active');
-  jQuery('.Lightbox-window-content').load( iFrame );
+  if ( type == 'modal' ) {
+    var mail = jQuery('#InputEmail').val();
+    jQuery('.Lightbox-window-content').load( iFrame+'&email='+mail);
+  } else {
+    jQuery('.Lightbox-window-content').load( iFrame );
+   }
+
+  jQuery('body').css({'overflow-y':'hidden'});
 }
 //$( ".LightboxCall" ).on( "click", LightboxCall );
 
@@ -497,6 +507,7 @@ function KeyUpEsc(evt) {
        jQuery('#Lightbox--container').removeClass('Lightbox--active');
        jQuery('#Lightbox--container').addClass('Lightbox--inactive');
        jQuery('.Lightbox-window-content').html( '' );
+       jQuery('body').css({'overflow-y':'auto'});
     }
 }
 
