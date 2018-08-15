@@ -11,7 +11,7 @@
 				<li id="tab-1" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter--half u-positionRelative u-paddingRight--inter--px is-active">
 					<h4 class="u-alignRight">
 
-						<a class="Navigation-link u-displayBlock u-paddingHorizontal--vrt--inter--half--px is-animating" href="javascript:NavigationTabs('aFranquia','1');">Restaurante</a>
+						<a class="Navigation-link u-displayBlock u-paddingHorizontal--vrt--inter--half--px is-animating" href="javascript:NavigationTabs('aFranquia','1','');">Restaurante</a>
 
 					</h4>
 					<figure class="ShadowBox ShadowBox--tabRight--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
@@ -20,7 +20,7 @@
 				<li id="tab-2" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter--half u-positionRelative u-paddingLeft--inter--px">
 					<h4>
 
-						<a class="Navigation-link u-displayBlock is-animating u-paddingHorizontal--vrt--inter--half--px" href="javascript:NavigationTabs('aFranquia','2');">Expresso</a>
+						<a class="Navigation-link u-displayBlock is-animating u-paddingHorizontal--vrt--inter--half--px" href="javascript:NavigationTabs('aFranquia','2','');">Expresso</a>
 
 					</h4>
 					<figure class="ShadowBox ShadowBox--tabLeft--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
