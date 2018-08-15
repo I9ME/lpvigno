@@ -14,7 +14,6 @@
  * Funções e Configurações do Tema
  */
 
-$skeleton_version = '1.7';
 
 
 function skeleton_setup() {

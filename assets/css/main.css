@@ -6395,63 +6395,105 @@ th.u-isShown {
 
 .ArabescoBottom--bottom {
   background-image: url(../images/sprite.png);
-  background-position: -411px -676px;
+  background-position: -414px -772px;
   width: 243px;
   height: 53px;
 }
 
 .ArabescoTop--color_15 {
   background-image: url(../images/sprite.png);
-  background-position: -240px -771px;
+  background-position: -171px -826px;
   width: 182px;
   height: 32px;
 }
 
 .ArabescoTop--intro {
   background-image: url(../images/sprite.png);
-  background-position: -411px -622px;
+  background-position: -171px -772px;
   width: 243px;
   height: 54px;
 }
 
-.FigureIcon--moedas {
+.FigureIcon--azeite {
+  background-image: url(../images/sprite.png);
+  background-position: -600px -622px;
+  width: 150px;
+  height: 150px;
+}
+
+.FigureIcon--fatiapizza {
+  background-image: url(../images/sprite.png);
+  background-position: -300px -622px;
+  width: 150px;
+  height: 150px;
+}
+
+.FigureIcon--legumes {
+  background-image: url(../images/sprite.png);
+  background-position: -150px -622px;
+  width: 150px;
+  height: 150px;
+}
+
+.FigureIcon--luvinhas {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -622px;
+  width: 150px;
+  height: 150px;
+}
+
+.FigureIcon--macarrao {
   background-image: url(../images/sprite.png);
   background-position: -812px 0px;
+  width: 150px;
+  height: 150px;
+}
+
+.FigureIcon--moedas {
+  background-image: url(../images/sprite.png);
+  background-position: -696px -370px;
   width: 85px;
   height: 65px;
 }
 
 .FigureIcon--money {
   background-image: url(../images/sprite.png);
-  background-position: -696px -370px;
+  background-position: -812px -524px;
   width: 93px;
   height: 70px;
 }
 
 .FigureIcon--newsletter {
   background-image: url(../images/sprite.png);
-  background-position: -812px -117px;
+  background-position: -905px -524px;
   width: 53px;
   height: 50px;
 }
 
+.FigureIcon--queijo {
+  background-image: url(../images/sprite.png);
+  background-position: -450px -622px;
+  width: 150px;
+  height: 150px;
+}
+
 .FigureIcon--report {
   background-image: url(../images/sprite.png);
-  background-position: -686px -523px;
+  background-position: -812px -667px;
   width: 93px;
   height: 63px;
 }
 
 .FigureIcon--send {
   background-image: url(../images/sprite.png);
-  background-position: -812px -65px;
+  background-position: -686px -450px;
   width: 85px;
   height: 52px;
 }
 
 .FigureIcon--store {
   background-image: url(../images/sprite.png);
-  background-position: -686px -450px;
+  background-position: -812px -594px;
   width: 83px;
   height: 73px;
 }
@@ -6479,21 +6521,21 @@ th.u-isShown {
 
 .Flatlay--folha1 {
   background-image: url(../images/sprite.png);
-  background-position: -240px -622px;
+  background-position: 0px -772px;
   width: 171px;
   height: 119px;
 }
 
 .Flatlay--folha2--noShadow {
   background-image: url(../images/sprite.png);
-  background-position: -120px -622px;
+  background-position: -812px -337px;
   width: 120px;
   height: 187px;
 }
 
 .Flatlay--folha2 {
   background-image: url(../images/sprite.png);
-  background-position: 0px -622px;
+  background-position: -812px -150px;
   width: 120px;
   height: 187px;
 }
@@ -6528,35 +6570,35 @@ th.u-isShown {
 
 .ShadowBox--bottom {
   background-image: url(../images/sprite.png);
-  background-position: -240px -741px;
+  background-position: -657px -772px;
   width: 293px;
   height: 30px;
 }
 
 .ShadowBox--tabLeft--footer {
   background-image: url(../images/sprite.png);
-  background-position: -686px -586px;
+  background-position: -812px -730px;
   width: 113px;
   height: 26px;
 }
 
 .ShadowBox--tabLeft {
   background-image: url(../images/sprite.png);
-  background-position: -812px -167px;
+  background-position: -932px -150px;
   width: 19px;
   height: 113px;
 }
 
 .ShadowBox--tabRight--footer {
   background-image: url(../images/sprite.png);
-  background-position: -654px -622px;
+  background-position: -686px -502px;
   width: 113px;
   height: 26px;
 }
 
 .ShadowBox--tabRight {
   background-image: url(../images/sprite.png);
-  background-position: -831px -167px;
+  background-position: -932px -337px;
   width: 19px;
   height: 113px;
 }
