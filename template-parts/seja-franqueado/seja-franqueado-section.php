@@ -14,7 +14,7 @@
 			<h3 class="Section-header-subtitle u-alignCenter">Faça parte desse empreendimento de sucesso! Invista em na Vignoli e garanta uma das melhores franquias de pizzaria do país!</h3>
 		</header>
 
-		<div class="Section-content u-sizeFull u-paddingVertical u-alignCenterBox u-marginHorizontal--inter">
+		<div class="Section-content u-sizeFull u-paddingVertical u-alignCenterBox u-marginTop--inter u-marginBottom">
 			<form class="Form Form--style1 u-size12of24 u-sizeFull">
 				<fieldset class="Form-fieldset u-sizeFull u-displayFlex u-flexDirectionColumn">
 					<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">

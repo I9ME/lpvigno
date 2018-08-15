@@ -11,7 +11,9 @@
 				</div>
 			</div>
 			<div class="Section-imageMain u-size14of24 u-positionRelative">
-					<figure class="Section-items-figure u-displayFlex u-flexJustifyContentCenter"></figure>
+					<figure class="Section-items-figure u-displayFlex u-flexJustifyContentCenter">
+						<img class="u-objectFitCover u-sizeHeight100 u-sizeFull u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="<?php echo get_template_directory_uri() . '/assets/images/brazil-pizza--right' . switch_img_Mobile() . '.png'; ?>" />
+					</figure>
 			</div>
 		</div>
 	</div>
