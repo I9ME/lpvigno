@@ -642,7 +642,7 @@ $('#depoimentos-carousel .owl-nav').append('<a class="navController navControlle
 
 
 
-function NavigationTabs(section, tab){
+function NavigationTabs(section, tab, uri){
     //alert( section + ' , ' + tab );
 <<<<<<< HEAD
    $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item').removeClass('is-clean');
@@ -662,6 +662,12 @@ function NavigationTabs(section, tab){
 
     $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item, .Section--' + section + ' .Items--tabs .Item, .Section--' + section + ' .Subsection-imageMain').removeClass('is-active');
     $('.Section--' + section + ' .Navigation--tabs #tab-' + tab + ', .Section--' + section + ' .Items--tabs #tabContent-' + tab +', .Section--' + section + ' #tabImage-' + tab).addClass('is-active');
+
+    if( uri != '' ) {
+
+        $('.Section--' + section + ' .Items--tabs #tabContent-' + tab).load(url+uri);
+
+    }
     
 =======
     $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item, .Section--' + section + ' .Items--tabs .Item, .Section--' + section + ' .Subsection-imageMain').removeClass('is-active');
