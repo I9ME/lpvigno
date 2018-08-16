@@ -8,11 +8,21 @@
 				</header>
 				<div class="Section-content u-alignJustify">
 					<h3 class="Section-content-subtitle">
+<<<<<<< HEAD
 						Eleita 8 vezes como a melhor pizza de Fortaleza pela Veja Comer e Beber  e 2 vezes consecutivas a melhor pizza de Salvador.
+=======
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
 					</h3>
 					<p class="Section-content-text u-marginTop--inter--half">
 						O ambiente aconchegante ao ar livre, com peças decorativas originais e muitas antiguidades, é ideal para quem procura conforto e um clima intimista na hora do jantar. No cardápio, são oferecidas pizzas, saladas e massas para todos os gostos, além de uma variada carta de vinhos.
 					</p>
+<<<<<<< HEAD
+=======
+					<p class="Section-content-text u-marginTop--inter--half">
+						O ambiente aconchegante ao ar livre, com peças decorativas originais e muitas antiguidades, é ideal para quem procura conforto e um clima intimista na hora do jantar. No cardápio, são oferecidas pizzas, saladas e massas para todos os gostos, além de uma variada carta de vinhos.
+					</p>
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
 				</div>
 			</div>
 			<div class="Section-imageMain Section-gridElastic u-size11of24 u-marginTop--inter u-positionRelative">

@@ -47,7 +47,7 @@ var sassProdOptions = {
 path = {
     dev     : './_src',
     prod    : './assets',
-    proxy   : 'http://localhost/vignoli'
+    proxy   : 'http://localhost/roupaematacado'
 }
 
 /*

@@ -5,6 +5,15 @@
 
 jQuery(function($) {
 	$(document).ready(function() {
+/*
+window.onload = function() {
+    var element = document.createElement("script");
+    //element.src = "myScript.js";
+    //
+   // document.body.appendChild(element);
+   alert('Carregou! ')
+};
+*/
 
 //alert(document.location.origin);
 //alert(document.location.pathname);
@@ -235,6 +244,154 @@ $(window).scroll(function(){
    });
 
 
+//=======================================================
+//Aplica a animação no scroll mediante clique no menu
+//=======================================================
+
+
+
+    $(".u-isScrollDown").click(function(event){        
+        event.preventDefault();
+        
+       
+
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 0}, 1000);
+
+          if ($(".Navigation--main").hasClass('u-isExpanded')){
+            $("#MainNavigation-container, .NavigationButton.NavigationButton--main").removeClass("u-isExpanded")
+            $("#MainNavigation-container, .NavigationButton.NavigationButton--main").addClass("u-isCollapsed");  
+         }
+        
+        varHash = $(this).attr('href');
+
+        
+        /*if (location.hash == varHash) {
+            $(this).addClass('u-isActive');
+        } else {
+            $(this).removeClass('u-isActive');
+        }*/
+        
+        if(history.pushState) {
+        
+            history.pushState(null, null, varHash);
+        
+        }
+        else {
+        location.hash = '#myhash';
+        window.location.hash = varHash;
+        }
+
+        
+   });
+
+
+
+
+/*$(function(){
+      $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 40
+      });
+    });
+*/
+
+
+
+
+// =====================================
+// .ScrollOn
+// Detecta o Movimento da Barra de Rolagem e aplica a classe no body
+// =====================================
+
+$(window).scroll(function(){
+
+
+     var scroll = jQuery(window).scrollTop();
+
+     //Class ScrollOn
+     if ( scroll > 0 ) {
+      jQuery('body').addClass('u-isScrollOn');
+
+     } else {
+      jQuery('body').removeClass('u-isScrollOn');
+     }
+
+     //Class Fixed
+    /* if ( scroll > 135 ) {
+      jQuery('.Intro--blog-headerBar').addClass('u-isFixed');
+
+     } else {
+      jQuery('.Intro--blog-headerBar').removeClass('u-isFixed');
+     }*/
+
+});
+
+// =====================================
+// .ScrollFade
+// Mostra os objetos conforme aparecem no scroll
+// =====================================
+ 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.u-isScrollFade').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 100;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                $(this).addClass('u-isScrollFade--on'); 
+                    
+            }
+            
+        }); 
+    
+    });
+
+
+//=======================================================
+//Aplica a animação no scroll mediante clique no menu
+//=======================================================
+
+    $(".u-isScrollDown").click(function(event){        
+        event.preventDefault();
+        
+       
+
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 0}, 1000);
+
+          if ($(".Navigation--menu--main").hasClass('u-isExpanded')){
+            $("#MainNavigation-container, .NavigationButton.NavigationButton--main").removeClass("u-isExpanded")
+            $("#MainNavigation-container, .NavigationButton.NavigationButton--main").addClass("u-isCollapsed");  
+         }
+        
+        varHash = $(this).attr('href');
+
+        
+        /*if (location.hash == varHash) {
+            $(this).addClass('u-isActive');
+        } else {
+            $(this).removeClass('u-isActive');
+        }*/
+        
+        if(history.pushState) {
+        
+            history.pushState(null, null, varHash);
+        
+        }
+        else {
+        location.hash = '#myhash';
+        window.location.hash = varHash;
+        }
+
+        
+   });
+
+
 // ==========================
 // Menu Toggle
 // ==========================
@@ -284,6 +441,10 @@ $(window).scroll(function(){
 
 function LightboxClose(iFrame) {
 
+<<<<<<< HEAD
+=======
+function LightboxClose() {
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
   //alert( "clicked" );
    $('#Lightbox--container').removeClass('Lightbox--active');
    $('#Lightbox--container').addClass('Lightbox--inactive');
@@ -344,6 +505,7 @@ $(window).scroll(function(){
 $('#namidia-carousel').owlCarousel({
     loop:true,
     dots: true,
+<<<<<<< HEAD
     nav: false,
     responsiveClass: true,
     responsive:{
@@ -388,10 +550,14 @@ $('#opinioes-carousel').owlCarousel({
     dots: false,
     nav: true,
     margin: 0,
+=======
+    nav: true,
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
     responsiveClass: true,
     responsive:{
         0:{
             items:1,
+<<<<<<< HEAD
             
 
         },
@@ -421,12 +587,27 @@ $('#historia-carousel').owlCarousel({
         },
         960:{
             items:3,
+=======
+            margin:50,
+            nav:false
+        },
+        768:{
+            items:2,
+            margin:25,
+            //nav:false
+        },
+        960:{
+            items:3,
+            margin:25,
+            //nav:true,
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
         }
     }
 })
 
 
 
+<<<<<<< HEAD
 
 // Persnonalizando os Botões de Navegação
 /*
@@ -450,6 +631,8 @@ $('#depoimentos-carousel .owl-nav').append('<a class="navController navControlle
 */
 
 
+=======
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
 // /*=========================================================================================
 // // CLOSE FUNCTION
 // =========================================================================================*/
@@ -461,6 +644,7 @@ $('#depoimentos-carousel .owl-nav').append('<a class="navController navControlle
 
 function NavigationTabs(section, tab){
     //alert( section + ' , ' + tab );
+<<<<<<< HEAD
    $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item').removeClass('is-clean');
   
    if( tab == 1) {
@@ -479,6 +663,10 @@ function NavigationTabs(section, tab){
     $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item, .Section--' + section + ' .Items--tabs .Item, .Section--' + section + ' .Subsection-imageMain').removeClass('is-active');
     $('.Section--' + section + ' .Navigation--tabs #tab-' + tab + ', .Section--' + section + ' .Items--tabs #tabContent-' + tab +', .Section--' + section + ' #tabImage-' + tab).addClass('is-active');
     
+=======
+    $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item, .Section--' + section + ' .Items--tabs .Item, .Section--' + section + ' .Subsection-imageMain').removeClass('is-active');
+    $('.Section--' + section + ' .Navigation--tabs #tab-' + tab + ', .Section--' + section + ' .Items--tabs #tabContent-' + tab +', .Section--' + section + ' #tabImage-' + tab).addClass('is-active');
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
     //$('.Section--' + section + ' .Subsection-imageMain .Subsection-imageMain-src').fadeOut();
     //$('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab + ' .Subsection-imageMain-src').fadeIn();
     //alert('clicked');
@@ -491,7 +679,11 @@ function NavigationTabs(section, tab){
     $('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab).addClass('is-active').fadeIn(750);*/
 
   //});
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
 }
 
 

@@ -296,6 +296,11 @@ $mainSelector: '.Form';
 
 .Form{
 	&-row{
+<<<<<<< HEAD
+=======
+
+		border:1px solid $color_16;
+>>>>>>> 47f23257ae31480e343b6deaf9917cacf32fcbfa
 		border-radius: 5px;
 	}
 	&-content{
