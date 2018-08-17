@@ -61,6 +61,7 @@ window.onload = function() {
 
 
 
+
 //LightBox Fotos
 /*
 $(".Gallery--fotos .gallery-item a").click(function(event){        
@@ -79,6 +80,8 @@ var title = $(this).find('img').attr('alt');
 
 
 //$('.Section--intro .Form-input--email').val($('.Form--modal .Form-input--email').val());
+
+
 
 
 //=======================================================
@@ -459,8 +462,19 @@ $('#depoimentos-carousel .owl-nav').append('<a class="navController navControlle
 
 
 
-function NavigationTabs(section, tab, uri){
+function NavigationTabs(section, tab, uri, effect){
     //alert( section + ' , ' + tab );
+    
+    if ( effect == 'scrollTop' ) {
+
+        var anchor = $('.Section--'+section+' .Section-content');
+        
+        var new_position = $(anchor).offset();
+
+        $('html, body').stop().animate({ scrollTop: new_position.top - 100 }, 500);
+            //e.preventDefault();
+        }
+
    $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item').removeClass('is-clean');
   
    if( tab == 1) {
