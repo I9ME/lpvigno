@@ -11,13 +11,17 @@
 
  -->
 	<div class="u-maxSize--container u-alignCenterBox u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-sizeFull u-flexAlignItemsCenter u-flexJustifyContentCenter">
-		<div class="Section-subSection Section-subSection--bio u-size8of24 u-marginBottom--inter--half">
+		<div class="Section-subSection Section-subSection--bio u-size8of24">
 			<p class="u-alignCenter">
-				© Pizza Vignoli <?php echo get_the_date('Y') ?>, Todos os direitos Resevados.
+				© <a href="http://www.pizzavignoli.com.br">Pizza Vignoli</a> <?php echo get_the_date('Y') ?>, Todos os direitos Resevados.
 			</p>
 		</div>
-		<!-- <div class="Section-subSection Section-subSection--author u-size6of24 u-alignCenter">
-			<a href="https://www.i9me.com.br" target="_blank"><img src="<?php// echo get_template_directory_uri(); ?>/assets/images/logo-i9me-web-design.png" title="I9ME WEB & DESIGN" alt="I9ME WEB & DESIGN" /></a>
-		</div> -->
+		
 	</div> <!-- Max Size Container -->
 </section>
+
+<div class="u-displayBlock u-alignCenter u-paddingHorizontal--inter--half u-lineHeight0 color_5 u-sizeFull">
+	<a class="u-displayInlineBlock u-lineHeight0" href="https://www.i9me.com.br" target="_blank">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logptipo-i9me-web-design-fortaleza-ce.png" width="30" height="30" alt="I9ME Web & Design" />
+	</a>
+</div>

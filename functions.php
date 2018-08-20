@@ -177,6 +177,9 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 <symbol id="iconSearch" viewBox="0 0 26 28">
 <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
 </symbol>
+<symbol id="iconTripadvisor" viewBox="0 0 36 28">
+<path d="M10.172 15.578c0 0.812-0.656 1.469-1.453 1.469-0.812 0-1.469-0.656-1.469-1.469 0-0.797 0.656-1.453 1.469-1.453 0.797 0 1.453 0.656 1.453 1.453zM28.203 15.563c0 0.812-0.656 1.469-1.469 1.469s-1.469-0.656-1.469-1.469 0.656-1.453 1.469-1.453 1.469 0.641 1.469 1.453zM11.953 15.578c0-1.656-1.359-3.016-3.016-3.016-1.672 0-3.016 1.359-3.016 3.016 0 1.672 1.344 3.016 3.016 3.016 1.656 0 3.016-1.344 3.016-3.016zM29.969 15.563c0-1.656-1.344-3.016-3.016-3.016-1.656 0-3.016 1.359-3.016 3.016 0 1.672 1.359 3.016 3.016 3.016 1.672 0 3.016-1.344 3.016-3.016zM13.281 15.578c0 2.406-1.937 4.359-4.344 4.359s-4.359-1.953-4.359-4.359c0-2.391 1.953-4.344 4.359-4.344s4.344 1.953 4.344 4.344zM31.313 15.563c0 2.406-1.953 4.344-4.359 4.344-2.391 0-4.344-1.937-4.344-4.344s1.953-4.344 4.344-4.344c2.406 0 4.359 1.937 4.359 4.344zM16.25 15.609c0-3.984-3.234-7.219-7.219-7.219-3.969 0-7.203 3.234-7.203 7.219s3.234 7.219 7.203 7.219c3.984 0 7.219-3.234 7.219-7.219zM26.688 6.656c-2.578-1.125-5.484-1.734-8.687-1.734s-6.391 0.609-8.953 1.719c4.953 0.016 8.953 4.016 8.953 8.969 0-4.859 3.859-8.813 8.687-8.953zM34.172 15.609c0-3.984-3.219-7.219-7.203-7.219s-7.219 3.234-7.219 7.219 3.234 7.219 7.219 7.219 7.203-3.234 7.203-7.219zM30.016 6.766h5.984c-0.938 1.094-1.625 2.562-1.797 3.578 1.078 1.484 1.719 3.297 1.719 5.266 0 4.953-4.016 8.953-8.953 8.953-2.812 0-5.313-1.281-6.953-3.297 0 0-0.734 0.875-2.016 2.797-0.219-0.453-1.328-2.031-2-2.812-1.641 2.031-4.156 3.313-6.969 3.313-4.937 0-8.953-4-8.953-8.953 0-1.969 0.641-3.781 1.719-5.266-0.172-1.016-0.859-2.484-1.797-3.578h5.703c3.063-2.047 7.516-3.328 12.297-3.328s8.953 1.281 12.016 3.328z"></path>
+</symbol>
 </defs>
 </svg>';
 
@@ -294,53 +297,6 @@ class Custom_Post_Type_Image_Upload {
 	 */
 	public function init() {
 		
-	// Projetos
-	$labels_projetos = array(
-		"name" => __( "Projetos", "" ),
-		"singular_name" => __( "Projeto", "" ),
-		"menu_name" => __( "Projetos", "" ),
-		"all_items" => __( "Todos os projetos", "" ),
-		"add_new" => __( "Adicionar novo", "" ),
-		"add_new_item" => __( "Adicionar novo", "" ),
-		"edit_item" => __( "Editar", "" ),
-		"new_item" => __( "Novo projeto", "" ),
-		"view_item" => __( "Visualizar", "" ),
-		"view_items" => __( "Visualizar", "" ),
-		"search_items" => __( "Pesquisar", "" ),
-		"not_found" => __( "Sem resultados", "" ),
-		"not_found_in_trash" => __( "Sem resultados", "" ),
-		"parent_item_colon" => __( "Relacionados", "" ),
-		"featured_image" => __( "Imagem destacada", "" ),
-		"set_featured_image" => __( "Editar imagem destacada", "" ),
-		"remove_featured_image" => __( "Remover imagem destacada", "" ),
-		"parent_item_colon" => __( "Relacionados", "" ),
-	);
-
-	$args_projetos = array(
-		"label" => __( "Projetos", "" ),
-		"labels" => $labels_projetos,
-		"description" => "",
-		"public" => true,
-		"publicly_queryable" => true,
-		"show_ui" => true,
-		"show_in_rest" => false,
-		"rest_base" => "",
-		"has_archive" => false,
-		"show_in_menu" => true,
-		"exclude_from_search" => true,
-		"capability_type" => "post",
-		"map_meta_cap" => true,
-		"hierarchical" => false,
-		"rewrite" => array( "slug" => "projetos", "with_front" => true ),
-		"query_var" => true,
-		"menu_icon" => "dashicons-welcome-write-blog",
-		"supports" => array( "title", "excerpt", "thumbnail"),
-		//'register_meta_box_cb' => 'noticias_meta_box'
-	);
-
-	register_post_type( "projetos", $args_projetos );
-
-
 
 	// Clippings
 	$labels_clipping = array(

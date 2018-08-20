@@ -13,7 +13,7 @@ var hostname = location.hostname;
 if ( hostname == 'localhost' ) {
     url = 'http://localhost/vignoli';
 } else {
-    url = 'http://'+hostname+'/franquiavignoli';
+    url = 'http://'+hostname+'/franquia';
 }
 
 window.onload = function() {

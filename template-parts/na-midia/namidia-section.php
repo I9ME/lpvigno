@@ -3,7 +3,7 @@
 		<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-paddingVertical u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter">
 			<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingHorizontal--inter--half u-sizeFull">VIGNOLI NA <strong>MÍDIA</strong></h2>
-			<h3 class="Section-header-subtitle u-alignCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus posuere enim auctor laoreet.</h3>
+			<h3 class="Section-header-subtitle u-alignCenter">Somos conhecidos por muitos pela alta qualidade de nossos produtos e serviços. Veja o que os veículos de comunicação falam sobre nós. </h3>
 		</header>
 		<div class="Section-content">
 			<ul id="namidia-carousel" class="Section-items owl-theme owl-carousel">

@@ -5,7 +5,7 @@
 
 			<ul class="Section-items u-displayFlex u-flexJustifyContentCenter u-positionAbsolute u-flexFollowSize u-heightFull u-sizeFull">
 				<li class="Section-items-item u-size8of24">
-					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="#">
+					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="https://www.facebook.com/vignolipizzaria/" target="_blank">
 							<i class="FigureIcon u-marginRight--inter u-lineHeight0">
 								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
 									<use xlink:href="#iconFacebook"></use>
@@ -15,24 +15,24 @@
 					</a>
 				</li>
 				<li class="Section-items-item u-size8of24">
-					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="#">
+					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="https://www.instagram.com/pizzavignoli/" target="_blank">
 							<i class="FigureIcon u-marginRight--inter u-lineHeight0">
 								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
 									<use xlink:href="#iconInstagram"></use>
 								</svg>
 						 	</i>
-							<p class="Section-items-item-resume">/pizzavignoli</p>
+							<p class="Section-items-item-resume">@pizzavignoli</p>
 					
 					</a>
 				</li>
 				<li class="Section-items-item u-size8of24">
-					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="#">
+					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="https://www.tripadvisor.com.br/Restaurant_Review-g303293-d1097556-Reviews-Vignoli_Fortaleza_Virgilio_Tavora-Fortaleza_State_of_Ceara.html" target="_blank">
 							<i class="FigureIcon u-marginRight--inter u-lineHeight0">
-								<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
-									<use xlink:href="#iconYoutube"></use>
+								<svg class="SocialBar-item-icon u-icon iconTripadvisor u-displayInlineBlock is-animating">
+									<use xlink:href="#iconTripadvisor"></use>
 								</svg>
 						 	</i>
-							<p class="Section-items-item-resume">/pizzavignoli</p>
+							<p class="Section-items-item-resume">tripAdvisor</p>
 
 					</a>
 				</li>
