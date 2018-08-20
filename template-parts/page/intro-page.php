@@ -11,7 +11,7 @@
 				</em>
 				<span class="Captions-title--line3 u-displayBlock u-sizeFull">Seja um dos nossos <strong>franqueados</strong></span>
 			</h1>
-			<form class="Form Form--style2 u-marginTop--inter--half u-sizeFull" action="<?php echo get_home_url(); ?>">
+			<form class="Form Form--style2 Form--modal Form--modal--franqueado u-marginTop--inter--half u-sizeFull" action="javascript:LightboxCall('<?php echo get_home_url(); ?>/form-franqueado/?action=open-modal','modal');">
 				<div class="u-displayFlex U-sizeFull  u-flexAlignItemsCenter u-flexDirectionColumn">
 					<div class="borderBox--gadient u-displayBlock"></div>
 				</div>
@@ -23,7 +23,7 @@
 									<use xlink:href="#iconEnvelope"></use>
 								</svg>
 							</i>
-							<input class="Form-input Form-input--text" type="text" name="email" placeholder="Digite seu e-mail" />
+							<input id="InputEmail" class="Form-input Form-input--text Form-input--email" type="text" name="email" placeholder="Digite seu e-mail" />
 						</div>
 						<div class="Form-coll Submit">
 							<input class="Form-input Form-input--submit u-cursorPointer Button u-zIndex2 u-paddingRight" type="submit" value="INICIAR" />

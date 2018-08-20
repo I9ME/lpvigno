@@ -19,7 +19,7 @@ get_header(); ?>
 <div id="main" class="SiteMain SiteMain--inter" role="main">
 	<?php get_template_part('template-parts/page/intro','page'); ?>
 	
-	<main class="SiteMain-main u-marginTop--inter">
+	<main class="SiteMain-main">
 	
 	<?php get_template_part('template-parts/page/section-page','content');?>
 

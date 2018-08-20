@@ -1,14 +1,17 @@
 
 					<div class="Section-items-item-content">
 						<h4 class="Section-items-item-title u-marginBottom--inter">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry
+							PIONEIRA! ORIGINAL! INCOMPARÁVEL! NÃO É PIZZA, É VIGNOLI!
 						</h4>
 						<div class="Section-items-item-text u-alignJustify">
 							<p>
-								Há treze anos o Vignoli chegou em Fortaleza com a proposta de oferecer uma pizza leve, fininha e crocante a ser apreciada com as mãos, um diferencial que conquistou imediatamente os fortalezenses. Os sabores marcantes, aliados a um ambiente aconchegante, familiar e intimista, logo conquistaram também turistas e visitantes de outros locais, fazendo o Vignoli ser rapidamente reconhecido como a melhor pizza da cidade.
+								A primeira Vignoli chegou em meados de 2004, tendo como grande diferencial sua pizza leve, fininha e crocante a ser apreciada com as mãos.
 							</p>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem ipsum.
+								Os sabores marcantes e incomparáveis, aliados a um ambiente aconchegante, intimista e familiar logo conquistaram tanto os fortalezenses, quanto turistas de todas as partes do país que já elegiam a melhor pizza da cidade. Confirmado em 2005 com o título de melhor Pizzaria da Cidade pela Revista Veja Comer & Beber, ganho por 8 vezes consecutivas.
+							</p>
+							<p>
+								Atualmente, a Vignoli é reconhecida por ser a Pizzaria mais premiada do Brasil.
 							</p>
 
 							<div class="subSection">
@@ -18,37 +21,37 @@
 											<span class="DotHistoty-year"><strong>2004</strong></span>
 										</div>
 										<header class="subSection-items-item-header">
-											<h5 class="subSection-items-item-title">Fundamos a Vingoli</h5>
+											<h5 class="subSection-items-item-title">Fundamos a Pizza Vingoli</h5>
 										</header>
 										<div class="subSection-items-item-content">
 											<p class="subSection-items-item-text">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+												A primeira Vignoli chegou revolucionando o mercado em meados de 2004, tendo como grande diferencial sua pizza leve, fininha e crocante, que são mais saudáveis por não possuírem gorduras hidrogenadas, leite e ovos, e são apreciadas com as mãos.
 											</p>
 										</div>
 									</li>
 									<li class="subSection-items-item u-alignCenter">
 										<div class="DotHistoty">
-											<span class="DotHistoty-year"><strong>2010</strong></span>
+											<span class="DotHistoty-year"><strong>2005</strong></span>
 										</div>
 										<header class="subSection-items-item-header">
-											<h5 class="subSection-items-item-title">Expandimos para outros estados</h5>
+											<h5 class="subSection-items-item-title">Eleitos como a melhor pizza da cidade</h5>
 										</header>
 										<div class="subSection-items-item-content">
 											<p class="subSection-items-item-text">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+												Tanto os fortalezenses quanto turistas de todas as partes do país elegeram a Vignoli como a melhor pizza da cidade, confirmado em 2005 com o título de Melhor Pizzaria da Cidade pela Revista Veja Comer & Beber, ganho por 8 vezes consecutivas.
 											</p>
 										</div>
 									</li>
 									<li class="subSection-items-item u-alignCenter u-alignCenter">
 										<div class="DotHistoty">
-											<span class="DotHistoty-year"><strong>2014</strong></span>
+											<span class="DotHistoty-year"><strong>2015</strong></span>
 										</div>
 										<header class="subSection-items-item-header">
-											<h5 class="subSection-items-item-title">Crescemos 150%</h5>
+											<h5 class="subSection-items-item-title">Lançamos a Vignoli Expresso</h5>
 										</header>
 										<div class="subSection-items-item-content">
 											<p class="subSection-items-item-text">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+												A Vignoli Expresso juntou os melhores e mais vendidos sabores, com a possibilidade de personalização, pelos clientes, das massas e saladas, com uma grande variedade de insumos selecionados, tornando as receitas únicas e exclusivas.
 											</p>
 										</div>
 									</li>
@@ -57,11 +60,11 @@
 											<span class="DotHistoty-year"><strong>2018</strong></span>
 										</div>
 										<header class="subSection-items-item-header">
-											<h5 class="subSection-items-item-title">Chegamos à 15 unidades</h5>
+											<h5 class="subSection-items-item-title">Chegamos à 16 unidades</h5>
 										</header>
 										<div class="subSection-items-item-content">
 											<p class="subSection-items-item-text">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+												Hoje, estamos em 5 estados, totalizando 16 unidades, com previsão de abertura de mais 6 lojas até o final do ano, chegando ao mercado de São Paulo, Campinas, Brasília entre outras cidades brasileiras.
 											</p>
 										</div>
 									</li>

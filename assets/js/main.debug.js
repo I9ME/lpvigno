@@ -13,7 +13,7 @@ var hostname = location.hostname;
 if ( hostname == 'localhost' ) {
     url = 'http://localhost/vignoli';
 } else {
-    url = 'http://'+hostname+'/vignoli/homolog';
+    url = 'http://'+hostname+'/franquia';
 }
 
 window.onload = function() {
@@ -26,13 +26,27 @@ window.onload = function() {
         var mobile = '';
     }
     
-    $('#afranquia #tabImage-1.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza'+mobile+'.png" />');
-    $('#afranquia #tabImage-2.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza--expresso'+mobile+'.png" />');
-    $('#onde-estamos .Section-items-figure').html('<img class="u-objectFitCover u-sizeHeight100 u-sizeFull u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="'+url+'/wp-content/themes/lpvigno/assets/images/brazil-pizza'+mobile+'.png" />');
+    $(function() {
+      setTimeout(function(){
+        //Inserindo imagens secudárias
+        $('.Section--aFranquia #tabImage-2.Subsection-imageMain[data-img-src]').each(function(){
+          var src = $(this).attr('data-img-src');
+          $('<img>').attr('src', url+'/wp-content/themes/lpvigno/assets/images/'+src).appendTo('.Section--aFranquia .Section-subSection #tabImage-2').addClass('Subsection-imageMain-src u-maxSize100 is-animating');
+        });
+
+        
+
+
+      }, 600);
+    });
+
+    //$('#afranquia #tabImage-1.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza'+mobile+'.png" />');
+    //$('#afranquia #tabImage-2.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza--expresso'+mobile+'.png" />');
+    //$('#onde-estamos .Section-items-figure').html('<img class="u-objectFitCover u-sizeHeight100 u-sizeFull u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="'+url+'/wp-content/themes/lpvigno/assets/images/brazil-pizza--right'+mobile+'.png" />');
     $('#avignoli').addClass('imgAfter');
 
-    $('#avignoli .Gallery--fotos').load(url+'/galeria-de-fotos/');
-    $('#avignoli .Gallery--videos').load(url+'/galeria-de-videos/');
+    $('#avignoli .Items--tabs .Item--tab.Item--gallery').load(url+'/galeria-de-fotos/');
+    //$('#avignoli .Gallery--videos').load(url+'/galeria-de-videos/');
 
 
     
@@ -44,6 +58,7 @@ window.onload = function() {
    //
 
 };
+
 
 
 
@@ -62,6 +77,9 @@ var title = $(this).find('img').attr('alt');
    $('.Lightbox-window-content').html( '<h1>TESTE</h1>' );
 
 });*/
+
+
+//$('.Section--intro .Form-input--email').val($('.Form--modal .Form-input--email').val());
 
 
 
@@ -172,7 +190,7 @@ $(window).scroll(function(){
                     
             } else {
 
-               $(this).removeClass('u-isScrollFade--on'); 
+               //$(this).removeClass('u-isScrollFade--on'); 
             
             } 
             
@@ -273,6 +291,7 @@ function LightboxClose(iFrame) {
    $('#Lightbox--container').removeClass('Lightbox--active');
    $('#Lightbox--container').addClass('Lightbox--inactive');
    $('.Lightbox-window-content').html('');
+   jQuery('body').css({'overflow-y':'auto'});
 }
 
 $( ".LightboxClose" ).on( "click", LightboxClose );
@@ -443,8 +462,19 @@ $('#depoimentos-carousel .owl-nav').append('<a class="navController navControlle
 
 
 
-function NavigationTabs(section, tab){
+function NavigationTabs(section, tab, uri, effect){
     //alert( section + ' , ' + tab );
+    
+    if ( effect == 'scrollTop' ) {
+
+        var anchor = $('.Section--'+section+' .Section-content');
+        
+        var new_position = $(anchor).offset();
+
+        $('html, body').stop().animate({ scrollTop: new_position.top - 100 }, 500);
+            //e.preventDefault();
+        }
+
    $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item').removeClass('is-clean');
   
    if( tab == 1) {
@@ -462,6 +492,12 @@ function NavigationTabs(section, tab){
 
     $('.Section--' + section + ' .Navigation--tabs .Navigation--tabs-items-item, .Section--' + section + ' .Items--tabs .Item, .Section--' + section + ' .Subsection-imageMain').removeClass('is-active');
     $('.Section--' + section + ' .Navigation--tabs #tab-' + tab + ', .Section--' + section + ' .Items--tabs #tabContent-' + tab +', .Section--' + section + ' #tabImage-' + tab).addClass('is-active');
+
+    if( uri != '' ) {
+
+        $('.Section--' + section + ' .Items--tabs #tabContent-' + tab).load(url+uri);
+
+    }
     
     //$('.Section--' + section + ' .Subsection-imageMain .Subsection-imageMain-src').fadeOut();
     //$('.Section--' + section + ' .Subsection-imageMain#tabImage-'+ tab + ' .Subsection-imageMain-src').fadeIn();
@@ -481,11 +517,19 @@ function NavigationTabs(section, tab){
 
 
 // Abre o Lightbox
-function LightboxCall(iFrame) {
+function LightboxCall(iFrame, type) {
+
   //alert( "clicked" );
   jQuery('#Lightbox--container').removeClass('Lightbox--inactive');
   jQuery('#Lightbox--container').addClass('Lightbox--active');
-  jQuery('.Lightbox-window-content').load( iFrame );
+  if ( type == 'modal' ) {
+    var mail = jQuery('#InputEmail').val();
+    jQuery('.Lightbox-window-content').load( iFrame+'&email='+mail);
+  } else {
+    jQuery('.Lightbox-window-content').load( iFrame );
+   }
+
+  jQuery('body').css({'overflow-y':'hidden'});
 }
 //$( ".LightboxCall" ).on( "click", LightboxCall );
 
@@ -497,6 +541,7 @@ function KeyUpEsc(evt) {
        jQuery('#Lightbox--container').removeClass('Lightbox--active');
        jQuery('#Lightbox--container').addClass('Lightbox--inactive');
        jQuery('.Lightbox-window-content').html( '' );
+       jQuery('body').css({'overflow-y':'auto'});
     }
 }
 

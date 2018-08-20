@@ -1,16 +1,3 @@
-<?php 
-	
-	if( wp_is_mobile() ){
-		$var_img_file = '--mobile';
-		$class_img = '';
-
-	} else {
-
-		$var_img_file = '';
-		$class_img = '';
-	}
-
- ?>
 
 <div class="Section-subSection Section-subsection--dados Subsection u-marginTop u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
 	<div class="Subsection-content u-positionRelative u-size12of24 u-paddingVertical">
@@ -24,7 +11,7 @@
 				<li id="tab-1" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter--half u-positionRelative u-paddingRight--inter--px is-active">
 					<h4 class="u-alignRight">
 
-						<a class="Navigation-link u-displayBlock u-paddingHorizontal--vrt--inter--half--px is-animating" href="javascript:NavigationTabs('aFranquia','1');">Restaurante</a>
+						<a class="Navigation-link u-displayBlock u-paddingHorizontal--vrt--inter--half--px is-animating" href="javascript:NavigationTabs('aFranquia','1','');">Restaurante</a>
 
 					</h4>
 					<figure class="ShadowBox ShadowBox--tabRight--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
@@ -33,7 +20,7 @@
 				<li id="tab-2" class="Navigation--tabs-items-item u-size12of24 u-paddingBottom--inter--half u-positionRelative u-paddingLeft--inter--px">
 					<h4>
 
-						<a class="Navigation-link u-displayBlock is-animating u-paddingHorizontal--vrt--inter--half--px" href="javascript:NavigationTabs('aFranquia','2');">Expresso</a>
+						<a class="Navigation-link u-displayBlock is-animating u-paddingHorizontal--vrt--inter--half--px" href="javascript:NavigationTabs('aFranquia','2','');">Expresso</a>
 
 					</h4>
 					<figure class="ShadowBox ShadowBox--tabLeft--footer u-positionAbsolute u-zIndex2 is-animating"></figure>
@@ -112,10 +99,9 @@
 		</ul>
 	</div>
 	<div id="tabImage-1" class="Subsection-imageMain u-positionRelative u-size12of24 u-zIndex4 u-lineHeight0 is-active">
-		<!-- <img class="Subsection-imageMain-src u-maxSize100 is-animating" src="<?php // echo get_template_directory_uri() . '/assets/images/subSection-mainImage--pizza' . $var_img_file . '.png'; ?>" alt="Pizza Vignoli" /> -->
+		<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="<?php echo get_template_directory_uri() . '/assets/images/subSection-mainImage--pizza' . switch_img_Mobile() . '.png'; ?>" alt="Pizza Vignoli" />
 	</div>
-	<div id="tabImage-2" class="Subsection-imageMain u-positionRelative u-size12of24 u-lineHeight0 u-zIndex4">
-
+	<div id="tabImage-2" data-img-src="<?php echo 'subSection-mainImage--pizza--expresso' . switch_img_Mobile() . '.png'; ?>" class="Subsection-imageMain u-positionRelative u-size12of24 u-lineHeight0 u-zIndex4">
 		<!-- <img class="Subsection-imageMain-src u-maxSize100 is-animating" src="<?php // echo get_template_directory_uri() . '/assets/images/subSection-mainImage--pizza--expresso' . $var_img_file . '.png'; ?>" alt="Pizza Vignoli" /> -->
 	</div>
 
