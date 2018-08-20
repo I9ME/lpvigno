@@ -13,7 +13,7 @@ var hostname = location.hostname;
 if ( hostname == 'localhost' ) {
     url = 'http://localhost/vignoli';
 } else {
-    url = 'http://'+hostname+'/vignoli/homolog';
+    url = 'http://'+hostname+'/franquiavignoli';
 }
 
 window.onload = function() {
@@ -45,7 +45,7 @@ window.onload = function() {
     //$('#onde-estamos .Section-items-figure').html('<img class="u-objectFitCover u-sizeHeight100 u-sizeFull u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="'+url+'/wp-content/themes/lpvigno/assets/images/brazil-pizza--right'+mobile+'.png" />');
     $('#avignoli').addClass('imgAfter');
 
-    $('#avignoli .Gallery--fotos').load(url+'/galeria-de-fotos/');
+    $('#avignoli .Items--tabs .Item--tab.Item--gallery').load(url+'/galeria-de-fotos/');
     //$('#avignoli .Gallery--videos').load(url+'/galeria-de-videos/');
 
 

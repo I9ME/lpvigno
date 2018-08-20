@@ -36,7 +36,7 @@
 				</nav>
 
 				<ul class="Section-items Items Items--tabs u-marginTop--inter u-positionRelative">
-					<li id="tabContent-1" class="Section-items-item Item Item--tab u-sizeFull u-positionRelative u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom is-animating">
+					<li id="tabContent-1" class="Section-items-item Item Item--gallery Item--tab u-sizeFull u-positionRelative u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom is-animating">
 						<?php // get_template_part( 'template-parts/vignoli/section-part', 'fotos' ); ?>
 					</li>
 					<li id="tabContent-2" class="Section-items-item Item Item--tab u-sizeFull u-positionRelative is-active u-boxShadow--clean--bottom u-borderRadius5 u-paddingVertical u-paddingBottom is-animating">

@@ -169,6 +169,14 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 <symbol id="iconMoney" viewBox="0 0 20 20">
 <path d="M11 16.755v2.245h-2v-2.143c-1.712-0.1-3.066-0.589-4.241-1.797l1.718-1.74c0.859 0.87 2.023 1.16 3.282 1.16 1.565 0 2.405-0.599 2.405-1.702 0-0.483-0.133-0.889-0.42-1.16-0.267-0.251-0.572-0.387-1.202-0.483l-1.642-0.232c-1.164-0.174-2.022-0.541-2.634-1.141-0.648-0.657-0.973-1.546-0.973-2.707 0-2.155 1.382-3.743 3.707-4.1v-1.955h2v1.932c1.382 0.145 2.465 0.62 3.415 1.551l-1.679 1.682c-0.859-0.832-1.889-0.947-2.787-0.947-1.412 0-2.099 0.792-2.099 1.74 0 0.348 0.115 0.716 0.401 0.986 0.267 0.252 0.706 0.464 1.26 0.541l1.602 0.232c1.241 0.174 2.023 0.522 2.596 1.063 0.726 0.696 1.050 1.702 1.050 2.92 0 2.25-1.567 3.662-3.759 4.055z"></path>
 </symbol>
+<symbol id="iconList" viewBox="0 0 44 32">
+<path d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"></path>
+<path d="M31 18l6 6 6-6z"></path>
+<path d="M43 16l-6-6-6 6z"></path>
+</symbol>
+<symbol id="iconSearch" viewBox="0 0 26 28">
+<path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
+</symbol>
 </defs>
 </svg>';
 
@@ -179,6 +187,35 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.2.1.min.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.paroller.min.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
+ 
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+
+<script type='text/javascript'>
+(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[6]='MMERGE6';ftypes[6]='phone';fnames[3]='MMERGE3';ftypes[3]='text';fnames[2]='MMERGE2';ftypes[2]='dropdown';fnames[7]='MMERGE7';ftypes[7]='dropdown';fnames[5]='MMERGE5';ftypes[5]='dropdown'; 
+/**
+ * Translated default messages for the $ validation plugin.
+ * Locale: PT_PT
+ */
+$.extend($.validator.messages, {
+	required: "Campo de preenchimento obrigat&oacute;rio.",
+	remote: "Por favor, corrija este campo.",
+	email: "Por favor, introduza um endere&ccedil;o eletr&oacute;nico v&aacute;lido.",
+	url: "Por favor, introduza um URL v&aacute;lido.",
+	date: "Por favor, introduza uma data v&aacute;lida.",
+	dateISO: "Por favor, introduza uma data v&aacute;lida (ISO).",
+	number: "Por favor, introduza um n&uacute;mero v&aacute;lido.",
+	digits: "Por favor, introduza apenas d&iacute;gitos.",
+	creditcard: "Por favor, introduza um n&uacute;mero de cart&atilde;o de cr&eacute;dito v&aacute;lido.",
+	equalTo: "Por favor, introduza de novo o mesmo valor.",
+	accept: "Por favor, introduza um ficheiro com uma extens&atilde;o v&aacute;lida.",
+	maxlength: $.validator.format("Por favor, n&atilde;o introduza mais do que {0} caracteres."),
+	minlength: $.validator.format("Por favor, introduza pelo menos {0} caracteres."),
+	rangelength: $.validator.format("Por favor, introduza entre {0} e {1} caracteres."),
+	range: $.validator.format("Por favor, introduza um valor entre {0} e {1}."),
+	max: $.validator.format("Por favor, introduza um valor menor ou igual a {0}."),
+	min: $.validator.format("Por favor, introduza um valor maior ou igual a {0}.")
+});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
 
 <?php
 }

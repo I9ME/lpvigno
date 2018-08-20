@@ -6795,7 +6795,8 @@ input[type="submit"] {
 
 .Form--style1 .Form-input[type="text"],
 .Form--style1 .Form-input[type="tel"],
-.Form--style1 .Form-input[type="email"] {
+.Form--style1 .Form-input[type="email"],
+.Form--style1 .Form-input--select {
   height: 75px;
 }
 
