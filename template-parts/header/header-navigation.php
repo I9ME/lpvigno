@@ -20,13 +20,13 @@
 			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#afranquia">FRANQUIA</a>
 		</li>
 
-		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
+		<!-- <li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
 			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#videos">VÍDEOS</a>
 		</li>
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
 			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#opinioes">OPINIÕES</a>
-		</li>
+		</li> -->
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
 			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#avignoli">VIGNOLI</a>
@@ -47,13 +47,13 @@
 			<a class="NavigationLink u-positionRelative Item-level1 is-animating " href="<?php echo get_home_url(); ?>/#afranquia">A FRANQUIA</a>
 		</li>
 
-		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
-			<a class="NavigationLink u-positionRelative Item-level1 is-animating " href="<?php echo get_home_url(); ?>/#videos">VÍDEOS</a>
+		<!-- <li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
+			<a class="NavigationLink u-positionRelative Item-level1 is-animating " href="<?php // echo get_home_url(); ?>/#videos">VÍDEOS</a>
 		</li>
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
-			<a class="NavigationLink u-positionRelative Item-level1 is-animating " href="<?php echo get_home_url(); ?>/#opinioes">OPINIÕES</a>
-		</li>
+			<a class="NavigationLink u-positionRelative Item-level1 is-animating " href="<?php // echo get_home_url(); ?>/#opinioes">OPINIÕES</a>
+		</li> -->
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
 			<a class="NavigationLink u-positionRelative Item-level1 is-animating " href="<?php echo get_home_url(); ?>/#avignoli">A VIGNOLI</a>

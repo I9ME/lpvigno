@@ -1201,7 +1201,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 						    text-shadow: 3px 5px 15px #DDD;
 						    letter-spacing: -3px;
 						    &.u-isScrollFade--on{
-								text-shadow: 4px 6px 17px #CCC;	
+								text-shadow: 3px 3px 15px #BBBBBB;	
 							}
 						}
 					}
@@ -1730,7 +1730,7 @@ A VIGNOLI
 
  		@media screen and (min-width: $break-sm){
  			& .owl-dots{
- 				flex-direction: row-reverse;
+ 				flex-direction: row;
  			}
 
  			& .gallery{

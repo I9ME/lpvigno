@@ -412,6 +412,9 @@ $('#historia-carousel').owlCarousel({
     dots: true,
     nav: false,
     margin: 50,
+   //rtl:true,
+    //startPosition: 'right',
+    //autoplay: true,
     responsiveClass: true,
     responsive:{
         0:{
@@ -423,7 +426,7 @@ $('#historia-carousel').owlCarousel({
             items:2,
         },
         960:{
-            items:3,
+            items:2,
         }
     }
 })
@@ -530,6 +533,15 @@ function LightboxCall(iFrame, type) {
    }
 
   jQuery('body').css({'overflow-y':'hidden'});
+
+
+   $(function() {
+      setTimeout(function(){
+        //Inserindo imagens secudárias
+        $('#loading').fadeOut();
+       }, 2000);
+    });
+   
 }
 //$( ".LightboxCall" ).on( "click", LightboxCall );
 

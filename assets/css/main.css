@@ -1321,7 +1321,7 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .Section--aFranquia .Section-subSection .Subsection-content-header-title.u-isScrollFade--on {
-  text-shadow: 4px 6px 17px #CCC;
+  text-shadow: 3px 3px 15px #BBBBBB;
 }
 
 .Section--aFranquia .Section-subSection .Subsection-imageMain {
@@ -1733,7 +1733,7 @@ FOOTER .Site--foter .Section--footerContent
 
 @media screen and (min-width: 768px) {
   .Section--aVignoli .owl-dots {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   .Section--aVignoli .gallery-item {
     min-width: 100px;
