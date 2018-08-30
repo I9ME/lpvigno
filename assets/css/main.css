@@ -1311,17 +1311,12 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .Section--aFranquia .Section-subSection .Subsection-content-header-title {
-  color: #FFFFFF;
+  color: #e2ded4;
   font-style: italic;
   width: 100%;
   text-align: center;
   font-size: 41px;
-  text-shadow: 3px 5px 15px #DDD;
-  letter-spacing: -3px;
-}
-
-.Section--aFranquia .Section-subSection .Subsection-content-header-title.u-isScrollFade--on {
-  text-shadow: 3px 3px 15px #BBBBBB;
+  letter-spacing: 1px;
 }
 
 .Section--aFranquia .Section-subSection .Subsection-imageMain {
@@ -1337,9 +1332,9 @@ FOOTER .Site--foter .Section--footerContent
     top: -40px;
   }
   .Section--aFranquia .Section-subSection .Subsection-content-header-title {
-    font-size: 60px;
-    text-shadow: 2px 7px 15px #e4e4e4;
-    letter-spacing: -4px;
+    /* font-size: 60px;
+							    text-shadow: 2px 7px 15px #e4e4e4;
+							    letter-spacing: -4px; */
   }
   .Section--aFranquia .Section-subSection .Subsection-imageMain {
     position: absolute;
@@ -3510,6 +3505,10 @@ th.u-isShown {
     height: 0px !important;
     overflow: hidden !important;
   }
+}
+
+.u-isExpanded #loading {
+  height: 200px;
 }
 
 .u-isExpanded.e-Toglle .NavigationButton-icon {
@@ -7222,6 +7221,11 @@ input[type="submit"] {
 
 #showLess:hover {
   color: black;
+}
+
+#loading {
+  height: 0px;
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------

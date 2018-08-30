@@ -1192,16 +1192,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
     					text-align: center;
     					top: -40px;
 						&-title{
-						    color: $color_1;
+						    color: #e2ded4;
 						    font-style: italic;
 						    width: 100%;
 						    text-align: center;
 
 						    font-size: 41px;
-						    text-shadow: 3px 5px 15px #DDD;
-						    letter-spacing: -3px;
+						    // text-shadow: 3px 5px 15px #DDD;
+						    letter-spacing: 1px;
 						    &.u-isScrollFade--on{
-								text-shadow: 3px 3px 15px #BBBBBB;	
+								// text-shadow: 3px 3px 15px #BBBBBB;	
 							}
 						}
 					}
@@ -1238,9 +1238,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00edeae3', e
 						&-header{
 	    					top: -40px;
 							&-title{
-								font-size: 60px;
+								/* font-size: 60px;
 							    text-shadow: 2px 7px 15px #e4e4e4;
-							    letter-spacing: -4px;
+							    letter-spacing: -4px; */
 							}
 						}
 					}
