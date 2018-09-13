@@ -9,17 +9,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124911775-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-124911775-1');
-</script>
-
 <meta name="description" content="Eleita 8 vezes como a melhor pizza de Fortaleza pela Veja Comer e Beber">
 <meta name="author" content="Diogo Soares | I9ME">
 
